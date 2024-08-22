@@ -3,6 +3,8 @@
 
 https://drowsy-drake-studios.itch.io/cryptid-crush
 
+https://cryptidcrush.com
+
 -------------------------------------------------------
 
 #### Hanté. Maudit. Célib.
