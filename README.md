@@ -36,10 +36,10 @@ Vide= A faire
 - 🟩 Menus, UI
 - 🟢 Introduction; Mothman
 - Menu "à propos"
-- 🟠 Chapitre INTRO [0/5]
-- Chapitre 1, DEAD AIR - Histoire
-- Chapitre 1, DEAD AIR - Combat 1
-- Chapitre 1, DEAD AIR - Combat 2
+- 🟠 Chapitre INTRO
+- Chapitre 0, DEAD AIR - Histoire [0/5]
+- Chapitre 0, DEAD AIR - Combat 1
+- Chapitre 0, DEAD AIR - Combat 2
 
  Plus a venir.
 -------------------------------------------------------
