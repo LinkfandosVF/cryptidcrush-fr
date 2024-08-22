@@ -26,6 +26,23 @@ Cryptid Crush contiendras *AU MOINS* 5 personnages a date, et recevera des màj 
 
 -------------------------------------------------------
 
+### Avancée
+
+🟢: Satisfaisant? Quelque erreur possible
+🟩: Fini à 100%
+🟠: En court
+Vide= A faire
+
+- 🟩 Menus, UI
+- 🟢 Introduction; Mothman
+- Menu "à propos"
+- Chapitre 0
+- Chapitre 1, DEAD AIR - Histoire
+- Chapitre 1, DEAD AIR - Combat 1
+- Chapitre 1, DEAD AIR - Combat 2
+
+ Plus a venir.
+-------------------------------------------------------
 ### DISCLAIMER:
 
 - C'est un dating sim. Mais pas que. D'accord? On juge pas un jeu par uniquement UN des aspects de l'histoire. Il y a bien plus.
