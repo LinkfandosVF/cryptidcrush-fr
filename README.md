@@ -36,7 +36,7 @@ Vide= A faire
 - 🟩 Menus, UI
 - 🟢 Introduction; Mothman
 - Menu "à propos"
-- 🟠 Chapitre INTRO
+- 🟢 Chapitre INTRO
 - Chapitre 0, DEAD AIR - Histoire [0/5]
 - Chapitre 0, DEAD AIR - Combat 1
 - Chapitre 0, DEAD AIR - Combat 2
@@ -51,9 +51,19 @@ fort en programmation (Ca c'est Dom!). Donc si il y a des bugs, ou des messages 
 du github! Jusqu'a ce que le bug soit réglé, vous pouvez selectionner "Ignorer" si cela est possible. Merci d'essayer le patch pour le jeu!
 
 
-Disponibilité: Actuellement **INDISPONIBLE.** 
+Disponibilité: Actuellement **PARTIELLEMENT DISPONIBLE** 
 
 Je suis toujours en train de travailler sur la permière build! Patience!
+Dans l'état l'intro jusqu'a la station d'Ehlkorn est traduit. Rien d'autre.
+
+### POUR INSTALLER:
+
+1 - Télécharger le code en tant que .Zip
+2 - Ouvrir le dossier du jeu préalablement téléchargé sur itch.io
+3 - Ouvrir le dossier "Game" du jeu
+4 - Copier le contenu du .zip dans le dossier Game et CLIQUER SUR REMPLACER LES FICHIERS.
+
+C'est juste une suposition, mais le jeu devrais être patché!
 
 
 [Devenir Membre Patreon](https://www.patreon.com/bePatron?u=19966246&redirect_uri=https%3A%2F%2Fitch.io%2Fgame%2Fedit%2F815590&utm_medium=widget)
