@@ -60,4 +60,7 @@ Je suis toujours en train de travailler sur la permière build! Patience!
 (ça aide beaucoup!)
 
 [Discord du jeu](https://discord.com/invite/cryptidcrush)
+
 Thanks to Mike for allowing me to mess with files and not smashing my head against a wall for discovering spoilers i wasn't supposed to see :3
+
+And thanks the whole dev team for making this master piece of a game. It's awesome. Thank y'all a lot!! ❤️
