@@ -16,11 +16,11 @@ label taro_dice_tutorial:
         ease 1.0 xcenter 0.2
 
     voice taro_laughc
-    Taro "This calls for an investigation!"
+    Taro "Tout cela demande à être fouillé!"
 
-    Robyn "Or I could just shoot them a text."
+    Robyn "Où je pourrais juste lui envoyer un message."
 
-    #Narrator "You shine your flashlight around, but don’t find anything in particular."
+    #Narrator "Tu explore la zone des yeux avec ta lampe, mais ne trouve rien en particulier."
     python:
         Taro_State["pawL"] = 0
         Taro_State["mouth"] = 1
@@ -29,10 +29,10 @@ label taro_dice_tutorial:
         Robyn_State["mouth"] = 3
         Robyn_State["brow"] = 1
 
-    Taro "Nooo! Not like that, you’ve gotta roll!"
+    Taro "Nooon! Pas comme ça! Tu dois lancer un dé!"
     $Robyn_State["mouth"] = 4
 
-    Robyn "I left my dice at home."
+    Robyn "Je les ai laissé à la maison."
     python:
         Robyn_State["eyes"] = 2
         Robyn_State["brow"] = 2
@@ -50,22 +50,22 @@ label taro_dice_tutorial:
         DiceMenuResult = -1
 
     voice RobynSays("Generic","ConfusedA")
-    Robyn "Ummm? What am I looking at?"
+    Robyn "Ummm? C'est QUOI ça?"
 
-    Taro "Sometimes things require skill and a bit of luck, so to determine how your fate unfolds, you have to roll!"
+    Taro "Certaines choses demande du skill et un peu de chance, donc pour déterminer ton avenir, tu dois lancer des dés!"
 
-    Taro "You’ll be given a difficulty rating that you have to meet or surpass. The universe will then add a modifier based on your stats! ([kwBrains] in this case)"
+    Taro "T'auras parfois de la difficulté dépendant de ce que tu doit faire ou surpasser. Et l'univers rajoutera une alteration sur une de tes stats! ([kwBrains] dans ce cas)"
 
     $Robyn_State["mouth"] = 3
 
-    Robyn "This feels like some kinda forbidden knowledge."
+    Robyn "Ca ressemble à un genre de truc interdit."
 
     python:
         Taro_State["pawL"] = 1
         Taro_State["mouth"] = 4
         Taro_State["eye"] = 2
 
-    Taro "Oh it is! Now try rolling for real!"
+    Taro "Oh mais c'est le cas! Maintenant lance un dé!"
 
     python:
         die1Result = 1
@@ -88,7 +88,7 @@ label taro_dice_tutorial:
     show failFlash
     play sfx dice_result_c
 
-    Robyn "Uh."
+    Robyn "Um."
     hide failFlash
     python:
         Taro_State["pawR"] = 2
@@ -96,82 +96,137 @@ label taro_dice_tutorial:
         Taro_State["eye"] = 2
 
     voice taro_smugb
-    Taro "Wow, that was awful."
+    Taro "Wow, c'était vraiment nul."
     python:
         Taro_State["mouth"] = 4
         Taro_State["eye"] = 5
 
-    Taro "Don't worry though! If you fail a roll, don't fret, you have a chance to change fate by spending [kwKarma]!"
+    Taro "Mais t'inquète! Si tu te loupe, tu peux relancer et changer le destin en utilisant du [kwKarma]!"
     python:
         Taro_State["eye"] = 2
         Taro_State["mouth"] = 3
 
         Robyn_State["eyes"] = 4
 
-    Robyn "Y’know, let me just call Atlas."
+    Robyn "Laisse moi juste appeler Atlas par pitié."
 
-    Taro "What’s [kwKarma] you ask? Well, whenever you fail a roll, you can expend [kwKarma] to reroll!"
+    Taro "C'est quoi le [kwKarma] tu dit? Et bien quand tu loupe un lancer, tu peux utiliser du [kwKarma] pour reroll!"
 
-    Taro "You can reroll as many times as you have [kwKarma] whether you succeeded or failed that roll, but you have to be smart with it!"
+    Taro "Tant que tu à du [kwKarma] tu peux relancer. Même si tu a reussi. Donc soit intélligent et ne dépense pas tout!"
 
-    Taro "You only get a point of [kwKarma] when you fail and decide not to reroll. You got it?"
+    Taro "Tu regagne seulement un point de [kwKarma] quand tu loupe, et quand tu décide de ne pas relancer. Comrpis?"
     $Robyn_State["eyes"] = 1
 
-    Robyn "I’m sure someone around here gets it."
+    Robyn "Je suis sur que quelqu'un ici comprend."
     python:
         tempFailCheck = True
         Taro_State["mouth"] = 4
         Taro_State["eye"] = 5
-    Taro "Great! Now tap that button and try rerolling those dice!"
+    Taro "Super! Maintenant appuie sur ce bouton et relance moi ces dés !"
 
     python:
         Taro_State["eye"] = 2
         Taro_State["mouth"] = 3
-    Taro "Just tap the button right below the dice!"
+    Taro "Le bouton juste en dessous!"
 
     Taro "..."
 
-    Taro "Any minute meow~"
+    Taro "Quand tu veux, meow~"
 
     Taro "..."
 
-    Taro "Click the die with the pink arrow."
+    Taro "Le dé avec la flèche rose."
 
     Taro "..."
 
-    Taro "Sure, Take your time."
+    Taro "Ouais prend ton temps."
 
     Taro "..."
 
-    Taro "Any day now."
+    Taro "Bon..."
 
     Taro "{sc=2}...{/sc}"
 
     $Taro_State["eye"] = 1
-    Taro "Are you doing this on purrpose?"
+    Taro "Tu le fait meowxpères?"
 
     Taro "{sc=4}...{/sc}"
 
-    Taro "Click the goddamn die with the pink arrow."
+    Taro "Just clique sur ce foutu bouton."
 
-    Taro "Just kidding! I don't actually care what you do."
+    Taro "Nan j'rigole! Je m'en fout un peu de ce que tu fait."
 
-    Taro "I'm just here for the laughs really."
+    Taro "Je suis juste là pour le fun vraiment."
 
-    Taro "So, what've you been up to?"
+    Taro "Sinon, quoi d'neuf?"
 
-    Taro "You sure love reading! I admire that."
+    Taro "Tu dois vraiment aimer lire! J'admire ça!"
 
-    Taro "Wouldn't it be funny if I spoiled the ending of this chapter?"
+    Taro "Et si je spoilais la fin du chapitre?"
 
-    Taro "Alright, alright I'll do it."
+    Taro "A la fin..."
 
-    Taro "You all {sc=3}{b}DIE!{/b}{/sc}"
+    Taro "Vous mourrez {sc=3}{b}TOUS!{/b}{/sc}"
 
-    Taro "Just kidding."
+    Taro "Nan je déconne."
 
-    Taro "Anyway, just click the die and roll again!"
+    Taro "Bref appuie sur le bouton!"
 
+    Taro "Je vais tomber a court de dialogues."
+
+    Taro "Il fait si beau dehors..."
+
+    Taro "Give me a drink bartender!"
+
+    Taro "Bon serieux même Gaël a plus d'idées là!"
+
+    Taro "Si Salomé tu voit ça, merci d'avoir éssayé le jeu!"
+
+    Taro "..."
+
+    Taro "Il est écrit..."
+
+    Taro "Seul Link peut vaincre Ganon."
+
+    Taro "Et toi tu peux commencer par appuyer sur ce fichu bouton!"
+
+    Taro "Eh t'a vu! Super game design! Pleins de dialogues pour les gens qui refusent de continuer comme toi."
+
+    Taro "C'est frustrant vraiment."
+
+    Taro "..."  
+
+    Taro "Fish."
+
+    Taro "Whopper whopper whopper whopper! Junior double tripple whopper!"
+
+    Taro "Est-ce que c'est ton adresse ip:       192.168.1.24\n Tu n'est pas en sécurité cette nuit~"
+
+    Taro "Bon là j'ai plus d'idées."
+
+    Taro "207 lines de code pour CA."
+
+    Taro "Sinon ce serait bien si quelqu'un comme Farod fesait le jeu."
+
+    Taro "..."
+
+    Taro "It is hot as hell in this fucky hot ass room i'm in."
+
+    Taro "Et là tu voit t'est censé dire:\n IS THAT THE GRIM REAPER??"
+
+    Taro "..."
+
+    Taro "Juste au cas où... Bonjour le chat!"
+
+    Taro "...Bon c'est plus drôle là. Au fait l'adress IP était fausse. Tu est en sécurité chez toi."
+
+    Taro "Enfin j'éspère. C'est les gens comme toi qui rendent le monde meilleur."
+
+    Taro "Enfin tu POURRAIS si tu décidait d'appuyer sur ce FICHU BOUTON!"
+
+    Taro "J'ai pas appris Ren'Py pour ça moi!"
+
+    Taro "Bon désolé j'ai plus de ligne là, c'est un WHILE TRUE en ligne 230. Pardon. Y'a plus rien à voir. Et pour une fois je suis honnète. D'ailleurs ce que tu vient de voir c'est que dans le patch français. Nulle part ailleurs."
     while True:
         Taro "{sc=6}...{/sc}"
 
@@ -194,7 +249,7 @@ label atTheStation:
         #yoffset 1
     with pixellate #----------------------------- Outside Radio Station
 
-    Narrator "Pulling into the radio station’s overgrown parking lot, you park between the fading lines. Taro hops up and jumps into her human’s arms, insisting on being carried like the oversized baby she is. You open the car door and step outside."
+    Narrator "Arrivant dans le parking vide de la station, tu te gare à travers les lignes quasi éffacés. Taro sort et se jette dans tes bras, insistant pour être porté comme un bébé sur-dimensionné qu'elle est. Tu ouvre la porte et sort."
 
     python:
         Robyn_State["brow"] = 2
@@ -227,7 +282,7 @@ label atTheStation:
             repeat
 
 
-    Narrator "You feel the brush of Taro’s whiskers against your cheek, somewhat easing your fears."
+    Narrator "Tu sent les moustaches de Taro sur tes joues, d'une manière ou d'une autre elle aime bien te voir flipper."
     camera:
         ease 3.0 zoom 1.5 ycenter 0.7
 
@@ -241,27 +296,27 @@ label atTheStation:
         repeat
 
     voice RobynSays("Generic","Concern")
-    Robyn "Oookay. We’ll be fine. It’s just a haunted station on a hill. No big deal."
+    Robyn "Oooké! Tout vas bien aller. C'est juste une station abandonnée. Rien d'autre."
 
-    Narrator "You click on the hefty flashlight with a tight grip."
+    Narrator "Tu clique sur le bouton de ta très chère lampe de poche.."
 
     python:
         Robyn_State["brow"] = 1
         Robyn_State["eyes"] = 1
         Robyn_State["mouth"] = 2
 
-    Narrator "You angle the light towards the station... as well as the large metal fence in front of it. Crap. Forgot the bolt cutters again."
+    Narrator "Tu pointe la fainte lumière vers la station. Incluant la barrière grillé en métal qui la protège. Merde. T'a encore oublié la pince."
 
     $Robyn_State["brow"] = 2
 
-    Narrator  "You turn your attention instead to a large sheet of wood spray-painted with crude red letters attached to the fence. You read it aloud."
+    Narrator  "Tu tourne plûtot ton attention vers un large morceau de bois sur lequel a sauvagement été écrit à la bombe avec des lettres rouges majuscules accroché sur le grillage. Tu le lit a voix haute."
 
     python:
         Robyn_State["brow"] = 3
         Robyn_State["eyes"] = 1
         Robyn_State["mouth"] = 4
 
-    Robyn "Keep out! Trespassers will be {sc=2}{b}{color=#EC2A2A}murderlated{/color}{/b}{/sc}."
+    Robyn "Dégagez! Les trepasseurs seront {sc=2}{b}{color=#EC2A2A}éxecutés!{/color}{/b}{/sc}."
 
     python:
         Robyn_State["brow"] = 2
@@ -275,7 +330,7 @@ label atTheStation:
         Robyn_State["eyes"] = 2
         Robyn_State["mouth"] = 1
 
-    #Narrator "Taro squirms out of her human’s arms and daintily lands on her feet."
+    #Narrator "Taro se jette de tes bras et fini sur le sol."
     camera:
         ease 1.0 zoom 2.0 ycenter 0.8 xcenter 0.7
 
@@ -300,7 +355,7 @@ label atTheStation:
             repeat
 
     voice taro_laughc
-    Taro "I heard the place glows red on Friday nights, and the ‘On Air’ sign never burns out. Buncha silly rumors, if you ask me."
+    Taro "J'ai entendu que cet endroit brillait en rouge les nuits de vendredi, et que le panneau ON AIR ne s'éteint jamais. Juste des petites rummeurs débiles si tu veux mon avis."
 
     show taro:
         matrixtransform RotateMatrix(0.0, 180.0, 0.0)
@@ -321,7 +376,7 @@ label atTheStation:
             ease 2.6 yoffset 10
             repeat
 
-    Taro "Where is everyone?"
+    Taro "Où sont les autres?"
     camera:
         ease 3.0 zoom 1.0 ycenter 0.5 xcenter 0.5
 
@@ -333,7 +388,7 @@ label atTheStation:
         linear 0.5 matrixtransform RotateMatrix(0.0, 360.0, 0.0)
         repeat
 
-    #Narrator  "Swishing her tail, Taro paces around the parking lot."
+    #Narrator  "Bougeant sa queue, elle tourne autour dans le parking."
 
     python:
         Robyn_State["brow"] = 3
@@ -341,9 +396,9 @@ label atTheStation:
         Robyn_State["mouth"] = 4
         Robyn_State["armR"] = 1
 
-    Robyn "It's already 2:00AM! They should’ve been here by now."
+    Robyn "Il est déja 2 Heures du ma't! Ils sont censé être là!"
 
-    Narrator "Checking the time, you stuff your phone into your pocket and scan your surroundings with your flashlight."
+    Narrator "Tu regarde l'heure, et remet ton téléphone portable dans ta poche puis scanne les environs avec ta lampe."
 
     call taro_dice_tutorial from _call_taro_dice_tutorial
 
@@ -359,7 +414,7 @@ label atTheStation:
         show taro:
             ease 0.75 xcenter 0.7 matrixtransform RotateMatrix(0.0, 180.0, 0.0)
 
-        Narrator "The flashlight scans over the empty lot, light dragging across the shattered windows and over the overgrown shrubbery. It suddenly catches a pair of beady red eyes lurking in the treeline, the light glinting off the unblinking eyes."
+        Narrator "L'éclairage parcours la zone, puis éclaire une vitre cassée avec des mauvaise-herbes ayant trop poussés. Soudainement, une paire de yeux rouge dans l'obscurité des arbes te fait passer un bâtement, de la lumière émanne des yeux non-clignant."
 
         python:
             Robyn_State["eyes"] = 3
@@ -384,16 +439,16 @@ label atTheStation:
             matrixtransform RotateMatrix(0.0, 180.0, 0.0)
 
         voice RobynSays("Generic","SurpriseC")
-        Robyn "{sc=5}AH! WHAT THE HECK!?{/sc}"
+        Robyn "{sc=5}AH! WHAT THE FUCK!?{/sc}"
 
         $musicPlayer.playSong(fadeOut=5)
-        Narrator "You yelp in surprise, dropping your flashlight."
+        Narrator "Tu crie de surprise et fait tomber ta lampe."
 
         show atlas fall:
             matrixcolor TintMatrix("#d1ffe1")
             xcenter 0.5
 
-        Narrator "In a flash, the figure leaps from the branches and splays its wings, swooping down before landing with a somersault. Dramatically, the very clouds overhead part, silvery moonlight revealing the creature’s feathery visage."
+        Narrator "En un flash, la créature saute des branches et écarte ses ailes, puis arrive sur le sol. Dramatiquement, les yeux te regardent, la douce lueur de la lune éclairant le visage plummé de la créature."
         python:
             Atlas_State["eye"] = 2
     else:
@@ -403,7 +458,7 @@ label atTheStation:
         show taro:
             ease 0.75 xcenter 0.7 matrixtransform RotateMatrix(0.0, 0.0, 0.0)
 
-        Narrator "You shine your flashlight all around the empty lot, nothing particularly catching your eye."
+        Narrator "Tu cherche dans le parking avec ta lampe, rien n'attire particulièrement ton attention."
 
         $musicPlayer.playSong()
         stop ambiance
@@ -456,10 +511,10 @@ label atTheStation:
             ease 0.05 xoffset 0
 
         voice RobynSays("Generic","SurpriseC")
-        Robyn "{sc=5}AH! WHAT THE HECK!?{/sc}"
+        Robyn "{sc=5}AH! WHAT THE FUCK!?{/sc}"
 
         $Robyn_State["armR"] = 0
-        #Narrator "You drop your flashlight on the ground."
+        #Narrator "Tu fait tomber ta lampe sur le sol."
         play ambiance forest_ambiancea fadein 7.5
 
     show robyn:
@@ -471,7 +526,7 @@ label atTheStation:
         Robyn_State["brow"] = 2
         musicPlayer.playSong(song="dirt_nap_dreams",fadeIn=8,fadeOut=5)
 
-    Robyn "Wait. {color=#ED2A82}{b}ATLAS{/b}{/color}?"
+    Robyn "Attend. {color=#ED2A82}{b}ATLAS{/b}{/color}?"
     python:
         Atlas_State["eye"] = 6
         Atlas_State["armL"] = 1
@@ -496,7 +551,7 @@ label atTheStation:
             repeat
 
     voice atlas_oneandonly
-    Atlas "{bt=3}The one and only{/bt}! I thought I’d scope out the perimeter before diving right in."
+    Atlas "{bt=3}Le seul et l'unique{/bt}! J'ai pensé que j'allais observer les environs avant d'y aller directement."
 
     python:
         Atlas_State["sparkle"] = 0
@@ -517,7 +572,7 @@ label atTheStation:
         xcenter 0.2
 
 
-    Narrator "After his dramatic entrance, Atlas shakes out his glossy feathers and flaps his large wings."
+    Narrator "Après son entrée dramatique, Atlas secoue ses plumes salles d'écorce et bas ses larges ailes."
     python:
         Taro_State["mouth"] = 3
         Taro_State["eye"] = 2
@@ -531,7 +586,7 @@ label atTheStation:
     show atlas:
         linear 0.5 matrixtransform RotateMatrix(0.0, 180.0, 0.0)
         ease 1.0 xcenter 0.545
-    Narrator  "His antennae twitch as he stands on one leg, poking Taro with one of his hind claws."
+    Narrator  "Ses antennes bougent, alors qu'il se tient sur un pied, il touche Taro de l'autre."
     python:
         Atlas_State["eye"] = 7
         Atlas_State["armL"] = 2
@@ -543,7 +598,7 @@ label atTheStation:
         xcenter 0.545
 
     voice atlas_spiritumentioned
-    Atlas "{b}SO{/b},.,., is this the spirit you mentioned? Huh. I kinda expected something...{w=0.3} more impressive."
+    Atlas "{b}SO{/b},.,., C'est ça l'ésprit qui te hante? Huh. J'aurais espéré quelque chose de plus...{w=0.3} Impressionant."
     python:
         Taro_State["mouth"] = 1
         Taro_State["pawL"] = 1
@@ -560,14 +615,14 @@ label atTheStation:
     show atlas:
         ease 3.0 xcenter 0.6
 
-    Narrator "Taro fluffs up, her whiskers standing on end as she hisses."
+    Narrator "Taro crache, ses poils s'érissent."
     python:
         Taro_State["mouth"] = 1
         Taro_State["pawR"] = 1
         Taro_State["pawL"] = 0
 
     voice taro_iamagreatandpowerfulcosmicguardian
-    Taro "{sc=2}I am a great and powerful cosmic guardian{/sc}!"
+    Taro "{sc=2}Je suis un grand et puissant gardien cosmique{/sc}!"
     python:
         Atlas_State["eye"] = 3
         Atlas_State["eyeFrame"] = 4
@@ -576,18 +631,18 @@ label atTheStation:
         Robyn_State["brow"] = 0
 
     play sfx emote_frustration
-    Narrator "She bites one of the mothman’s talons."
+    Narrator "Elle mort le talon de la phalène humanoide."
 
     Taro "Mrrrff! Grrh!"
     python:
         Atlas_State["eye"] = 5
         Atlas_State["eyeFrame"] = 0
 
-    Atlas "Owch, I am in immense pain."
+    Atlas "Wow. J'ai mal."
 
     show atlas:
         ease 0.5 xcenter 0.5
-    Narrator "Atlas pulls away, breaking out of Taro’s grip."
+    Narrator "Atlas la dégage, et se défait de l'emprise de Taro."
     python:
         Atlas_State["eye"] = 0
         Atlas_State["eyeFrame"] = 4
@@ -598,7 +653,7 @@ label atTheStation:
 
     show atlas:
         xcenter 0.5
-    Atlas "It’s not too late to be haunted by something cooler, right?"
+    Atlas "C'est pas trop tard pour se faire hanter par un truc plus cool, hein?"
 
     python:
         Robyn_State["eyes"] = 2
@@ -619,22 +674,22 @@ label atTheStation:
         linear 0.1 yoffset -20
         linear 0.1 yoffset 0
 
-    Robyn "Taro's doing her best!"
+    Robyn "Elle fait de son mieux!.. Je crois."
 
     $Robyn_State["mouth"] = 5
 
-    #Narrator "You shoot the mothman a sharp look."
+    #Narrator "Tu lance un regard moqueur au mothman."
 
     $Atlas_State["eye"] = 2
 
     show atlas:
         matrixtransform RotateMatrix(0.0, 180.0, 0.0)
         ease 0.75 matrixtransform RotateMatrix(0.0, 0.0, 0.0)
-    Robyn "You’re just jealous you don’t have a familiar following you around."
+    Robyn "T'es juste jaloux de pas avoir un famillier qui te suit partout."
 
     voice atlas_nervouslaugh
 
-    Atlas "Damn. If I had to pick, I’d want a raven familiar."
+    Atlas "Raah, si je pouvait prendre je choisirais un corbeau!"
 
     python:
         Atlas_State["eye"] = 7
@@ -643,7 +698,7 @@ label atTheStation:
         Taro_State["eye"] = 1
         Taro_State["pawR"] = 2
 
-    Atlas "Too bad ravens hate me."
+    Atlas "Dommage qu'ils me détestent."
 
     python:
         Atlas_State["eye"] = 7
@@ -661,7 +716,7 @@ label atTheStation:
         pause 2.0
         ease 1.5 xcenter 0.6
 
-    Narrator "Atlas bends down and scoops the flashlight off on the ground."
+    Narrator "Atlas se baisse et ramasse la lampe sur le sol."
     python:
         Atlas_State["eye"] = 1
         Atlas_State["eyeFrame"] = 3
@@ -680,9 +735,9 @@ label atTheStation:
         matrixtransform RotateMatrix(0.0, 0.0, 0.0)
         yoffset 0
 
-    Atlas "Here, sorry for startling you."
+    Atlas "Tient, désolé de t'avoir fait peur, je voulais pas."
 
-    Narrator "Breaking through the greenery, a single blue flame casts an eerie light over a large imposing demon striding into the clearing, a heavy pair of bolt cutters resting at their hip."
+    Narrator "Se démarquant dans la végétation, une petite flamme bleue émanne d'une légère lumière au dessus d'une large silhouette démonique. Debout dans l'ouverture, une paire de pinces lourdes."
     python:
         Atlas_State["eyeFrame"] = 0
         Atlas_State["eye"] = 1
@@ -715,9 +770,9 @@ label atTheStation:
 
 
     voice jamie_greet
-    Jamie "Ah, it seems everyone has arrived."
+    Jamie "Ah. On dirais que tout le monde est là."
 
-    Jamie "I assume Atlas spoke of me?"
+    Jamie "Je suppose qu'Atlas a parlé de moi?"
 
     #Narrator "The tall devil stares down, as if evaluating the small human and [PCtheir] spectral cat."
     python:
@@ -726,7 +781,7 @@ label atTheStation:
 
         Robyn_State["mouth"] = 4
 
-    Robyn "H-how’d you get here so fast—?!"
+    Robyn "Comment t'es arrive si vite?!"
     python:
         Atlas_State["eye"] = 7
 
@@ -737,14 +792,14 @@ label atTheStation:
 
         Robyn_State["mouth"] = 3
 
-    Jamie "Legs?"
+    Jamie "Jambes?"
 
     python:
         Atlas_State["eye"] = 6
         Atlas_State["armL"] = 1
         Atlas_State["sparkle"] = 1
 
-    Atlas "This is Jamie! The roughest devil around. They're a great listener, bone collector, fist fighter, and artist! \n\n Jamie,, you should show [PCname] some drawings!"
+    Atlas "Voici Jamie! Le plus dûr-a-cuire des démons. Iel écoute bien, collectionne des Os, combat au poings, et déssine! \n\n Jamie,, tu devrais montrer à [PCname] quelques dessins un de ces jours!"
 
     python:
         Jamie_State["sweat"] = 0
@@ -762,7 +817,9 @@ label atTheStation:
         Atlas_State["armR"] = 0
         Atlas_State["feelers"] = 1
     voice atlas_frustration
-    Atlas "But you're so good!"
+    Atlas "Mais tu déssines tellement bien!"
+
+    Robyn "Compréhensible."
 
     python:
         Atlas_State["eye"] = 7
@@ -773,7 +830,7 @@ label atTheStation:
         Jamie_State["mouth"] = 0
 
     voice taro_dismissive
-    Taro "I suppose I’ll scout on ahead, since you seem to be in such capable claws."
+    Taro "Bon je suppose que je vais partir un peu, vu que t'a l'air d'être entre de si bonnes mains."
     python:
         Jamie_State["sweat"] = 0
         Jamie_State["brow"] = 1
@@ -781,15 +838,15 @@ label atTheStation:
     show taro:
         ease 3.0 yoffset 500
 
-    Narrator "The feline hovers past the demon, floats through the fence, and disappears into the overgrowth."
+    Narrator "Le félin disparais dans les feuillages."
     python:
         Jamie_State["brow"] = 0
         Jamie_State["eye"] = 3
 
     voice jamie_scoffb
-    Jamie "We should follow suit."
+    Jamie "On devrais y aller nous aussi."
 
-    Narrator "Jamie struts towards the chain link fence, unsheathing the bolt cutters. They snap through the padlock and give a quick thumbs up."
+    Narrator "Jamie prend la chaine qui retient les grillages, et le séctionne en 2. Elle coupe le cadena et fait un petit pouce en l'air."
     python:
         Jamie_State["r3Fire"] = 1
         Jamie_State["armR"] = 2
@@ -825,9 +882,9 @@ label atTheStation:
 
     show atlas:
         ease 1.0 xcenter 0.5
-    Robyn "This is a horrible idea. What if someone gets hurt?"
+    Robyn "C'est une idée horrible. Et si quelqu'un se blesse?"
 
-    Narrator "You hesitate, stopping just before the gate."
+    Narrator "Tu hésite et t'arrètes juste avant la clôture."
     python:
         Atlas_State["eye"] = 0
         Atlas_State["feelers"] = 0
@@ -838,7 +895,7 @@ label atTheStation:
 
     #Narrator "Atlas nudges you and smiles with his eyes, his antennae flicking forward as he tilts his head to one side."
 
-    Atlas "Psh,, ghost's are practically harmless. I bet this dude’s just some disembodied voice or a possessed microphone."
+    Atlas "Psh,, les fantômes sont pratiquement innofensifs. Je suis sur ce mec c'est genre une voie distordue ou un micro possèdé."
     python:
         Atlas_State["eye"] = 6
         Atlas_State["armL"] = 1
@@ -847,7 +904,7 @@ label atTheStation:
         Robyn_State["eyes"] = 2
         Robyn_State["mouth"] = 3
         Robyn_State["brow"] = 1
-    Atlas "Besides,, you've got me to protect you!"
+    Atlas "Et puis, je suis là pour te protèger!"
     $Robyn_State["eyes"] = 1
     $Robyn_State["brow"] = 0
     $Robyn_State["mouth"] = 5
@@ -855,11 +912,11 @@ label atTheStation:
     $Atlas_State["sparkle"] = 0
     $Atlas_State["armL"] = 0
     $Atlas_State["armR"] = 0
-    Robyn "Mmmh,, nah it's the other way around."
+    Robyn "Mmmh,, nan c'est plûtot l'inverse."
     $Atlas_State["eye"] = 1
     $Robyn_State["eyes"] = 0
     $Robyn_State["brow"] = 1
-    Jamie "Hurry up!"
+    Jamie "Dépèchez vous!"
     show atlas:
         ease 2.5 xcenter 1.5
 
@@ -879,7 +936,7 @@ label atTheStation:
     $Robyn_State["eyes"] = 2
     $Robyn_State["brow"] = 0
     play sfx rustyDoor
-    Narrator "The exterior of the radio station is tagged with fading graffiti and plastered with condemnation warning posters. Jamie turns the handle to the front door and it easily clicks open."
+    Narrator "L'éxterieur de la station est taggé avec des vieux graffitis et recouvert de posters de condamnation déchirés. Jamie tourne la poignée de la porte et l'ouvre facilement."
 
     Atlas "Creepy!"
     jump exploreStation
@@ -887,7 +944,7 @@ label atTheStation:
 label exploreStation:
     scene BG Hallway Radio Station with Fade(0.75, 0.25, 0.75, color="#000")
     stop ambiance fadeout 1.0
-    Narrator "Looking through the doorway, the dark interior of the station seems impossibly clean compared to the outside. The waiting room is seemingly suspended in time, only faded from months of neglect... maybe years."
+    Narrator "En regardant dans le couloir, l'interieur de l'endroit a l'air impossiblement propre par rapport à l'exterieur. La salle d'attente à l'air suspendu dans le temps, seulement salie par des moits de négligence... peut-être même des années."
     python:
         Atlas_State["eye"] = 1
 
@@ -911,12 +968,12 @@ label exploreStation:
         ease 2.0 xcenter 0.5
 
 
-    Narrator "You shuffle in line behind Jamie as you examine the lobby. Stopping a moment, you realize that you’re the only one with a flashlight."
+    Narrator "Tu avance en ligne derrière Jamie alors que tu examine l'acceuil. Après un moment, Tu réalise que tu est la seule personne avec une lampe."
 
     show robyn:
         xcenter 0.3
 
-    Robyn "All of you can see in the dark?"
+    Robyn "Vous pouvez tous voir dans le noir?"
 
 
     python:
@@ -925,7 +982,7 @@ label exploreStation:
         Jamie_State["steam"] = 0
         Jamie_State["mouth"] = 0
 
-    Jamie "Indeed. My eyes can pierce any darkness."
+    Jamie "En effet, mes yeux percent l'obscurité."
     show jamie:
         xcenter 0.8
         matrixtransform RotateMatrix(0.0,0.0,0.0)
@@ -944,7 +1001,7 @@ label exploreStation:
         ease 0.15 matrixtransform RotateMatrix(0.0, 180.0, 7.0) yoffset 30
         ease 0.15 matrixtransform RotateMatrix(0.0, 180.0, 0.0) yoffset 0
 
-    Atlas "I actually rely on my capitate antennae, with these big ol’ eyes my vision’s super sensitive to light."
+    Atlas "En fait moi c'est avec mes antennes, et ces bon vieux gros yeux ma vision est super sensible à la lumière."
 
     python:
         Atlas_State["armL"] = 0
@@ -955,7 +1012,7 @@ label exploreStation:
         yoffset 0
         matrixtransform RotateMatrix(0.0, 180.0, 0.0)
 
-    Atlas "Okay, it’s not seeing but more like smelling."
+    Atlas "Okay, c'est plus sentir que voir."
 
     python:
         Atlas_State["eye"] = 1
@@ -972,7 +1029,7 @@ label exploreStation:
         linear 0.05 xcenter 0.8
 
     voice jamie_annoyedb
-    Jamie "Atlas, can you go a day without mentioning your insectoid parts?"
+    Jamie "Atlas, tu peux passer un jour sans mentionner tes parties d'insecte?"
 
 
     python:
@@ -983,7 +1040,7 @@ label exploreStation:
     show jamie:
         xcenter 0.8
 
-    Robyn "I don’t mind really."
+    Robyn "Ca me dérange pas honnètement."
 
     python:
         Robyn_State["mouth"] = 0
@@ -994,7 +1051,7 @@ label exploreStation:
         matrixtransform RotateMatrix(0.0, 0.0, 0.0)
         ease 0.8 matrixtransform RotateMatrix(0.0, 360.0, 0.0)
 
-    Narrator  "You twirl the flashlight in your hand, nearly dropping it in the process."
+    Narrator  "Tu fait tourner la lampe dans tes mains, la fesant presque chuter dans le processus."
 
     python:
         Robyn_State["mouth"] = 3
@@ -1010,9 +1067,9 @@ label exploreStation:
     show atlas:
         ease 1.5 xcenter 0.8
 
-    Narrator "Wandering around, Atlas tries the nearest door. After finding it locked, he shuffles over to the recording studio window and presses his face against the glass."
+    Narrator "En se balladant, Atlas essaie la porte la plus proche. Après l'avoir trouvé fermée, il tourne son regard vers la fenètre du studio d'enregistrement."
 
-    Narrator "Jamie kicks one of the trash cans over. Dozens of lime green soda cans come clanging out, scattering across the floor."
+    Narrator "Jamie donne un coup dans une des poubelles et la renverse. Une douzaine de cannettes vertes tombent sur le sol, s'étallant un peu partout."
 
     python:
         Jamie_State["eye"] = 8
@@ -1024,7 +1081,7 @@ label exploreStation:
     show atlas:
         xcenter 0.8
 
-    Jamie "For an unlocked haunted house, it is surprisingly untouched... I almost feel bad trashing the place."
+    Jamie "Pour une maison hanté pas vérouillée, c'est plûtot en bon état. Je me sens presque mal à salir l'endroit."
 
     python:
         Robyn_State["mouth"] = 4
@@ -1033,7 +1090,7 @@ label exploreStation:
         Jamie_State["eye"] = 1
         Jamie_State["brow"] = 0
 
-    Robyn "Where do you think we’ll find the ghost?"
+    Robyn "Où est-ce que tu crois qu'on trouvera le spectre?"
 
     python:
         Atlas_State["eye"] = 17
@@ -1042,7 +1099,7 @@ label exploreStation:
         Jamie_State["eye"] = 0
         Robyn_State["mouth"] = 5
 
-    Atlas "You tuned into the ghost frequency,, right?"
+    Atlas "T'a mit la fréquence fantôme,, n'est-ce pas?"
 
     show atlas:
         matrixtransform RotateMatrix(0.0, 180.0, 0.0)
@@ -1061,26 +1118,26 @@ label exploreStation:
         Atlas_State["armL"] = 0
         Atlas_State["armR"] = 0
 
-    Narrator "Atlas gives a reassuring nod."
+    Narrator "Atlas te hôche la tête d'une manière rassurante."
 
     $Atlas_State["eye"] = 0
 
 
     voice atlas_dismissive
-    Atlas "It’s fine if you didn’t."
+    Atlas "C'est pas grave si tu l'a pas fait."
 
     $Atlas_State["eye"] = 1
     $Atlas_State["eyeFrame"] = 6
     camera:
         ease 8.0 zoom 2.3 xcenter 1.05 ycenter 0.8
 
-    Atlas "I’ll catch you up. So, the show was basically this radio host, Madhouse Mike, reading ghost stories and urban myths off a script. It was all super cheesy and I loved it."
+    Atlas "Je vais te mettre à jour. En gros, le show c'était ce mec, Madhouse Mike, il lisait des histoires de cryptides et des légendes urbaines comme script. C'était super cool et j'ai vraiment aimé."
     camera:
         zoom 2.3 xcenter 1.05 ycenter 0.8
         ease 0.3 xoffset -1500
 
     $displaymenu = True
-    Robyn "I don’t understand why.{nw}"
+    Robyn "Je vois vraiment pas comment-.{nw}"
     $displaymenu = False
     camera:
         ease 0.3 xoffset 0
@@ -1088,17 +1145,17 @@ label exploreStation:
     $Atlas_State["eyeFrame"] = 2
     $Atlas_State["eye"] = 0
 
-    Atlas "Anyways, he’s the ghost we’re looking for. Madhouse was an {color=#3bec27}{b}EXPERT{/b}{/color} on the supernatural, so I’m certain he'll know something about your curse."
+    Atlas "Bref, c'est le fantôme qu'on cherche. Madhouse était un {color=#3bec27}{b}EXPERT{/b}{/color} sur le super-naturel, donc je suis quasi sûr qu'il sait un truc sur ta malédiction."
 
     $Atlas_State["eyeFrame"] = 0
     $Atlas_State["eye"] = 1
 
-    Jamie "Mike is playing a character, Atlas. Who knows what the guy is like off air."
+    Jamie "Mike joue un personnage, Atlas. Qui sait qui ce type est vraiment en dehors du stage."
     show jamie:
         ease 3.0 xcenter -0.5
     show robyn:
         ease 1.0 xcenter 0.5
-    Narrator "Jamie absentmindedly crushes one of the spilt cans and tosses it back into the trash can."
+    Narrator "Jamie écrase une des cannettes par accident et la remet dans la poubelle."
 
     python:
         Atlas_State["eyeFrame"] = 3
@@ -1118,7 +1175,7 @@ label exploreStation:
         Robyn_State["eyes"] = 4
         Robyn_State["brow"] = 2
 
-    Robyn "Aren’t ghosts usually created from tragedy? He sounds normal enough to me."
+    Robyn "Les fantômes sont pas censé être créée avec des tragédies? Il a l'air plûtot normal selon moi."
 
     python:
         Atlas_State["eye"] = 4
@@ -1141,11 +1198,11 @@ label exploreStation:
         ease 0.5  zoom 3.5 xcenter 1.15 ycenter 0.85
 
     voice atlas_gotastory
-    Atlas "{bt=5}It was totally tragic!{/bt}"
+    Atlas "{bt=5}Oh! C'était super tragique!{/bt}"
 
-    Atlas "Madhouse died while advertising for some sketchy drink company! He thought he could bring in more listeners by drinking the entire sample box."
+    Atlas "Madhouse est mort pendant qu'il fesait la promotion d'une marque de boison energisante super sketchy! Il a cru que boire la boite entière d'échantillions serait une bonne idée."
 
-    Atlas "It actually worked for like... two seconds."
+    Atlas "Ca a marché pendant genre... Deux secondes."
 
     python:
         Atlas_State["armR"] = 0
@@ -1154,7 +1211,7 @@ label exploreStation:
         Atlas_State["feelers"] = 1
         Atlas_State["sparkle"] = 0
 
-    Atlas "I mean really,, who’d trust a company named Toxic Waste Energy?"
+    Atlas "J'veux dire,, Vraiment. Qui peut avoir confiance en une companie du nom de Toxic Waste Energy?"
     camera:
         ease 0.5 xoffset -1400 yoffset -100
     $displaymenu = True
@@ -1171,7 +1228,7 @@ label exploreStation:
     show atlas:
         yoffset 0
         matrixtransform RotateMatrix(0.0, 180.0, 0.0)
-    Atlas "{sc=1}He drank so much that his skin glowed {color=#3bec27}green{/color}{/sc} and he beefed it from all that radiation! \n\nThe studio had to shut down, and no one alive's been on air since!"
+    Atlas "{sc=1}Il en à bu tellement que sa peau s'est mise a briller d'une couleur {color=#3bec27}vert fluo{/color}{/sc} et il est mort instant de toute la radiation! \n\nLe studio a du fermer, et personne de vivant a été sur l'air depuis!"
 
     camera:
         ease 0.5 xoffset -1400 yoffset -100
@@ -1179,7 +1236,7 @@ label exploreStation:
     show robyn:
         matrixtransform RotateMatrix(0.0, 180.0, 0.0)
 
-    Jamie "Do you even hear yourself?"
+    Jamie "Tu t'entend parler, serieux?"
 
     show robyn:
         matrixtransform RotateMatrix(0.0, 180.0, 0.0)
@@ -1188,7 +1245,7 @@ label exploreStation:
         Robyn_State["mouth"] = 5
         Robyn_State["eyes"] = 0
         Robyn_State["brow"] = 2
-    Atlas "This is exactly what Madhouse would have wanted! Hosting a radio show for the rest of eternity? That sounds great!"
+    Atlas "C'est exactement le genre de truc qu'il aurait voulu! Gérer une station radio pour le reste de l'éternité? Ca a l'air trop cool!"
     show robyn:
         matrixtransform RotateMatrix(0.0, 0.0, 0.0)
         ease 0.5 matrixtransform RotateMatrix(0.0, 180.0, 0.0)
@@ -1198,7 +1255,7 @@ label exploreStation:
         Robyn_State["brow"] = 3
 
     voice jamie_annoyedb
-    Jamie "Turning into a restless ghost is easily the worst case scenario."
+    Jamie "Se transformer en fantôme sociopathe coincé dans un endroit pareil est problablement le pire scenario du monde."
 
     python:
         Jamie_State["eye"] = 1
@@ -1223,13 +1280,13 @@ label exploreStation:
             ease 4.0 zoom 1.0 xcenter 0.5 ycenter 0.5
         parallel:
             ease 3.0  xoffset 0 yoffset 0
-    Atlas "It’s funny, he carried me through those long nights at my old retail job back home. Y’know, before I got fired after being robbed twice and starting an electrical fire. The dude was a legend for us night owls."
+    Atlas "C'est marrant, je l'écoutait beaucoup quand j'était encore sur mon ancien job a l'époque. Tu sais, avant que je me fasse virer pour avoir été cambriolé 2 fois et avoir commencé un feu éléctrique. Le type c'était une légende pour nous."
 
     #Jamie Expression needed
     python:
         Atlas_State["eye"] = 7
         Jamie_State["armR"] = 3
-    Jamie "You truly are a bringer of bad luck."
+    Jamie "T'a vraiment pas de chance mon pauvre."
 
     #Atlas expression needed
     python:
@@ -1238,8 +1295,8 @@ label exploreStation:
     show atlas:
         matrixtransform RotateMatrix(0.0, 180.0, 0.0)
         ease 0.5 matrixtransform RotateMatrix(0.0, 0.0, 0.0)
-    Atlas "You’re a literal devil!"
-    Robyn "Sooo, it's just a rumor."
+    Atlas "T'es littéralement un démon!"
+    Robyn "Doooonc, c'est juste une rumeur."
     python:
         Jamie_State["eye"] = 4
 
@@ -1250,7 +1307,7 @@ label exploreStation:
     $Jamie_State["eye"] = 1
     $Jamie_State["brow"] = 0
 
-    Jamie "Rumors won't get us anywhere,, let's search the place and gather more information."
+    Jamie "Les rumeurs vont pas nous aider,, on doit chercher l'endroit pour trouver plus d'infos."
 
     python:
         Atlas_State["eyeFrame"] = 0
@@ -1273,9 +1330,9 @@ label exploreStation:
 
     $Atlas_State["eye"] = 19
 
-    Atlas "And risk upsetting the guy when we’re about to hop onto his radio show? No way!"
+    Atlas "Et risquer énerver le type a qui on est sur le point de rentrer en plein dans son émition radio? Hors de question!"
 
-    Jamie "Upset?"
+    Jamie "Enerver?"
 
     python:
         Jamie_State["armR"] = 2
@@ -1290,9 +1347,9 @@ label exploreStation:
         Robyn_State["brow"] = 1
 
     voice jamie_annoyeda
-    Jamie "Atlas. We're trespassers!"
+    Jamie "Atlas on est des trépasseurs!"
     $Atlas_State["eye"] = 19
-    Atlas "What do {i}you{/i} think about this [PCname]?"
+    Atlas "T'en pense quoi, {i}TOI{/i}, [PCname]?"
 
     python:
         Atlas_State["eyeFrame"] = 0
@@ -1303,7 +1360,7 @@ label exploreStation:
     show atlas:
         matrixtransform RotateMatrix(0.0, 180.0, 0.0)
         ease 0.4 matrixtransform RotateMatrix(0.0, 0.0, 0.0)
-    Narrator "Both Jamie and Atlas turn to you, expecting you to settle whatever this is."
+    Narrator "Jamie et Atlas se tournent vers toi, éspérant que tu trouve un terme aux arguments."
 
     python:
         Robyn_State["mouth"] = 4
@@ -1314,7 +1371,7 @@ label exploreStation:
         Jamie_State["steam"] = 0
         Jamie_State["eye"] = 1
 
-    Robyn "Jamie's right. We might find something useful, like a vault of haunted treasure or a portal to a ghost dimension."
+    Robyn "Jamie à raison. On dois éssayer de trouver un truc utile, genre un coffre fantôme ou un espèce de portail vers une autre dimmension."
 
     show robyn:
         ease 1.0 xcenter 0.55
@@ -1329,13 +1386,13 @@ label exploreStation:
         Robyn_State["eyes"] = 3
         Robyn_State["brow"] = 1
 
-    Robyn "Atlas, think of all the exclusive merch—! You could totally ask for an autograph."
+    Robyn "Atlas, pense a tout le merch exclusif—! Tu pourrais même demander pour un autographe."
     $Atlas_State["eye"] = 4
     $Atlas_State["feelers"] = 0
 
-    Atlas "You think so? Actually, let’s check out the record room, there’s gotta be some shiny collector vinyls and tapes in there."
+    Atlas "Tu croit? En fait, verifions la salle des enregistrements, doit y a voir des vinyls collector ou des cassettes exclusives quelque part."
 
-    Narrator "The mothman’s eyes sparkle."
+    Narrator "Les yeux du mothman s'illuminent."
 
     python:
         Atlas_State["eye"] = 9
@@ -1346,21 +1403,21 @@ label exploreStation:
     show atlas:
         matrixtransform RotateMatrix(0.0, 0.0, 0.0)
         ease 3.0 xcenter 1.5
-    Atlas "Y’know, for research purposes."
+    Atlas "T'sais, pour la recherche."
 
     show jamie:
         ease 2.0 xcenter 0.75
-    Narrator "Jamie brushes past you and open the door before them, ushering the human to follow."
+    Narrator "Jamie passe a coté de toi et ouvre la porte, pour te laisser entrer en premier."
 
     python:
         Robyn_State["brow"] = 0
         Robyn_State["mouth"] = 1
 
     voice jamie_scoffa
-    Jamie "Scratch that,, I want this spector dealt with {i}now.{/i}"
+    Jamie "Puis zut,, j'ai envie de voir ce {i}type cinglé{/i} après tout."
 
     $Robyn_State["eyes"] = 4
-    #Narrator "Avoiding their icy blue gaze, your heart skips a beat at Jamie’s words. Even though they agreed to join you, you still feel like they’re burning a hole in your chest."
+    #Narrator "En évitant les yeux bleus illuminés de Jamie, ton coeur manque un battement à ses mots. Même si iel à accepté de se joindre à toi, t'a quand même l'impression qu'iel est en train de te brûler un trou dans le torse."
 
     python:
         Robyn_State["eyes"] = 2
@@ -1368,7 +1425,7 @@ label exploreStation:
 
     show robyn:
         ease 0.3 xcenter 0.5
-    Robyn "Hey,, I was wondering, why'd you come with us?"
+    Robyn "Hey,, Je me demandais, pourquoi t'a voulu venir avec nous?"
 
     python:
         Robyn_State["eyes"] = 2
@@ -1376,58 +1433,58 @@ label exploreStation:
 
     #Narrator "Jamie thinks a moment before answering flatly."
 
-    Jamie "I wanted to meet you."
+    Jamie "Je voulais te rencontrer."
 
     python:
         Robyn_State["eyes"] = 0
 
-    Jamie "An average human moving to Longhope is a major big deal."
+    Jamie "Un humain normal qui arrive a Longhope c'est pas tout les jours."
 
     python:
         Robyn_State["mouth"] = 4
         Robyn_State["eyes"] = 4
         Robyn_State["brow"] = 0
 
-    Robyn "What makes you say that?"
+    Robyn "Qu'est-ce qui te fait dire ça?"
 
     python:
         Robyn_State["eyes"] = 0
         Robyn_State["mouth"] = 1
 
-    Jamie "Folks around here tend to be occult,, undead or aquatic. \n\nWhich, you are not."
+    Jamie "Les gens par içi on tendence à être,, mort, volant ou aquatique. \n\nCe que au dernières nouvelles tu n'est pas."
 
     $Robyn_State["eyes"] = 2
     $Robyn_State["mouth"] = 5
 
     voice RobynSays("Generic","ConfusedA")
-    Robyn "Nope."
+    Robyn "Ouais."
 
-    Jamie "Then something had to have brought you here."
+    Jamie "Alors un truc t'a ammené içi."
 
-    Narrator "Jamie’s expression darkens, their gaze trailing down before resting upon you. Your throat feels dry as you try to force a response."
+    Narrator "Son expression s'assombre, son regard descent avant de se poser sur toi. Ta gorge sent sèche tandis que tu éssaie de sortir une réponse."
 
-    Robyn "Well... I've known Atlas since like forever,, he helped me unpack!"
+    Robyn "Eh ben... Je connais Atlas depuis genre,, toujours! Il m'a aidé a déballer!"
 
-    Jamie "No. \n\nSomething worse."
+    Jamie "Non. \n\nY'a autre chose."
 
     $Robyn_State["mouth"] = 5
     $Robyn_State["eyes"] = 3
     $Robyn_State["brow"] = 2
 
-    Robyn "Jamie, you're being awfully cryptic."
+    Robyn "Jamie, tu est horriblement cryptique."
 
     #Narrator "You hardly manage to squeak out your words, ready to buckle under Jamie’s suffocating aura."
 
-    Jamie "I tend to be."
+    Jamie "J'ai l'habitude."
 
     voice RobynSays("Generic","HmphB")
-    Robyn "Uh, Okay."
+    Robyn "Um, D'accord."
 
-    Jamie "But let's not jump to conclusions."
+    Jamie "Mais ne sautons pas au conclusions."
 
-    Narrator "You’ve decided Jamie is definitely annoyed with you. You must salvage this."
+    Narrator "Tu te dit que Jamie te déteste définitivement maintenant. Tu dois essayer de sauver ça."
 
-    Robyn "{bt=4}Sooo{/bt}, you'll be there for Friday's movie night, right?"
+    Robyn "{bt=4}Doooonc{/bt}, tu seras là pour la soirée film de vendrendi soir, pas vrai?"
 
     $Robyn_State["eyes"] = 0
     $Jamie_State["armR"] = 1
@@ -1438,34 +1495,34 @@ label exploreStation:
         matrixtransform RotateMatrix(0, 180, 0)
         ease 0.4 matrixtransform RotateMatrix(0, 0, 0)
 
-    Narrator "Jamie’s eyes light up, the flame atop their head flickering a warmer blue."
+    Narrator "Les yeux de Jamie s'allument, la flamme au dessus de sa tête brille d'une manière plus vaste."
 
-    Jamie "Carrying stuffed sweet potatoes, chicken skewers and jalapeño dip."
+    Jamie "Ammener des patates douces farcies, des brochettes de poulet et une trempette aux jalapeños."
 
-    Narrator "You picture Jamie wearing a gingham apron and oven mitts all while carrying a tray of freshly baked snickerdoodles."
+    Narrator "Tu imagine Jamie vétu d'un tablier à carreaux vichy et des gants de cuisine tout en portant un plateau de snickerdoodles fraîchement sortis du four."
 
     $Robyn_State["mouth"] = 4
     $Robyn_State["brow"] = 2
 
-    Robyn "You cook?"
+    Robyn "Tu cuisine?"
 
     $Jamie_State["eye"] = 6
     $Jamie_State["armR"] = 2
     $Robyn_State["eyes"] = 2
 
     voice jamie_happya
-    Jamie "{sc=1}{color=#ff0f4f}Part-time.{/color}{/sc}"
+    Jamie "{sc=1}{color=#ff0f4f}Mi-temps.{/color}{/sc}"
 
     $Robyn_State["mouth"] = 0
 
-    Robyn "I have {sc=1}soooo{/sc} many questions."
+    Robyn "J'ai {sc=1}teeeellement{/sc} de questions."
 
     $Jamie_State["eye"] = 7
     $Jamie_State["mouth"] = 1
 
-    Jamie "They called me the {bt=4}Grill Master{/bt}."
+    Jamie "Ils me surnomment le {bt=4}Maître du gril{/bt}."
     $Jamie_State["mouth"] = 0
-    Robyn "Jamie, I need answers."
+    Robyn "Jamie, j'ai besoin de réponses."
 
     $Jamie_State["eye"] = 1
     $Jamie_State["armR"] = 0
@@ -1476,7 +1533,7 @@ label exploreStation:
     show jamie:
         matrixtransform RotateMatrix(0, 0, 0)
         ease 0.4 matrixtransform RotateMatrix(0, 180, 0)
-    Jamie "I need you to keep walking."
+    Jamie "Et moi j'ai besoin que tu continue de marcher."
 
     show jamie:
         matrixtransform RotateMatrix(0, 180, 0)
@@ -1487,16 +1544,18 @@ label exploreStation:
 
     $Jamie_State["eyes"] = 4
 
-    Robyn "Sure thing, {bt=4}Grill Master!{/bt}"
+    Robyn "Ca marche, {bt=4}Maître du gril!{/bt}"
 
     voice jamie_angry
-    Jamie "Do not say that."
+    Jamie "Ne m'appèle pas comme ça, s'il te plaît."
+
+    Robyn "Pardon."
 
     scene black with dissolve
     play sfx rustyDoor
-    Narrator "With a grunt, you manage to shove the door open, knocking down a filing cabinet blocking the doorway within the room."
+    Narrator "Avec un grognement, tu parvient a ouvrir la porte, fesant tomber un tiroir qui bloquait la porte dans la salle."
 
-    Narrator "Stepping over the cabinet, you gaze around the office."
+    Narrator "Tu marche par dessus et regarde le bureau."
     scene  BG Office Dark Spooky
     python:
         Atlas_State["eye"] = 3
@@ -1510,7 +1569,7 @@ label exploreStation:
         yoffset 75
 
     with Fade(0.25, 0.5, 0.75, color="#000")
-    Narrator "The room is completely trashed. Loose papers are scattered across the carpet, green sludge is smeared across the walls, and a bookshelf full of records and trophies are smashed to bits."
+    Narrator "Tout est défoncé. Des papiers déchirés sont étalés sur le tapis, un liquide gluant vert est répendu sur les murs, et une étagère autrefois remplie d'enregistrements et de vinyls se voit explosé sur le sol en morceaux."
 
     python:
         Robyn_State["eyes"] = 0
@@ -1531,9 +1590,9 @@ label exploreStation:
         ease 0.7 xcenter 0.3
         ease 0.3 matrixtransform RotateMatrix(0, 0, 0)
 
-    Robyn "Oh dear."
+    Robyn "Oh wow."
 
-    #Narrator "Atlas lets out a gasp, stumbling towards the sorry pile of vinyls and falls to his knees."
+    #Narrator "Atlas hatèle et se rue sur la pile d'enregistrements détruits sur le sol."
     show robyn:
         xcenter 0.3
         alpha 1
@@ -1543,14 +1602,14 @@ label exploreStation:
 
 
     voice atlas_frustration
-    Atlas "{sc=3}Nooo{/sc}! What kind of monster did this?!"
+    Atlas "{sc=3}Nooon{/sc}! Quel genre de monstre à bien pu faire ça!"
 
 
-    Narrator  "The mothman scoops up a handful of shattered records, letting shards fall between his feathers."
+    Narrator  "Le mothman fouille dans les enregistrements tous écrasés, laissant passer des fragments tomber de ses mains."
 
     show atlas:
         matrixtransform RotateMatrix(0.0, 180.0, 5.0) yoffset 75
-    Atlas "{sc=1}These were original copies{/sc}!"
+    Atlas "{sc=1}C'était des copies originales{/sc}!"
 
     python:
         Robyn_State["eyes"] = 1
@@ -1560,7 +1619,7 @@ label exploreStation:
         matrixtransform RotateMatrix(0.0, 0.0, 0.0)
         pause 0.5
         ease 0.4 matrixtransform RotateMatrix(0.0, 180.0, 0.0)
-    Robyn "... Couldn’t you just download the digital album?"
+    Robyn "Tu pouvais pas juste télécharger l'album digital?"
 
     show robyn:
         matrixtransform RotateMatrix(0.0, 180.0, 0.0)
@@ -1592,7 +1651,7 @@ label exploreStation:
     $Atlas_State["tears"] = 0
     $Atlas_State["feelers"] = 1
 
-    Atlas "{sc=3}No!{/sc} It’s about the rich, omni-dimensional sound!"
+    Atlas "{sc=3}Non!{/sc} Tout est dans le riche, son omni-dimensionel!"
 
     python:
         Jamie_State["eye"] = 3
@@ -1612,7 +1671,7 @@ label exploreStation:
     show atlas:
         matrixtransform RotateMatrix(0.0, 0.0, 5.0)
         ease 0.2 matrixtransform RotateMatrix(0.0, 180.0, 5.0)
-    Narrator "Ignoring Atlas’ muttering, Jamie runs their claws across the wall, tracing out the words written in faintly glowing slime."
+    Narrator "En ignorant les blablatages d'Atlas, Jamie passe ses mains sur les murs, lisant les mots écrit dans le slime vert."
 
     python:
         Robyn_State["eyes"] = 2
@@ -1628,21 +1687,21 @@ label exploreStation:
         xcenter 0.3
 
 
-    Jamie "‘Daily ghost watch dot net'... The hell does that mean?"
+    Jamie "‘Daily ghost watch point net'... C'est quoi ce charabia?"
     $Jamie_State["mouth"] = 0
     $Jamie_State["armR"] = 0
     $Robyn_State["mouth"] = 5
     $Robyn_State["eye"] = 1
     show jamie:
         ease 0.3 xcenter 0.33
-    #Narrator "Jamie steps back, reading the words scrawled onto the wall."
+    #Narrator "Jamie recule, lisant les mots sur le mur."
 
     show robyn:
         matrixtransform RotateMatrix(0.0, 180.0, 0.0)
         ease 0.3 matrixtransform RotateMatrix(0.0, 0.0, 0.0)
 
     voice RobynSays("Generic","Thinking")
-    Robyn "Sounds like a website."
+    Robyn "On dirait un site web."
 
     python:
         Atlas_State["tears"] = 0
@@ -1655,7 +1714,7 @@ label exploreStation:
         matrixtransform RotateMatrix(0.0, 180.0, 5.0)
         ease 0.3 matrixtransform RotateMatrix(0.0, 0.0, 5.0)
 
-    Narrator "Atlas looks up from the vinyl wreckage, wiping away his tears."
+    Narrator "Atlas se lève du tas de ce qui reste des vinyls, et éssuie les larmes sur ses yeux."
 
     show robyn:
         matrixtransform RotateMatrix(0, 0, 0)
@@ -1671,19 +1730,19 @@ label exploreStation:
     $Atlas_State["eye"] = 0
     $Atlas_State["eyeFrame"] = 5
 
-    Atlas "Tch, it’s just some blog that reports on abnormal occurrences."
+    Atlas "Pff, c'est juste un blog qui parle de paranormal."
 
     $Jamie_State["eye"] = 3
     $Robyn_State["eyes"] = 4
 
-    Jamie "Makes sense."
+    Jamie "Logique."
 
     $Atlas_State["eye"] = 14
     $Atlas_State["feelers"] = 0
     $Atlas_State["eyeFrame"] = 0
     $Jamie_State["brow"] = 0
 
-    Atlas "I was actually a mod there for like a month."
+    Atlas "J'était dessus pendant genre un mois en fait."
     $Jamie_State["mouth"] = 1
     $Jamie_State["eye"] = 1
     $Atlas_State["eye"] = 13
@@ -1699,13 +1758,13 @@ label exploreStation:
         ease 0.2 yoffset 0
 
 
-    Robyn "Moderation's important!"
+    Robyn "C'est important la modération!"
     $Jamie_State["eye"] = 2
     $Atlas_State["eye"] = 18
     $Robyn_State["brow"] = 0
     $Robyn_State["mouth"] = 1
 
-    Jamie "Yeeeeah,, you nerds better get snooping."
+    Jamie "Ouaaais,, vous feriez mieux de vous dépècher les nerds."
 
     $Robyn_State["mouth"] = 3
 
@@ -1714,7 +1773,7 @@ label exploreStation:
         ease 0.3 matrixtransform RotateMatrix(0.0, 0.0, 0.0)
         ease 0.3 yoffset 20 matrixtransform RotateMatrix(0.0, 0.0, 5.0)
         ease 0.3 yoffset 0 matrixtransform RotateMatrix(0.0, 0.0, 0.0)
-    Robyn "I'll make it quick."
+    Robyn "Je vais essayer."
 
     $Atlas_State["eye"] = 1
     $Jamie_State["eye"] = 1
@@ -1751,14 +1810,14 @@ label investigation_loop:
             numInvest = 0
             startInvest = False
             mCaseInvest = False
-        Robyn "Where should I start?{nw}"
+        Robyn "Où-est-ce que je commence?{nw}"
     else:
-        Robyn "Let’s see here...{nw}"
+        Robyn "Voyons voir...{nw}"
 
     menu:
         extend ""
 
-        "Computer" if inv1:
+        "L'ordinateur" if inv1:
             python:
                 displaymenu = False
                 inv1 = False
@@ -1780,25 +1839,25 @@ label investigation_loop:
                 ease 0.2 matrixtransform RotateMatrix(0.0, 180.0, 0.0)
                 ease 0.8 xcenter 0.85
 
-            Narrator "Sneaking around the office, you stop at the desk resting in one corner."
+            Narrator "Tu arrive devant le bureau dans le coin de la salle."
 
-            Narrator "A chunky computer hums with power and the monitor rests on the desk, a single sticky note slapped to its screen. It reads, Password: 'deathproof' in messy pen strokes."
+            Narrator "Un viel ordinateur a peine vivant reste sur le bureau, un unique post-it collé sur l'écran. Il lit, Mot de passe: 'deathproof' en mal écrit."
 
             $Robyn_State["mouth"] = 1
             $Robyn_State["brow"] = 1
 
-            Narrator "You click on the monitor, which blinks on and flashes a group photo of the Studio members before sputtering out again."
+            Narrator "Tu clique sur le bouton de l'écran, qui finit par s'allumer montrant une photo de groupe de ce qui semble être les membres du studio avant l'incident."
 
-            Narrator "Clicking on the monitor once more, you click the minimized webpage and are greeted with the ghost hunting forum."
+            Narrator "Tu clique sur une icone dans la barre des tâches, une page web minimisée apparait et te voilà acceuili par le forum du nom de ghost hunting problems."
 
-            Narrator "Someone seems to have scoured the page, leaving comments and even arguing with users under the username {i}RadioGhost1.{/i}"
+            Narrator "Quelqu'un a déscendu la page, laissant des commentaires en se disputant avec des utilisateurs sous le nom de {i}RadioGhost1.{/i}"
 
-            Narrator "One comment reads, This guy sounds so cool! I wonder what he was like in life. A response under the same username reads, Great post! Heaven’s really missing out lol."
+            Narrator "Un des commentaires dit, Ce mec est trop cool! Je me demande ce qu'il était dans la vraie vie. Une réponse en dessous du poste cite, Super post! Le paradis ne sait pas ce qu'il manque, LOL."
 
             python:
                 Robyn_State["eyes"] = 4
 
-            Narrator "Scrolling down, you see that RadioGhost1's been banned for self advertising."
+            Narrator "Tu scroll et voit que, RadioGhost1' a été banni pour self advertising."
 
             python:
                 Robyn_State["eyes"] = 0
@@ -1809,24 +1868,24 @@ label investigation_loop:
                 ease 0.2 yoffset -50
                 ease 0.2 yoffset 0
 
-            Narrator "You're about to check the other tab open on the computer, but are cut short as something cold brushes against you."
+            Narrator "Tu était sur le point de regarder les autres onglets du navigateur, mais un touché froid te coupe par derrière."
 
             python:
                 Robyn_State["mouth"] = 1
             show Debbie Prop:
                 alpha 0
                 ease 0.5 alpha 1.0
-            Narrator "Turning around sharply, you see a human sized figure crafted out of empty Toxic Waste cans sits in the dusty office chair."
+            Narrator "Tu te retourne rapidement, et remarque une figure humanoide fait de cannettes de Toxic Waste qui s'assoit sur la chaise du bureau."
 
-            Narrator "The figure has a marker mouth hanging open in a smile, its head built from a half crushed water jug and paperclips strung together like hair. A name tag clipped to the forehead reads Debbie."
+            Narrator "La création a un sourire déssiné au marqeur, sa tête est faite d'un barril d'eau en plastique a moitié écrasé et de trombones qui ressemble a des cheveux. Une étiquette sur son front lit Debbie."
             show Debbie Prop Leave:
                 alpha 1
                 pause 0.5
                 ease 0.5 alpha 0
-            Robyn "This is seriously creepy."
+            Robyn "C'est serieusement creepy."
             hide Debbie Prop
 
-        "Boohoo Answers" if inv6 and not inv1:
+        "Boohou Answers" if inv6 and not inv1:
             python:
                 inv6 = False
                 displaymenu = False
@@ -1852,55 +1911,55 @@ label investigation_loop:
             $Jamie_State["eye"] = 3
             $Robyn_State["eye"] = 0
 
-            Narrator "You return to the computer to resume checking it out. The other tab left open was for a site called BooHoo Answers."
+            Narrator "Tu retourne vers l'ordi et continue de chercher dedans. Un autre onglet liste un site appelé BooHoo Answers."
             $Computer = Character("RadioGhost2", image = "madhouse", callback = Bleep,ctc="end_of_msg", cb_id = "8B", who_color = "#79f06c")
-            Computer "{i}Question: How to banish a ghost?{/i}"
+            Computer "{i}Question: Comment bannir un fantôme?{/i}"
 
-            Computer "Hi, I've got a ghost living in my house and it's going on eight years. I've tried everything— psychics, priests, investigators you name it! He won't leave! HELP. (10 Answers)"
+            Computer "Salut, j'ai un fantôme qui vit chez moi et ce depuis 6 ans. J'ai tout éssayé— Psychés, Prètres, investigations et plus encore! IL VEUT PAS PARTIR! HELP. (10 Answers)"
 
             $Computer = Character("L0GIC", image = "madhouse", callback = Bleep,ctc="end_of_msg", cb_id = "3A", who_color = "#f0bf6c")
-            Computer "Ask him to pay rent, but raise the price each month. (Top Reply)"
+            Computer "Demande lui de payer un loyer, mais monte le tous les mois. (Top Reply)"
 
             $Computer = Character("Para_Mama", image = "madhouse", callback = Bleep,ctc="end_of_msg", cb_id = "4B", who_color = "#e96cf0")
-            Computer "Hang in there sweetpea, if you need a medium I accept virtual sessions. I'll share my website if you're in need of extra resources. Good luck! :)"
+            Computer "Attend un peu chéri, si il te faut un medium j'accepte les sessions virtuelles. Je te donne mon site web si il te faut d'autres ressources. Bonne chance! :)"
 
             $Computer = Character("(Deleted)", image = "madhouse", callback = Bleep,ctc="end_of_msg", cb_id = "7B", who_color = "#ff3232")
-            Computer "Duuuude same! I've got a bloody ghost in my bathroom mirror and she won't stop knocking on the glass. What does she want? \n\n(This user was last online 725 days ago)"
+            Computer "Meeeec pareil! J'ai un spectre de sang dans le mirroir de ma salle de bain et elle veut pas arrèter de taper sur la vitre!. Elle veut quoi? \n\n(Dernièrement en ligne il y a 725 jours)"
 
             $Computer = Character("FaeBae", image = "madhouse", callback = Bleep,ctc="end_of_msg", cb_id = "10A", who_color = "#7b78ff")
-            Computer "You'll want to take a red marker, and draw two touching circles followed by a long oval connecting the shapes, preferably on the wall. They act as protection wards which will banish any spirit!"
+            Computer "Tu prend un feutre rouge, tu déssine deux cercles qui se touchent suivit par une longue ovale qui connecte les deux formes, de préférence sur le mur. C'est comme des protections qui banissent les ésprits!"
 
             $Computer = Character("RadioGhost2", image = "madhouse", callback = Bleep,ctc="end_of_msg", cb_id = "8B", who_color = "#79f06c")
-            Computer "Didn't work. Also,, fuck you!"
+            Computer "Pas marché, et aussi, va te faire foutre!"
 
             $Computer = Character("Dan105.1", image = "madhouse", callback = Bleep,ctc="end_of_msg", cb_id = "10C", who_color = "#6cbcf0")
-            Computer "Wanna know my secret? Garlic bread. I eat like six sticks a day and haven't seen a single ghost."
+            Computer "Tu veux mon secret? Pain à l'ail. Je mange genre 6 morceaux par jour et j'ai jamais vu un fantôme."
 
             $Computer = Character("RadioGhost2", image = "madhouse", callback = Bleep,ctc="end_of_msg", cb_id = "8B", who_color = "#79f06c")
-            Computer "You really think it's that easy to exile a vengeful spirit?! If it were that easy I wouldn't be here! You're all frauds!!"
+            Computer "Vous croyez vraiment que je suis là pour rien?! Si c'était si simple je vous parlerais même pas! Vous êtes tous des putains de fraudes!!"
 
-            Narrator "You see that the user has been permanently banned."
+            Narrator "L'utilisateur a été banni a vie."
 
-        "Muffled Voices" if inv7 and numInvest >= 2:
+        "Voix éttoufés" if inv7 and numInvest >= 2:
             python:
                 inv7 = False
                 displaymenu = False
                 renpy.block_rollback()
                 Voice = Character("???", image = "madhouse", callback = Bleep,ctc="end_of_msg", cb_id = "8B", who_color = "#3bec27")
 
-            Narrator "You hear a muffled voice and put your ear up against the wall to listen in better."
+            Narrator "Tu entend des petites voies derrière la porte et porte ton oreille dessus pour écouter."
 
-            Voice "Debbie quit puttin' garbage in with the fan mail!\n\n{sc=2}I'm not reading anymore {b}SCAMS.{/b}{/sc}"
+            Voice "Debbie arrète de mettre de la merde avec les lettres de fan!\n\n{sc=2} J'ai pas envie de lire plus{b}D'ARNAQUES!{/b}{/sc}"
 
-            Narrator "There's a long pause before the voice picks up again."
+            Narrator "Il y a une longue pause avant que les voies ne reprennent."
 
-            Voice "Look, I was wondering... It's about my work hours. Y'see, usually I'm sharper than a wolf bite but, the past decade's felt rather dull."
+            Voice "Ecoute je me demandais... à propos de mes horaires. Tu vois, normallement je suis plus précis q'une morsure de loup! Mais là, la dernière décénnie à été plûtot chiante..."
 
-            Voice "I was thinking maybe,, I could take a break! I'd spend that time reconnecting with the living part of me."
+            Voice "Je me disais, je pourrais faire une pose! J'ai envie de reconnecter avec cette partie vivante de moi."
 
-            Narrator "There's a drone of silence before you hear a muffled slam and the sound of a can crumpling in someone's grip. "
+            Narrator "Il y a un silence avant qu'un bruit de métal qui touche le sol ne puisse être entendu, suivi d'un son de prise de quelqu'un sur une cannette. "
 
-        "Bulletin Board" if inv2:
+        "Bulletins" if inv2:
             python:
                 inv2 = False
                 displaymenu = False
@@ -1918,18 +1977,18 @@ label investigation_loop:
                 ease 0.4 matrixtransform RotateMatrix(0.0, 0.0, 0.0)
                 ease 1.0 xcenter 0.2
 
-            Narrator "You look to the corkboard nailed to the wall, taking note of the various pages tacked to the board."
+            Narrator "Tu regarde le panneau sur le mur, prenant note des nombreuses pages attachés dessus."
 
-            Narrator "Marker mustaches are scribbled over a single group photo, a man wearing a red hoodie scratched out entirely."
+            Narrator "Des moustaches au marqeur sont mises sur une photo de groupe, un homme portant une veste rouge complètement rayé."
 
-            Narrator "A printed out calendar is pinned to the wall with August 21st circled and labeled, “Dr’s appointment.” There’s even a coupon for a free case of Toxic Waste Energy tacked to the corkboard."
+            Narrator "Un calendrier est aussi attaché au mur, la date du 21 Aout entouré et noté, “Médecin.” Il y a même un coupon pour une canette gratuite de Toxic Waste Energy glissé sur le coté."
 
             show robyn:
                 ease 0.2 matrixtransform RotateMatrix(0.0, 0.0, 0.0)
                 ease 0.8 xcenter 0.6
-            Narrator "Tearing off the coupon, you bring it to Atlas hoping for some insight."
+            Narrator "Tu arrache le coupon, et l'apporte à Atlas ésperant un peu d'information."
 
-            Robyn "What’s this?"
+            Robyn "C'est quoi?"
 
             show atlas:
                 matrixtransform RotateMatrix(0, 180, 0)
@@ -1939,12 +1998,12 @@ label investigation_loop:
 
             voice atlas_thinking
             $Atlas_State["eye"] = 3
-            Atlas "Hm? Oh, that’s the drink that killed Mike Madhouse! It’s that infamous soda brand known for its insane caffeine content."
+            Atlas "Hm? Oh, c'est la boisson qui a tué Madhouse Mike! Il est connu pour avoir une quantitée atroce de cafféine."
             $Atlas_State["eye"] = 13
 
-            Narrator "You immediately regret asking, but decide to keep the coupon anyways... just in case?"
+            Narrator "Tu regrette imédiatement avoir demandé, mais décide de garder le coupon quand même... au cas où?"
 
-        "Papers on the floor" if mCaseInvest and inv3:
+        "Papiers sur le sol" if mCaseInvest and inv3:
             python:
                 inv3 = False
                 displaymenu = False
@@ -1957,17 +2016,17 @@ label investigation_loop:
             show robyn:
                 ease 1.0 xcenter 0.45
 
-            Narrator "Taking a step back, you feel a crunch under your shoe. You look down, realizing you’ve stepped onto crumpled pages of overdue bills addressed to Elkhorn Radio."
+            Narrator "Tu recule d'un pas, et sent quelque chose sur ta chaussure. Tu baisse les yeux, et réalise que tu à marché sur des factures impayés adressés à la station d'Elkhorn."
 
             show robyn:
                 ease 0.3 matrixtransform RotateMatrix(0, 180, 0)
                 ease 0.7 yoffset 150 matrixtransform RotateMatrix(0.0, 180.0, -10.0)
                 ease 0.7 yoffset 0 matrixtransform RotateMatrix(0.0, 180.0, 0.0)
 
-            Narrator  "Crouching down, you pick up a crumpled newspaper scrap accusing Elkhorn Radio of poor working conditions and long work hours. The author seems especially resentful in this article. You mumble the last sentence aloud."
+            Narrator  "Tu t'accroupis, et prend un journal froissé sur le sol accusant Elkhorn Radio de conditions de travail négligés et de longues heures de travail. L'Auteur a l'air d'avoir mit beaucoup de coeur dans cet article. Tu lit la dernière phrase a voix haute."
 
             voice RobynSays("Generic","HmphB")
-            Robyn "{i}I hope the station owner faces justice...{/i}"
+            Robyn "{i}J'éspère que le gérant de la station face la justice...{/i}"
 
         "Dead Carnations" if numInvest >= 2 and inv4:
             python:
@@ -1989,13 +2048,13 @@ label investigation_loop:
 
 
             play sfx emote_realization_sfx
-            Narrator "Spilled out of the trashcan is a vase of pink and white carnations, a small card clipped to the side. With a frown, you pluck up the card and read, {i}Here's to five years at Elkhorn Radio and many, many more!{/i}"
+            Narrator "Dans la poubelle se trouve un vase rempli d'œillets roses et blancs. Une petite carte est glissée sur le coté. Tu la ramasse en fronssant les sourcils, elle lit {i}Voilà cinq ans chez Elkhorn Radio et bien plus encore !{/i}"
 
-            Narrator "Glancing over the card, Atlas scoffs."
+            Narrator "Regardant la carte, Atlas juge."
 
-            Atlas "Oh that's bad."
+            Atlas "Oof, pas cool."
 
-        "Trophy Case" if inv5:
+        "Etagère a trophées" if inv5:
             python:
                 inv5 = False
                 displaymenu = False
@@ -2011,16 +2070,16 @@ label investigation_loop:
                 ease 0.3 matrixtransform RotateMatrix(0, 180, 0)
             show robyn:
                 ease 1.0 xcenter 0.8
-            Narrator "Following the trail of papers, you stop at the smashed trophy case with the words \"Stinks worse than Momo\" spray-painted in red over the whole thing." #, stepping over the glass shattered against the floor.
+            Narrator "En suivant la trace des papiers, tu t'arrête devant la boîte à trophées cassée avec les mots \"Pue plus que Momo\" spray-painted en rouge par dessus tout le truc." #, stepping over the glass shattered against the floor.
 
-            Narrator "It seemed to have held a variety of commemorations and awards celebrating radio entertainment the station had broadcast."
+            Narrator "Ont dirait qu'il y ait eu diverses commémorations et récompenses célébrant les divertissements radiophoniques diffusés par la station..."
 
-            Narrator "You shift through the destruction, only finding the remains of awards to obscure bands and talk shows like Shark Infinity, Tiny Red Panda, and DJ Bean Angel. Nothing about Madhouse, though."
+            Narrator "Tu regarde la déstruction, seulement pour trouver les restes d'Awards pour des gens comme Shark Infinity, Tiny Red Panda, et DJ Bean Angel. Rien sur Madhouse, cependant."
 
-            Robyn "Looks like Mike’s really taking this personally."
+            Robyn "Ont dirait que Mike avait beaucoup de... Personalité."
 
             #voice atlas_booyah
-            Atlas "Duuude! Shark Infinity recorded here—!"
+            Atlas "Meec! Shark Infinity a enregistré ici—!"
 
 
     $numInvest +=1
@@ -2037,34 +2096,34 @@ label investigation_loop:
             ease 0.2 yoffset 0 matrixtransform RotateMatrix(0.0, 0.0, 0.0)
             ease 0.8 xcenter 0.5
         $Atlas_State["phone"] = 1
-        Narrator "Atlas stands near the door, scrolling through his phone."
+        Narrator "Atlas est collé au mur près de la porte, a scroller sur son portable."
         $Atlas_State["eye"] = 1
         play sfx emote_realization_sfx
-        Atlas "Apparently, The Daily Ghost wrote an article about Elkhorn Station."
+        Atlas "Apparament, le Daily Ghost à écrit un article sur Elkhorn Station."
 
-        Narrator "The mothman skims over the blog post."
+        Narrator "Le mothman écume sur le post."
         $Atlas_State["eye"] = 3
         $Jamie_State["eye"] = 1
         $Robyn_State["eyes"] = 2
 
-        Atlas "Dude. They didn’t bother mentioning Mike by name."
+        Atlas "Wow. Ca les dérange pas de citer Mike par son nom."
         show jamie:
             ease 0.4 matrixtransform RotateMatrix(0.0, 180.0, 0.0)
 
         voice jamie_scoffa
-        Jamie "Does that matter?"
+        Jamie "C'est important?"
 
-        Atlas "Mike’s just a faceless green poltergeist to these people. See? Literally, no face."
+        Atlas "Mike c'est juste un poltergeist sans visage pour ces gens. Tu vois? Litteralement pas de visage."
 
-        Narrator "Atlas holds out his phone, showing off a blurry green mass wearing a hat and a hoodie, it’s difficult to make out."
+        Narrator "Atlas te montre son portable, affichant une masse verte floue qui porte une casquette et une veste, c'est un peu dure a voir."
 
-        Jamie "Isn't that how the whole cryptid gig works?"
+        Jamie "C'est pas justement comment ça marche?"
 
-        Atlas "I guess you're right."
+        Atlas "Je suppose que t'a raison."
 
-        Narrator "Jamie shrugs and turns away from Atlas, their tail knocking over the small trash can, spilling the contents over the floor."
+        Narrator "Jamie lève les épaules et écarte son regard d'Atlas, sa queue renversant une petite poubelle, délâchant son contenu sur le sol."
 
-        Jamie "Whoops."
+        Jamie "Oops."
 
     if numInvest >= 7:
         jump endInvestigation
@@ -2077,16 +2136,16 @@ label investigation_loop:
         jump endInvestigation #End
 
 label endInvestigation:
-    Jamie "Alright nerds,, we gotta go."
+    Jamie "Bon on doit y aller."
     $Atlas_State["phone"] = 0
 
 
-    Narrator "Jamie gestures to the door, their tail flicking impatiently."
+    Narrator "Jamie pointe la porte, sa queue bouge d'impatience."
 
     #voice atlas_defeated
-    Atlas "Fine... There’s no way I can salvage this."
+    Atlas "Pff... oké. Y'a pas moyen que je sauve ça de toute façon."
 
-    Narrator "Atlas begrudgingly leaves the remains of shattered vinyls behind."
+    Narrator "Il dit avant de laisser les restes de vinyls sur le sol."
 
     scene BG Hallway Radio Station with Fade(0.75, 0.25, 0.75, color="#000")
 
@@ -2101,12 +2160,12 @@ label endInvestigation:
         matrixtransform RotateMatrix(0, 180, 0)
         ease 1.5 xcenter 0.8
 
-    Narrator "Atlas briskly marches ahead."
+    Narrator "Atlas avance dans le couloir."
 
     show atlas:
         xcenter 0.8
 
-    Jamie "\n\n{size=-5}You walk like a pigeon.{/size}"
+    Jamie "\n\n{size=-5}Tu marche comme un pigeon.{/size}"
 
     show robyn:
         matrixcolor TintMatrix("#ebabab")
@@ -2120,7 +2179,7 @@ label endInvestigation:
         matrixtransform RotateMatrix(0, 180, 0)
         ease 1.0 xcenter 0.1
 
-    Narrator "Following Atlas’ voice, you and Jamie turn the corner and stop abruptly. He’s fiddling with the doorknob."
+    Narrator "Suivant la voix d'Atlas, toi et Jamie tournez le coin et vous arrêtez brusquement. Il joue avec la poignée de porte."
 
     python:
         Atlas_State["eyeframe"] = 0
@@ -2129,7 +2188,7 @@ label endInvestigation:
         Atlas_State["feelers"] = 1
 
 
-    Atlas "It’s totally jammed—"
+    Atlas "C'est complètement bloqué—"
     $musicPlayer.playSong()
     $musicNote = 12
     python:
@@ -2139,7 +2198,7 @@ label endInvestigation:
 
 
     play sfx dramatic_boom_b
-    Narrator "Atlas is cut short as a hand shoots out from the door, grabbing at the moth’s neck fluff. It stops, confused, and slinks back behind the door."
+    Narrator "Atlas est interrompu lorsqu'une main jaillit de la porte, saisissant les plummes de son cou. Il s'arrête, confus, et se faufile derrière la porte."
     show atlas:
         xcenter 1.4
         matrixtransform RotateMatrix(0, 0, 0)
@@ -2151,7 +2210,7 @@ label endInvestigation:
         Atlas_State["sparkle"] = 0
         Atlas_State["feelers"] = 0
 
-    Atlas "Guess I scared ‘em off?"
+    Atlas "Je suppose que je leur ai fait peur?"
 
     #show atlas:
         #ease 0.35 xcenter 1.4 matrixtransform RotateMatrix(0.0, 0.0, 90.0) yoffset 700
@@ -2166,32 +2225,32 @@ label endInvestigation:
         parallel:
             ease 0.5 xcenter 1.2
 
-    Narrator "The door suddenly vanishes, leaving Atlas tumbling into the Studio room."
+    Narrator "La porte disparaît soudainement, laissant Atlas dégringoler dans la salle du Studio."
 
 
     $musicPlayer.playSong(song="not_so_spooky_song")
 
     voice mm_wellwellwella
-    Madhouse "{bt=3}Well well well~{/bt}"
+    Madhouse "{bt=3}Bien bien bien~{/bt}"
 
     voice mm_whattookyousolong
-    Madhouse "What took you so long? Y’all three totally left me hangin’!"
+    Madhouse "Qu'est-ce qui vous a prit autant de temps? Vous trois m'avez complètement laisser raccroché’!"
 
     voice mm_deadairisacareerkiller
-    Madhouse "Dead air is a career killer in this line of work. Ya could’ve at least rescheduled with my producer!"
+    Madhouse "Le Dead Air c'est un tueur de carrière dans ce domaine de travail. T'aurais au moins pu reprogrammer avec le producteur !"
 
     if not inv1:
         #voice PC_Thinking
-        Robyn "You mean the jug headed abomination back in the office?"
+        Robyn "Tu veut dire l'abomination en plastique sur la chaise du bureau?"
 
-        Madhouse "Ah, so you met ol' Debbie!"
+        Madhouse "Ah, donc vous avez vu Debbie!"
 
-        Madhouse "Not much of a talker."
+        Madhouse "Y' Parle pas beaucoup."
 
         voice mm_laugha
-        Narrator "Madhouse Mike laughs at his own joke."
+        Narrator "Le spectre rit a sa propre blague."
 
-    #Madhouse "So, who are you and what do you want?"
+    #Madhouse "Bon, z'êtes qui et vous voulez quoi?"
 
     hide robyn
     hide jamie
@@ -2200,13 +2259,13 @@ label endInvestigation:
     with { "master" : Dissolve(0.5) }
 
 
-    Narrator "Suddenly blinking into view, Mike appears in his full ghoulish glory."
+    Narrator "Il apparait soudainement dans ton champ de vision en toute sa splandeur."
 
     #voice PC_Confused
-    Robyn "You’re really REAL!"
+    Robyn "Donc tu EXISTE!"
 
     #voice MM_Listening1
-    Madhouse "{sc=2}Of course I’m real{/sc}! You think I host a radio show just for kicks? I’ve been waiting for a special guest slot for ages!"
+    Madhouse "{sc=2}Evidement que je suis réel{/sc}! Tu crois j'hoste un show de radio pour de l'air? J'attendais un invité spécial depuis des lustres!"
 
     python:
         Atlas_State["eyeFrame"] = 0
@@ -2219,7 +2278,7 @@ label endInvestigation:
         yoffset -40
         matrixcolor TintMatrix("#ebabab")
         ease 0.5 matrixtransform RotateMatrix(0.0, 180.0, 35.0) xcenter -0.02
-    Atlas "{bt=3}Ohmygosh!{/bt} Mike Madhouse!"
+    Atlas "{bt=3}OHMONDIEU!{/bt} Mike Madhouse!"
 
     show atlas:
         linear 0.05 xoffset 5
@@ -2235,7 +2294,7 @@ label endInvestigation:
         pause 1.0
         repeat
 
-    Narrator "Atlas takes a sharp breath, absolutely starstruck at the sight of his hero— a real urban legend."
+    Narrator "Atlas réspire fort, complètement époustouflé à la vue de son héros— une vraie légende urbaine."
 
     show atlas:
         xoffset 0
@@ -2254,7 +2313,7 @@ label endInvestigation:
         Atlas_State["sparkle"] = 1
 
     voice atlas_hugefan
-    Atlas "Oh boy— I’m a huuuuge fan!"
+    Atlas "Oh boy— Je suis un éeeeenoooorme fan!"
 
     hide MM_Appears
     show atlas:
@@ -2299,7 +2358,7 @@ label endInvestigation:
     voice jamie_growld
     Jamie "{sc=3}Grrrr...{/sc}"
 
-    Narrator "Atlas looks up at Jamie who’s blankly staring at Madhouse, a wild look in their eyes."
+    Narrator "Atlas lève les yeux vers Jamie, actuellement possèdé d'un regard violent."
 
     python:
         Atlas_State["eyeframe"] = 0
@@ -2310,7 +2369,7 @@ label endInvestigation:
         Robyn_State["eyes"] = 4
         Robyn_State["brow"] = 2
 
-    Atlas "Jamie... Don’t."
+    Atlas "Jamie... Non."
 
     python:
         Jamie_State["mouth"] = 0
@@ -2326,9 +2385,9 @@ label endInvestigation:
     #Narrator "He turns back towards the phantom and squeaks."
 
 
-    Atlas "We’re here to join you on tonight’s show!"
+    Atlas "On aimerais te rejoindre pour le show de ce soir!"
 
-    Robyn "And ask you some questions."
+    Robyn "Et poser quelques questions."
 
     python:
         MM_State["armR"] = 2
@@ -2342,9 +2401,9 @@ label endInvestigation:
         Robyn_State["brow"] = 2
 
     $musicPlayer.playSong()
-    Madhouse "Mmm, I don’t think it'd be a good idea."
+    Madhouse "Je sais pas si c'est une bonne idée-"
 
-    Narrator "Madhouse pauses."
+    Narrator "Madhouse s'arrète."
 
     python:
         MM_State["armR"] = 0
@@ -2361,7 +2420,7 @@ label endInvestigation:
         musicPlayer.playSong(song="not_so_spooky_song")
 
     voice mm_laughb
-    Madhouse "{bt=3}To turn down such big fans!{/bt}"
+    Madhouse "{bt=3}De renvoyer de si grand fans! Hah!{/bt}"
 
     python:
         MM_State["armR"] = 1
@@ -2378,7 +2437,7 @@ label endInvestigation:
         Robyn_State["eyes"] = 1
         Robyn_State["brow"] = 2
 
-    Madhouse "Except you, the one with the ram horns,, I don’t deal with devils."
+    Madhouse "Sauf toi avec les cornes. Je gère pas les démons."
 
     $Jamie_State["mouth"] = 3
     $Jamie_State["eye"] = 7
@@ -2386,7 +2445,7 @@ label endInvestigation:
     $Jamie_State["alFace"] = 0
 
 
-    Jamie "Bold choice of words for a dead man."
+    Jamie "Mots gras pour un homme mort."
 
     python:
         MM_State["armR"] = 1
@@ -2396,13 +2455,13 @@ label endInvestigation:
         Atlas_State["eye"] = 0
 
 
-    Madhouse "... You're a fire hazard."
+    Madhouse "... T'es un incendit ambulant."
 
     $Robyn_State["mouth"] = 7
     $Robyn_State["eyes"] = 4
     $Robyn_State["brow"] = 2
 
-    Robyn "Sorry Jamie."
+    Robyn "Désolé Jamie."
 
     python:
         Jamie_State["mouth"] = 0
@@ -2418,7 +2477,7 @@ label endInvestigation:
         MM_State["eyes"] = 0
 
 
-    Jamie "I understand. Weak-willed spirits tend to fall faint around me."
+    Jamie "Je comprends. Les ésprits faible on tendence à s'évanouir devant moi."
 
     python:
         Atlas_State["eye"] = 4
@@ -2433,10 +2492,10 @@ label endInvestigation:
     show jamie:
         ease 0.4 matrixtransform RotateMatrix(0.0, 0, 0.0)
         ease 1.0 xcenter -0.3
-    Narrator "Atlas does a giddy fist pump to himself and stands up straight."
+    Narrator "Atlas se fait un check a lui même avant d'avancer."
 
     voice atlas_booyah
-    Atlas "Sweet! I ah— yes, this is business."
+    Atlas "Cool! Je ah— ouais, c'est du business."
 
     python:
         Atlas_State["eye"] = 6
@@ -2445,6 +2504,8 @@ label endInvestigation:
         Atlas_State["armR"] = 1
         Atlas_State["armL"] = 2
 
-    Atlas "I am a serious business boy."
+    Atlas "Je suis quelqu'un qui est très serieux niveau Business!"
+
+    Narrator "Vous vous avancez dans le studio."
 
     jump RadioShow
