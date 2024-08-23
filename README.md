@@ -37,8 +37,8 @@ Vide= A faire
 - 🟢 Introduction; Mothman
 - Menu "à propos"
 - 🟢 Chapitre INTRO
-- 🟠 Chapitre 0, DEAD AIR - Histoire [3/4] (Bourré de fautes que j'ai faite- aled.)
-- Chapitre 0, DEAD AIR - Combat 1
+- 🟢 Chapitre 0, DEAD AIR - Histoire [4/4] (Bourré de fautes que j'ai faite- aled.)
+- 🟠 Chapitre 0, DEAD AIR - Combat 1
 - Chapitre 0, DEAD AIR - Combat 2
 
  Plus a venir.
