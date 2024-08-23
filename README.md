@@ -37,7 +37,7 @@ Vide= A faire
 - 🟢 Introduction; Mothman
 - Menu "à propos"
 - 🟢 Chapitre INTRO
-- 🟠 Chapitre 0, DEAD AIR - Histoire [2/4] (Bourré de fautes que j'ai faite- aled.)
+- 🟠 Chapitre 0, DEAD AIR - Histoire [3/4] (Bourré de fautes que j'ai faite- aled.)
 - Chapitre 0, DEAD AIR - Combat 1
 - Chapitre 0, DEAD AIR - Combat 2
 
@@ -72,7 +72,7 @@ Jour 1- 4H (22/03), Fini a 1h12
 
 Jour 2- 2H + 7H (23/08), Fini à 1:52AM
 
-Jour2
+Jour 3- 3H (23/08)
 [Devenir Membre Patreon](https://www.patreon.com/bePatron?u=19966246&redirect_uri=https%3A%2F%2Fitch.io%2Fgame%2Fedit%2F815590&utm_medium=widget)
 (ça aide beaucoup!)
 
