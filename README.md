@@ -85,5 +85,6 @@ Jour 3- 3H (23/08), Fini à 4:52PM
 [Discord du jeu](https://discord.com/invite/cryptidcrush)
 
 Thanks to Mike for allowing me to mess with files and not smashing my head against a wall for discovering spoilers i wasn't supposed to see :3
++ MIKE UR A FUCKING GOD DKHFKDFKDJFDFKDFJ WHY DOES A FUCKING : RUINED EVERYTHING
 
 And thanks the whole dev team for making this master piece of a game. It's awesome. Thank y'all a lot!! ❤️
