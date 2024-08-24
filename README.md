@@ -56,7 +56,7 @@ du github! Jusqu'a ce que le bug soit réglé, vous pouvez selectionner "Ignorer
 
 Disponibilité: Actuellement **PARTIELLEMENT DISPONIBLE** 
 
-[Lire la documentation](docu)
+[Lire la documentation](docu.md)
 
 Je suis toujours en train de travailler sur la permière build! Patience!
 Dans l'état l'intro jusqu'a la station d'Ehlkorn est traduit. Rien d'autre.
