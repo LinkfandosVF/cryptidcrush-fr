@@ -1,9 +1,9 @@
 # Cryptid Crush
 ## Patch francophone
 
-https://drowsy-drake-studios.itch.io/cryptid-crush
+Télécharger le jeu: https://drowsy-drake-studios.itch.io/cryptid-crush
 
-https://cryptidcrush.com
+Site web officiel: https://cryptidcrush.com
 
 -------------------------------------------------------
 
@@ -34,12 +34,15 @@ Cryptid Crush contiendras *AU MOINS* 5 personnages a date, et recevera des màj 
 Vide= A faire
 
 - 🟩 Menus, UI
+- Ui des Combats (Skills, déscriptions, dé...)
 - 🟢 Introduction; Mothman
 - Menu "à propos"
 - 🟢 Chapitre INTRO
 - 🟢 Chapitre 0, DEAD AIR - Histoire [4/4] (Bourré de fautes que j'ai faite- aled.)
 - 🟠 Chapitre 0, DEAD AIR - Combat 1
+  - Note: Cela n'inclus pas les UI DES COMABTS EN GENERAL.
 - 🟠 Chapitre 0, DEAD AIR - Combat 2
+- 🟠 Chapitre 0, DEAD AIR - "Post Madhouse Bash"
 
  Plus a venir.
 -------------------------------------------------------
