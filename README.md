@@ -39,7 +39,7 @@ Vide= A faire
 - 🟢 Chapitre INTRO
 - 🟢 Chapitre 0, DEAD AIR - Histoire [4/4] (Bourré de fautes que j'ai faite- aled.)
 - 🟠 Chapitre 0, DEAD AIR - Combat 1
-- Chapitre 0, DEAD AIR - Combat 2
+- 🟠 Chapitre 0, DEAD AIR - Combat 2
 
  Plus a venir.
 -------------------------------------------------------
@@ -77,7 +77,7 @@ Jour 1- 4H (22/03), Fini a 1h12
 
 Jour 2- 2H + 7H (23/08), Fini à 1:52AM
 
-Jour 3- 3H (23/08), Fini à 4:52PM
+Jour 3- 3:46H (23/08), Fini à 0:26AM
 
 [Devenir Membre Patreon](https://www.patreon.com/bePatron?u=19966246&redirect_uri=https%3A%2F%2Fitch.io%2Fgame%2Fedit%2F815590&utm_medium=widget)
 (ça aide beaucoup!)
