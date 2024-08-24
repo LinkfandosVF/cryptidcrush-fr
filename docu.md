@@ -1,6 +1,6 @@
 # Documentation
 
-Paumé? -> [Retourner au README](README)
+Paumé? -> [Retourner au README](README.md)
 
 ## 1 - Sources et droits réservés
 ### 1.1 - Obtention et réservations de droits
