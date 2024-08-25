@@ -42,9 +42,14 @@ Vide= A faire
 - 🟠 Chapitre 0, DEAD AIR - Combat 1
   - Note: Cela n'inclus pas les UI DES COMABTS EN GENERAL.
 - 🟠 Chapitre 0, DEAD AIR - Combat 2
-- 🟠 Chapitre 0, DEAD AIR - "Post Madhouse Bash"
+- 🟢 Chapitre 0, DEAD AIR - "Post Madhouse Bash"
+- Chapitre 1, Intro
+- Chapitre 1, Jour 1 [0/7]
+- Chapitre 1, Jour 2 [0/4]
+- Chapitre 1, Jour 3 [0/5]
+- Chapitre 1, Hangouts [0/7]
 
- Plus a venir.
+ Plus a venir. (Oh mon dieu je vais tellement crever)
 -------------------------------------------------------
 ### DISCLAIMER:
 
