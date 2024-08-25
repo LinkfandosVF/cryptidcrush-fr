@@ -15,12 +15,12 @@ label FIGHT_01_MM_ROBYN_0: ##Robyn's Bash. -- NEEDS TEXT
 
         show demon_madhouse at MMD_Damaged_Pos
 
-        Narrator "[pName] successfully bash [eName] with a thwack, dealing [sfxDmg] damage!"
+        Narrator "[pName] frappe [eName] avec ses poings! [eName] prend [sfxDmg] dommages!"
 
         #Modify Mahouse Stat
         $enemyUnits[targetChoice].modifyStatMod("power",-1,-4,4)
     else:
-        Narrator "Swing{w=.5} And a miss! [eName]’s eyes are on [pName] now."
+        Narrator "[pName]frappe{w=.5} et loupe lamantablement! Les yeux de [eName]’s sont rivés sur [pName] maintenant."
 
         #Modify Mahouse Stat
         $enemyUnits[targetChoice].modifyStatMod("diff",-2,-4,4)
@@ -37,10 +37,10 @@ label FIGHT_01_MM_ROBYN_1: ##Robyn's Cheer.
         pName = playerUnits[0].name
 
         if targetChoice != -1:
-            xArray = ["C’mon, me, you’ve got this!", "You’ve got so much junk food to live for, Atlas!", "Show ‘em what Jersey’s made of, Jamie!", "Taro, Taro, you’re so great! Scratch that guy right in the face!"]
+            xArray = ["Allez moi! Tu peux le faire!", "Tu à tellement de truc a faire encore, Atlas!", "Montre leur de quel poing tu te chauffe, Jamie!", "Taro, Taro, t'es incroyable! Défonce le visage de ce type!"]
             xStr = xArray[targetChoice]
         else:
-            xStr = "We’ve got this, everyone!"
+            xStr = "On peux le faire!"
 
     Robyn "[xStr]"
 
@@ -62,12 +62,12 @@ label FIGHT_01_MM_ROBYN_1: ##Robyn's Cheer.
 
             playerUnits[targetChoice].modifyHP(xHeal,0.0,"guts")
 
-        Narrator "[pName] uses the power of positivity to heal [xName]'s for [xHeal] [kwHealth]!"
+        Narrator "[pName] utilise le pouvoir de la positivité pour soigner [xName] de [xHeal] [kwHealth]!"
 
         $playerUnits[targetChoice].modifyStatMod("power",2,-4,4)
 
     if not isRollSuccess:
-        Narrator "[eName] takes [pName]'s words the wrong way and is also invigorated!!"
+        Narrator "[eName] prend les motes de [pName] de la mauvaise manière et et aussi soigné!!"
 
         $enemyUnits[0].modifyStatMod("power",2,-4,4)
 
@@ -79,19 +79,19 @@ label FIGHT_01_MM_ROBYN_2: ##Robyn's Focus. -- NEEDS TEXT
     $pName = playerUnits[0].name
     if isRollSuccess:
         #Raises Karma on success
-        Narrator "[pName] thinks REAL hard to collect [PCtheir] thoughts about what to do next."
+        Narrator "[pName] pense TRES fort sur quoi faire ensuite."
 
-        Robyn "Think, think, think… I’ve got it!"
+        Robyn "Pense, pense, pense... Okay je l'ai!"
 
         $addBattleKarma(2)
 
     else:
         #Raises Jamie's Brain's and occult on a failure
-        Narrator "As [pName] tries to think as hard as [PCthey] can, [pName] is worn out in the process."
+        Narrator "[pName] éssaie de penser aussi fort qu'[PCthey] peut, mais n'y parvient pas."
 
-        Robyn "Can’t. Focus. Brain. Foggy."
+        Robyn "J-j'y arrive pas!."
 
-        Jamie "Don’t strain yourself, boss, I’ll take it from here."
+        Jamie "T'inquète pas. On gère."
 
         python:
             xName = playerUnits[2].name
@@ -107,13 +107,13 @@ label FIGHT_01_MM_ROBYN_3: ##Robyn's Heart Out.
         eName = enemyUnits[0].name
 
     if isRollSuccess:
-        $xStr = renpy.random.choice(["You’re completely unstable! I don’t know how much more your soul can take!","Are you even listening to me?!","Mike, you’re going to get hurt!","Mike, I lied! I’ve literally never heard of you or your show! I was just trying to make you and Atlas happy!"])
+        $xStr = renpy.random.choice(["Tu es complètement instable ! Je ne sais pas jusqu'où ton âme peut supporter !", "Est-ce que tu m'écoutes au moins ?!", "Mike, tu vas être blessé !", "Mike, J'ai menti ! Je n'ai littéralement jamais entendu parler de toi ou de ton émission. J'essayais juste de te rendre heureux, toi et Atlas !"])
         Robyn "[xStr]"
 
-        $xStr = renpy.random.choice([eName + " tenses up, hesitating a moment as he feels a twinge of guilt.","The demon reels back, bringing a hand to his face with a pained growl.","The demon’s chest aches, hearing these words make his head spin and his blood boil. A small part of " + eName + " wants to cry."])
+        $xStr = renpy.random.choice([eName + "s'éffrite, hésitant un moment alors qu'il se sent coupable.","Le démon se frappe le visage, et grogne sur tes mots.","La poitrine du démon se crispe, une partie de toi à envie de pleurer."])
         Narrator "[xStr]"
 
-        Madhouse "I can’t give up."
+        Madhouse "Je peux pas abandonner."
 
         python:
             #Fucks with Madhouse on a success
@@ -121,16 +121,16 @@ label FIGHT_01_MM_ROBYN_3: ##Robyn's Heart Out.
             enemyUnits[0].modifyStatMod("diff",-2,-4,4)
             enemyUnits[targetChoice].modifyStatMod("brawn",-2,-4,4)
 
-        Narrator "[eName]'s turn is delayed by +1."
+        Narrator "Le tour de [eName] est éloigné de +1."
     else:
-        $xStr = renpy.random.choice(["Mike roars, drowning out " + pName + "'s words.","The demon growls, refusing to listen."])
+        $xStr = renpy.random.choice(["Mike refuse d'écouter.","Le démon grogne, et se bouche les oreilles."])
         Narrator "[xStr]"
 
         python:
             enemyUnits[0].modifyStatMod("diff",2,-4,4)
             enemyUnits[0].ChangeMTA(-1)
 
-        Narrator "[eName]'s turn is hastened by +1."
+        Narrator "Le tour de [eName] se rapproche de +1."
 
     $playerUnits[0].DiminishModifiers([2,3,5])
     jump expression currentLabelET

@@ -51,10 +51,10 @@ label CH0_TitleCard:
 
 layeredimage ch0ttxt:
     always:
-        Text("{ddd=#32f3ff-#ce2aff}{size=75}  Chapter 0  \n   Dead Air   {/size}{/ddd}")
+        Text("{ddd=#32f3ff-#ce2aff}{size=75}  Chaptitre 0  \n   Dead Air   {/size}{/ddd}")
 
     always:
-        Text("{glitch=3.0}{size=75}{color=#32ff84}  Chapter 0  \n   Dead Air   {/color}{/size}{/glitch}")
+        Text("{glitch=3.0}{size=75}{color=#32ff84}  Chaptitre 0  \n   Dead Air   {/color}{/size}{/glitch}")
 
 image Ch_0_Title_Text:
     #WaveImage("ch0ttxt", amp = 2.75, strip_height = 6,melt=True,freq=35)
@@ -97,20 +97,22 @@ label Ch0_Intro:
         Taro_State["eyes"] = 2
         Taro_State["mouth"] = 4
 
-    Narrator "Your phone startles you awake, a trail of messages scrolling down your screen. IF YOU SEE THIS IT'S EDITED WOWO FRENCH PATCH"
+    Narrator "Ton téléphone sonne et te réveille avec une nuée de messages qui apparaissent sur l'écran de vérouillage."
     play music astral_reflection
     show Atlas_Phone CG
-    Atlas "Hey, are you awake?"
+    Atlas "Hey, t'es réveillé?"
 
-    Atlas "{bt=3}It's time~{/bt}"
+    Atlas "{bt=3}C'est l'heure~{/bt}"
 
-    Atlas "Ghosty time."
+    Atlas "L'heure fantôme."
 
-    Atlas "I sent you the address!"
+    Atlas "Je t'ai envoyé l'adresse!"
 
-    Atlas "Just follow the radio tower and you'll find it!"
+    Atlas "Suit la tour radio et tu trouvera!"
 
-    Narrator "All you can manage to type back in your half asleep sluggish state is—"
+    Narrator "Tu est toujours a moitié endormis quand tu lit le message. Le nombre de notifications ayant un effet néfaste sur ton cerveau."
+
+    Narrator "Tout ce que tu parvient a répondre dans ta somnolance est—"
     stop music
     $musicPlayer.playSong()
     Robyn "K."
@@ -122,7 +124,7 @@ label Ch0_Intro:
     $timeText = "1:00AM"
     $musicPlayer.playSong(song="eating_in_the_car_song",fadeIn=10)
 
-    Narrator "You feel a sudden icy chill, jolting you awake and sending shivers down your spine."
+    Narrator "Soundainement un sentiment froid te parcourt la colone vertébrale,, te réveillant sur le coup avec des frissons dans le dos."
 
     scene BG Apartment Bedroom
     camera:
@@ -145,16 +147,16 @@ label Ch0_Intro:
             repeat
     Robyn "..!"
 
-    Narrator "You see a large, fuzzy gray cat with three eyes and a flaming tail shoving her translucent paw through your face."
+    Narrator "Tu appercois une silhouette large et floue, formant un chat gris avec 3 yeux et une queue en feu, en train d'enfoncer ses pates translucides dans ton visage maintenant complètement éveillé."
 
     voice taro_greetingsmortal
-    Taro "Greetings mortal."
+    Taro "Salutations mortel."
 
     with hpunch
     camera:
         ease 2.0 xcenter 0.5 ycenter 0.5 zoom 1.0
 
-    Narrator "With a yelp, you leap out of bed, the shimmering tabby cat phasing right through you."
+    Narrator "D'un cri, tu te dégage du lit, trandis le félin transparent phase a travers ton corps."
     camera:
         ease 0.5 xcenter 0.5 ycenter 0.5 zoom 1.0
 
@@ -178,14 +180,14 @@ label Ch0_Intro:
         ease 0.5 xcenter 0.3 yoffset 0
 
     voice RobynSays("Chapter 0","CantYouJustBeNormal")
-    Robyn "Can't you just be {sc=3}NORMAL?!{/sc}"
+    Robyn "Tu peux pas juste être {sc=3}NORMAL?!{/sc}"
 
     python:
         Taro_State["eye"] = 3
         Taro_State["mouth"] = 4
 
     voice taro_iwasgettingdesperate
-    Taro "You slept through three alarms! I was getting desperate."
+    Taro "T'a loupé 3 alarmes! Tu commencais a me désespérer!."
 
     python:
         Robyn_State["armR"] = 0
@@ -204,14 +206,14 @@ label Ch0_Intro:
         ease 0.3 matrixtransform RotateMatrix(0,180,0)
 
 
-    Robyn "Okay, OKAY. I’m awake. And… I’m running late!"
+    Robyn "Okay, OKAY. Je suis réveillé! Et en retard aussi!"
 
     $Robyn_State["mouth"] = 3
 
     show robyn:
         ease 0.5 xcenter -0.3
 
-    Narrator "You rush around your room gathering everything you could possibly need for tonight."
+    Narrator "Tu court dans tout l'appartement a la recherche de ce tu aurais potentiellement besoin pour cette nuit."
 
     show robyn default:
         xcenter -0.3
@@ -238,7 +240,7 @@ label Ch0_Intro:
         pause 0.7
         linear 0.5 matrixtransform RotateMatrix(0.0, 180.0, 0.0)
 
-    Narrator "You then run through your mental checklist, ‘Don’t forget your flashlight, bolt cutters, granola bars, and….’"
+    Narrator "Tu relis ta liste mentale, ‘N'oublie pas la lampe, pince, granola bars, et….’"
 
     show robyn:
         xcenter 0.9
@@ -251,13 +253,13 @@ label Ch0_Intro:
         ease 0.5 ycenter 0.8
         ease 2.0 xcenter -0.2
 
-    Narrator "You squat down to tie your shoes and slip on your jacket. Opening the door you  step out into the stuffy hallway and march out to your car."
+    Narrator "Tu t'accroupis pour faire tes lacets et enfile ta veste. Tu ouvre la porte brusquement et parcourt le couloir en direction de la voiture."
 
     python:
         Taro_State["eye"] = 2
         Taro_State["mouth"] = 3
 
-    Taro "W-wait for me!"
+    Taro "A-Attend moi!"
 
     python:
         Taro_State["eye"] = 4
@@ -266,7 +268,7 @@ label Ch0_Intro:
     show taro:
         ease 0.6 xcenter -0.2
 
-    Narrator "Taro has to race to catch up with you, meowing in protest as she kicks off the top step and floats down the stairs, phasing right through the apartment wall."
+    Narrator "Taro doit tracer pour te rattraper, elle proteste en miaulant alors qu'elle saute de la première marche des escaliers et déscend, en passant a travers le mur de ton appartement."
 
     python:
         songText = "Midway to Nowhere"
@@ -286,91 +288,91 @@ label Ch0_Intro:
     scene BG Road Side with Fade(0.5, 0.5, 0.5, color="#000000")
     window show
 
-    Narrator "Taro finally lands on your shoulder as you reach your car— \nAnd nips your ear."
+    Narrator "Taro arrive finallement sur ton épaule en te mordant l'oreille."
 
     play sfx hurt_a
     Robyn "OW!"
 
-    Narrator "You try to brush the phantom cat off your shoulder but your hand sweeps right through her."
+    Narrator "Tu essaie d'écarter le chat fantôme de ton épaule mais ta main passe tout simplement à travers."
 
-    Taro "Caught you!"
+    Taro "J'te tient!"
 
     #Robyn "Ugh."
 
-    #Narrator "After convincing Taro that the passenger seat is the coolest seat in the car, she finally settles down, letting you buckle up and start the engine."
+    #Narrator "Après avoir convaincu Taro que le siège passager est le siège le plus cool de la voiture, elle s'installe enfin, te laissant t'attacher et démarrer le moteur."
 
     show Driving Night Graphic
     play sfx carStart
-    Narrator "You flick on the headlights before backing up and pulling onto the street."
+    Narrator "Tu allume les phares avant d'avancer dans la rue."
 
     stop sfx fadeout 1.0
     play ambiance car_ambiance fadein 8.0
-    Taro "Are you sure Atlas is gonna be any help?"
+    Taro "T'es sûr qu'Atlas va vraiment être utile?"
 
-    Narrator "Taro keeps her little paws tucked under her fluff like a fuzzy bread loaf."
+    Narrator "Elle garde ses petites pattes sous ses poils comme un petit pain."
 
-    Taro "Y’know what they say about mothmen…"
+    Taro "Tu sais ce qu'ont dit sur les mothmans…"
 
     voice RobynSays("Generic","Annoyed")
-    Robyn "That they’re bad omens?"
+    Robyn "Qu'ils porte malheur?"
 
     Taro "Bingo."
 
-    Robyn "Omen or not, I could use all the help I can get."
+    Robyn "Malheur où pas, j'ai besoin de toute l'aide que je peux avoir."
 
-    Taro "Right, that nasty curse."
+    Taro "Ah ouais, cette horrible malediction."
 
-    Taro "You should really get that checked out!"
+    Taro "Tu devrais consulter quelqu'un."
 
-    Robyn "Isn’t that YOUR JOB?"
+    Robyn "Et c'est pas censé être TON BOULOT?"
 
     voice taro_smuga
-    Taro "You don’t expect me to work on an empty stomach do you?{nw}"
+    Taro "Tu crois pas que je vais travailler avec l'estomac vide,, n'est-ce pas?{nw}"
 
     #Narrator "Taro whimpers, bringing a weak paw to her forehead."
 
-    extend "\n\nI’m feeling faint..."
+    extend "\n\nJe me sens faible..."
 
-    Robyn "Do you need me to stop and get you something?"
+    Robyn "Tu veux que je m'arrète pour t'acheter un truc?"
 
-    Taro "Oh, no, don’t worry about me. I’ll... survive… You’re the one dealing with that wretched curse, not me."
+    Taro "Oh non t'inquète pas pour moi. Je vais... survive... T'es celui qui est maudis, pas moi."
 
-    Robyn "I don’t feel any different."
+    Robyn "Je me sens pas vraiment différent."
 
     voice taro_laughab
-    Taro "Ohoho, you will, and it’s going to be agonizing."
+    Taro "Ohoho, tu vas, et ça va être {i}AGONISANT.{/i}"
 
-    Robyn "You never mentioned that!"
+    Robyn "Tu n'a jamais mentionné ça!"
 
-    Taro "I didn’t want to scare you! Even describing this curse brings about {i}evil{/i}."
+    Taro "Je voulais pas te faire peur! Même décrire cette malédiction ammène des choses {i}térrible{/i}."
 
-    Robyn "So, you can’t get rid of it, you can’t even talk about it, and it’s going to be excruciating. Is there anything else you forgot to tell me?"
+    Robyn "Donc, tu peux pas la dissiper, tu peux même pas en parler, et ça va être atroce. Y'a quelque chose d'autre que t'a oublié de me dire ou?"
 
-    #Taro "Uh..."
+    #Taro "Ouais..."
 
-    #Narrator "Taro glances around and slouches back in the passenger seat. She takes a pause and closes her third eye, thinking."
+    #Narrator "Taro bouge un peu et s'allonge dans son siège. Elle prend une pause et ferme son troisième oeuil en réflechissant."
 
-    Taro "Well. There’s a countdown."
+    Taro "Bien... Y'a un décompte."
 
-    Robyn "A countdown?"
+    Robyn "Un décompte?"
 
-    Taro "That’s right. Its a countdown to your {sc=1}imminent{/sc} demise."
+    Taro "Exactement. Un décompte pour ta {sc=1}MORT IMMINENTE{/sc}!"
 
-    #Narrator "You shoot Taro a sharp look."
+    Narrator "Tu jette à Taro un regard de juge."
 
-    Robyn "That’s not funny!"
+    Robyn "C'est pas drôle!"
 
-    Taro "Prrrh, I’m not joking, silly."
+    Taro "Prrrh, je rigole pas, débile."
 
-    Robyn "How much time do I have?"
+    Robyn "Combien de temps il me reste?"
 
-    Taro "That’s for a cat to know, and a physician to find out."
+    Taro "C'est à un chat de savoir, et à un physicien de découvrir."
 
-    Robyn "But that’s why you’re here right? Being a cosmic guardian and all. You’re meant to protect me."
+    Robyn "Mais c'est pour ça que t'est là non? Guardien comsique et tout. Tu est censé me protéger."
 
     #Taro "..."
 
-    Taro "...Absolutely!"
+    Taro "...Absolument!"
 
     show Atlas_Phone Ring CG:
         xcenter 0.7
@@ -378,45 +380,45 @@ label Ch0_Intro:
         ease 0.5 yoffset 0
 
     play sfx phone_notif
-    Narrator "Your phone chimes, buzzing in the cupholder."
+    Narrator "Ton téléphone sonne en vibrant dans le porte goblet."
 
     show Atlas_Phone CG
-    Atlas "{sc=2}Where are you?{/sc}"
+    Atlas "{sc=2}T'es où?{/sc}"
 
-    Robyn "I’m on my way! Sheesh, unlike you most of us can’t fly."
+    Robyn "J'arrive. Et serieux, comparé à toi nous on peux pas voler."
 
-    Atlas "You fell back asleep., didn't you."
+    Atlas "Tu t'es rendormis, pas vrai?"
 
-    Robyn "I'm not nocturnal!"
+    Robyn "Je suis pas nocturne!"
 
-    Atlas "Not with that attitude! \n\nSo,, do you see the station?"
+    Atlas "Pas avec cette attitude! \n\nBref tu vois la station?"
 
-    Narrator "Leaning forward, you glance upwards towards the distant radio tower cutting through the night air."
+    Narrator "Tu t'avance sur le siège, ta tête presque collée contre le parre brise tu appercois une tour radio qui coupe le ciel illuminé de la nuit."
 
-    Robyn "I think so.{nw}"
+    Robyn "Je crois?{nw}"
 
-    extend "\n\nIs it just the three of us?"
+    extend "\n\nC'est juste nous trois?"
 
-    Atlas "Depends… How cool are you with devils?"
+    Atlas "Sa dépend... Tu pense quoi des démons?"
 
-    Robyn "Pretty cool? Why?"
+    Robyn "J'aime bien. pourquoi?"
 
-    Atlas "I have a friend who just got off work and was wondering if they could tag along! \n\nI figured I’d ask you first!"
+    Atlas "J'ai un ami qui vient de finir le travail et iel se demandais si iel pouvait venir! \n\nJe pensais que j'allais te demander avant!"
 
-    Robyn "Yeah, I’d definitely feel safer in a larger group."
+    Robyn "Ouais, je préfererais être dans un groupe plus large."
 
     voice atlas_booyah
-    Atlas "Sweet!"
+    Atlas "Cool!"
 
-    Robyn "See ya soon."
+    Robyn "A toute."
 
-    Atlas "Don’t forget about the phantom frequency!"
+    Atlas "N'oublie pas la fréquence fantôme!"
 
     #Taro "There’s ghosts on the radio waves?"
 
-    Robyn "Channel 103.1, Elkhorn Radio, I’ve got it. I’ve got it."
+    Robyn "Chaine 103.1, Elkhorn Radio, Je sais. Je sais."
 
-    Atlas "Great tha—{nw}"
+    Atlas "Cool ça—{nw}"
 
 
     show Atlas_Phone CG:
@@ -431,31 +433,31 @@ label Ch0_Intro:
             ease 1.0 yoffset 700
 
     play sfx hurt_b
-    Narrator "{i}THUNK.{/i}"
+    Narrator "{i}BONK{/i}"
 
-    Narrator "The sound of feathers brush against the microphone and the audio fizzles out before Atlas squeaks."
+    Narrator "On peut entendre des plummes qui frottent contre le microphone et l'audio qui coupe avant qu'Atlas gémisse."
 
-    Atlas "Sorry, I hit a lamp post."
+    Atlas "Pardon. J'ai mangé un lampadaire."
 
-    Atlas "I-I'll meet up with you soon. \n\n\Drive safe!"
+    Atlas "O-On se voit plus tard. \n\n\Fait gaffe sur la route!"
 
     hide Atlas_Phone
-    Narrator "Atlas hangs up."
+    Narrator "Atlas raccroche."
 
     #Taro "Psh, classic moth move."
 
-    Narrator "You picture Atlas wildly fluttering around a giant light bulb, and then it dawns on you."
+    Narrator "T'imaginer atlas se taper contre une ampoule géante te fait réaliser..."
 
-    Robyn "I forgot my flashlight!"
+    Robyn "J'ai oublié la lampe!"
 
-    Taro "Looks like we’ll need to make that pitstop and snack run!"
+    Taro "On dirait qu'on va devoir faire une pose snack après tout!"
 
     #voice RobynSays("Generic","HmphB")
-    #Robyn "Goddammit."
+    #Robyn "Putain..."
 
-    Narrator "Rolling into view is a dingy looking gas station named Al’s Owl Nighter. Dozens of sun bleached local ads plaster the foggy store windows, weeds sprouting through the cracks in the cement."
+    Narrator "Passant par la fenètre est une vielle station de gas appelée Al’s Owl Nighter. Plusieurs publicitées tarnies par le soleil replissent les vitres salles du magasin, des vignes poussant sur les cotés du batiment dans le ciment."
 
-    Narrator "This place looks safe enough right? It’s well lit at least."
+    Narrator "Ca à l'air plûtot sécurisé, pas vrai? C'est bien éclairé en tout cas."
 
     $musicPlayer.playSong(song = "next_time_on_song",songLoop=False,fadeOut=0.5)
     stop ambiance fadeout 4.0
@@ -475,9 +477,9 @@ label Ch0_Minimart:
         Taro_State["eye"] = 0
         Taro_State["mouth"] = 0
 
-    Narrator "A pleasant jingle echoes into the night air, as the door leading out of a roadside minimart swings open."
+    Narrator "Un petit jingle retenti dans l'aire de nuit, alors que les portes automatiques du magasin souvre horizontallement."
 
-    Narrator "You walk out into the starlight, carrying a convenience store sushi roll and a cheap flashlight."
+    Narrator "Tu sort sous le ciel étoilé, avec du sushi de super-marché et une lampe-torche franchement cheap."
 
     python:
         Robyn_State["brow"] = 2
@@ -490,9 +492,9 @@ label Ch0_Minimart:
         appearBlack(shading="#bbb4ff",t=0.5)
 
     voice RobynSays("Chapter 0","SuspiciouslyUnderpriced")
-    Robyn "That sushi was... {i}suspiciously underpriced.{/i}"
+    Robyn "Ce sushi était... {i}suspicieusement peu-cher.{/i}"
 
-    Narrator "You hold the receipt up to the neon open sign, eyeing it \nclosely."
+    Narrator "Tu porte le ticket devant le panneau illumé par des néons, en le regardant \navec précision."
 
     $Robyn_State["eyes"] = 2
     show robyn:
@@ -503,38 +505,41 @@ label Ch0_Minimart:
         ease 0.15 yoffset 0
 
     voice RobynSays("Chapter 0","HmOhWell")
-    Robyn "Mmh, oh well."
+    Robyn "Bon et bah."
 
     show robyn:
         ease 1.6 xcenter 0.3
         linear 0.5 matrixtransform RotateMatrix(0.0, 180.0, 0.0)
 
-    Narrator "You shuffle back to your car, bounty in tow, and gaze over the horizon."
+    Narrator "Tu te rend vers ta voiture, tes achats en main, et observe l'horizon."
 
-    #Narrator  "You stare off towards the sleeping town of Longhope, your new home, and gather your thoughts."
+    Narrator  "Tu observe silencieusement la ville endormie de Longhope, ta nouvelle maison, perdu dans tes pensées."
 
-    Narrator "You haven’t had a moment to yourself since that cat practically poofed into existence."
-    #But you’d better get going, no way in hell are you pulling another all-nighter."
+    Narrator "T'a pas vraiment eu un moment pour toi depuis que ce chat est pratiquement apparu dans ta vie sans rien dire."
+    
+    Narrator "..."
+
+    Narrator "Tu reprend tes esprits d'un soupir fatigué et te redirige vers la voiture."
 
     python:
         Robyn_State["eyes"] = 1
         Robyn_State["mouth"] = 5
 
-    Narrator "Opening the car door, you plop down the bag of groceries with a bit of a huff."
+    Narrator "Tu ouvre la porte, et balance le sac plastique sur les sièges arrière avec un peu de colère."
 
     python:
         Robyn_State["brow"] = 1
         Robyn_State["eyes"] = 0
         Robyn_State["mouth"] = 5
 
-    Narrator "Your ear catches a low, restrained sound of claws scraping against leather, the sound of some terrible creature trying to hide her devilry."
+    Narrator "Tes tympans receuillent un son léger, camouflé comme des griffes qui grattent contre du cuir, le son d'une personne horrible en train de cacher son crime."
 
     python:
         Robyn_State["brow"] = 3
         Robyn_State["eyes"] = 0
         Robyn_State["mouth"] = 4
 
-    Robyn "Taro,, you goblin! {sc=2.5}That’s my {b}CAR{/b}!{/sc}"
+    Robyn "Taro,, sale peste! {sc=2.5}C'est {b}MA{/b} voiture!{/sc}"
 
     python:
         Robyn_State["mouth"] = 5
@@ -561,13 +566,13 @@ label Ch0_Minimart:
 
     show robyn:
         xcenter 0.5
-    Narrator "Taro splays her paws and stretches, dragging her claws across the car seat."
+    Narrator "Taro relache sa patte et s'étire, déchiquetant le siège avec ses griffes."
 
     python:
         Taro_State["eye"] = 0
-    Taro "Well, as my meowther always said, the world is your scratching post!"
+    Taro "Et bien m'a mère m'a toujours dit que le monde était mon griffoire!"
 
-    #Narrator "She lifts her chin slightly and purrs."
+    #Narrator "Elle lève son visage et ronronne."
 
     python:
         Robyn_State["brow"] = 0
@@ -575,7 +580,7 @@ label Ch0_Minimart:
 
         Taro_State["eye"] = 3
 
-    Taro "I’ll consider sparing your car’s interior if you offer me something I want~"
+    Taro "J'épargnerais peut-être l'interieur de ta voiture si tu me donne quelque chose que je veux~"
 
     python:
         Robyn_State["eyes"] = 2
@@ -583,14 +588,14 @@ label Ch0_Minimart:
 
         Taro_State["eye"] = 5
 
-    Narrator "She tilts her head to one side and closes her eyes expectantly."
+    Narrator "Elle penche sa tête sur le coté et ferme les yeux."
 
     python:
         Robyn_State["brow"] = 2
         Robyn_State["eyes"] = 3
         Robyn_State["mouth"] = 0
 
-    #Robyn "{bt=2.5}Fiiiine.{/bt}"
+    #Robyn "{bt=2.5}Rooh okeeeh-...{/bt}"
 
     python:
         Robyn_State["eyes"] = 3
@@ -599,12 +604,12 @@ label Ch0_Minimart:
     show robyn:
         ease 2.0 xcenter 0.35
 
-    Narrator "You roll your eyes and reach over, gently scratching Taro behind the ears. She’s oddly cold for a big fuzzy cat."
+    Narrator "Tu lève les yeux et approche le félin, puis gratouille gentiment Taro derrière les oreilles. Elle est plûtot froide pour être une grosse boule de poils."
 
     show robyn:
         xcenter 0.35
 
-    Robyn "You’re a real handful Taro. Seriously, what kind of cat drags me out past midnight for some expired sushi? We have places to be!"
+    Robyn "T'es vraiment impossible Taro. Serieux, quel genre de chat me rammène après minuit pour du sushi expiré? On est censé être avec Atlas!"
 
     $Taro_State["eye"] = 3
 
@@ -614,21 +619,21 @@ label Ch0_Minimart:
     show taro:
         ease 2.0 xcenter -0.25
 
-    Taro "A nyangel of course! Or that’s what I call myself anyway. You do know I’m not just a normal cat, right? Nyaow, paw over the goods."
+    Taro "Un nyange évidemment! Où plûtot c'est ce que j'aime bien m'appeler. Tu sais que je suis pas juste un chat normal, hein?"
 
     hide robyn
     hide taro
-    Narrator "You peel off the plastic wrap and slide it towards the demanding cat."
+    Narrator "Tu arrache l'embalage plastique et le glisse près du matou."
 
     #Robyn "How does a ghost cat eat? The world may never know."
 
-    Narrator "You turn the key in the ignition, the old car rattling to life."
+    Narrator "Tu tourne la clé, la vielle voiture démarre."
 
-    Robyn "We’d better get going before I totally chicken out."
+    Robyn "On ferais mieux de y'aller avant que je tombe de someil."
 
     $musicPlayer.playSong(fadeOut=6)
     play sfx car_ignition
-    Narrator "The car drives off, peeling out of the convenience store parking lot and down the dimly lit streets of Longhope."
+    Narrator "La voiture démarre, sort du parking du magasin et s'enfonce dans les rues faiblement éclairées de Longhope."
 
     window hide
     scene BG Road Side with pixellate #----------------------------------------- Road side
@@ -645,70 +650,70 @@ label Ch0_Minimart:
 
     #Maybe put in a Robyn line here to warrant the Taro response more
 
-    Narrator "Taro scarfs down the last bits of sushi, licking specks of rice off her nose."
+    Narrator "Taro dévore le reste du poisson et se lèche les coussinets."
 
     #Taro "You’ve got nothing to worry about, [PCname]."
 
-    Taro "Aren’t we on the lookout for that phantom frequency?"
+    Taro "Dit [PCname]? On était pas censé chercher une fréquence fantôme?"
 
     #Narrator "Taro meows, as she gazes out the window and the car drives up the road." #as you drive further up the mountain.
 
-    Robyn "Ah, right."
+    Robyn "Ah, ouais."
 
-    Narrator "You slide your hand over to the dash and click on the stereo."
+    Narrator "Tu glisse ta main sur la stéréo et allume le système."
 
     play sfx radio_tuning
-    Narrator "The radio whirrs on, with harsh static as it switches between frequencies until it reaches 103.1."
+    Narrator "La radio s'allume, avec un son blanc très aigu, elle change entre les fréquences jusqu'a atteindre 103.1 FM."
 
     stop sfx
 
     $musicPlayer.playSong(song="elkhorn_radio_intro_song",songLoop=False,notif=False)
-    Narrator "The static is cut with a crisp and peppy tune, cueing the start of some sort of radio show."
+    Narrator "Le static est coupé par un jingle stupide, suivit par une sorte d'émission radio."
 
     $musicPlayer.playSong(song="elkhorn_radio_blues_song_radio",fadeIn=3)
     voice mm_radio_goodeveningfreaksters
-    Madhouse "{color=#3bec27}Gooood evening freaksters! I’m your host Madhouse Mike {b}LIVE{/b} at Elkhorn County Radio."
+    Madhouse "{color=#3bec27}Booooonne soirée freaksters! Vôtre hôte préférée {b}MADHOUSE MIKE{/b} est en LIVE à la station du conté d'Elkhorn."
 
     voice mm_radio_whatsthatdebbie
-    Madhouse "{color=#3bec27}What’s that? It seems my producer’s letting me know I am, in fact, DEAD! Hah! Thanks, Debbie."
+    Madhouse "{color=#3bec27}C'est quoi? On dirait que mon producteur est en train de m'annoncer que, je suis en fait, MORT! Haha! Merci Debbie."
 
     voice mm_radio_shoutout
-    Madhouse "{color=#3bec27}So! Before we get started, I just wanted to give a shoutout to all of my listeners!"
+    Madhouse "{color=#3bec27}Donc avant de commencer! J'aimerais dire un mot à tout les gens qui m'écoutent!"
 
     voice mm_radio_supportandfanmail
-    Madhouse "{color=#3bec27}It’s your support that keeps this show alive, so as a thank-you, I’ll be starting tonight’s show with some fan mail."
+    Madhouse "{color=#3bec27}C'est votre support qui garde ce show en vie a l'instart de moi même, donc pour vous remercier, je vais commencer le show de ce soir en lisant quelques-unes de vos lettres!"
 
-    Narrator "Madhouse clears his throat for emphasis."
+    Narrator "Il néttoie sa gorge et débute son discours."
 
     voice mm_radio_heylovely
-    Madhouse "{color=#3bec27}{bt=5}{color=#3bec27}Hey lovely!{/bt} Want to make thousands working with a flexible schedule from home? Of course, you do!"
+    Madhouse "{color=#3bec27}{bt=5}{color=#3bec27}Hey choupi!{/bt}Tu veux travailler proche de chez toi avec des horaires flexible? Evidement que oui mon chou!"
 
     voice mm_radio_girlboss
-    Madhouse "{color=#3bec27}Join our loyal family and become the independent girl boss of your dreams!"
+    Madhouse "{color=#3bec27}Rejoins notre loyale famille, et devient la girl boss de tes rèves!"
 
     voice mm_radio_joinusandflourish
-    Madhouse "{color=#3bec27}For a tiny fee of twelve hundred dollars you too can enroll in our courses and start {glitch=40}{color=#3bec27}feeding{/color}{/glitch} today! Join us and flourish, The Great Mother!"
+    Madhouse "{color=#3bec27}Pour un petit prix de vingt-mille dollars tu peux t'enroller dans nos courses et commencer à {glitch=40}{color=#3bec27}nourrir~{/color}{/glitch} notre entreprise aujourd'hui! Rejoins nous et fleuris la grande mère!"
 
     voice mm_radio_fleshyletter
-    Madhouse "{color=#3bec27}Wow. Thanks much for that threatening and oddly {bt=4}{color=#3bec27}fleshy{/bt} letter!... Seriously this thing is {sc=3}{color=#3bec27}MEATY—{/sc}"
+    Madhouse "{color=#3bec27}Wow. Merci beaucoup pour cette lettre d'une étrange menacante et {bt=4}{color=#3bec27}charnue{/bt} écriture! Serieusement ce truc est bien {sc=3}{color=#3bec27}CHAIR et en OS!—{/sc}"
 
     python:
         musicPlayer.playSong(fadeOut=2)
         pauseEnable = True
 
-    Narrator "You turn off the radio."
+    Narrator "Tu éteint la radio."
 
-    Robyn "Yuck."
+    Robyn "Dégeu."
 
     voice taro_meowf
-    Taro "Didn’t you mail in a fan letter?"
+    Taro "T'avais pas envoyé une lettre de fan?"
 
-    Robyn "I wouldn't call myself a 'fan',, heck, I've never even heard of the guy!" #I wouldn't call myself a "fan" Taro.
+    Robyn "Je m'appelerait pas un 'fan',, serieux, j'ai jamais entendu parler de ce type!" #I wouldn't call myself a "fan" Taro.
 
-    Narrator "You grimace, glancing out the window as the woods begin thinning out into a clearing."
+    Narrator "Tu grimace, regardant par la fenètre alors que les bois commencent a s'éclaircir dans un certain vide."
     voice taro_laughc
-    Taro "Hm, that seems a tad insincere, bothering a fellow you don't even know."
+    Taro "C'est pas très sympa d'embèter un type que tu connais même pas."
 
-    Narrator "The skeletal frame of the radio tower stretches up over the horizon, looming over your destination— Elkhorn Radio \nStation."
+    Narrator "Le squelette de la tour radio s'étend à l'horizon, souvrant sur ta destination... \nElkhorn Radio Station."
 
     jump atTheStation

@@ -64,13 +64,13 @@ label MM_fightAftermath:
         musicPlayer.playSong(3)
 
     voice dmm_realdeal
-    Madhouse "You’re the real deal huh? Heh. Guess that’s a wrap folks..."
+    Madhouse "Pff vous lâchez vraiment jamais, hein? Heh, c'est un match..."
 
     show demon_madhouse:
         matrixcolor BrightnessMatrix(0)
         ease 1.0 alpha 0 blur 30 matrixcolor BrightnessMatrix(1.0)
 
-    Narrator "The ghost’s form flickers, Madhouse crumbling to the floor in an ectoplasmic heap."
+    Narrator "La forme du spectre clignote, il se ramasse au sol et recrache de l'éctoplasme."
     $Jamie_State["armR"] = 2
     $Jamie_State["fire"] = 0
     $Jamie_State["r3fire"] = 0
@@ -80,7 +80,7 @@ label MM_fightAftermath:
     show jamie:
         ease 0.4 xcenter 0.65
 
-    Narrator "Jamie steps forward, a fire roaring in their eyes."
+    Narrator "Jamie fait un pas en avant, de la rage brûlant dans ses yeux."
 
     ##TODO voice PC_Frustrated
     show robyn:
@@ -90,7 +90,7 @@ label MM_fightAftermath:
     $Atlas_State["eyeFrame"] = 0
     $Atlas_State["eye"] = 7
     $MM_State["mouth"] = 9
-    Robyn "Nooo! I still have questions!"
+    Robyn "Nooon! J'ai toujours des questions!"
 
     show robyn:
         ease 0.5 xcenter 0.45
@@ -107,9 +107,9 @@ label MM_fightAftermath:
     $Robyn_State['eyes'] = 0
     $Robyn_State['mouth'] = 1
     $Robyn_State['brow'] = 4
-    Narrator "You take hold of Jamie’s arm, trying to hold them back."
+    Narrator "Tu t'aggripes au bras de Jamie, en éssayant de l'empècher d'agir."
 
-    Madhouse "Is that all really you care about?! You're all so clueless!"
+    Madhouse "C'est vraiment tout ce qui t'importe?! Vous êtes vraiment tous désespérés!"
 
     show jamie:
         matrixtransform RotateMatrix(0.0, 180.0, 0.0)
@@ -127,10 +127,10 @@ label MM_fightAftermath:
 
     $MM_State["eyes"] = 0
     $MM_State["mouth"] = 9
-    Narrator "Snapping up, Mike musters up the last bit of strength he has and latches onto you."
+    Narrator "Essouflé, Mike utilise le peu de force qu'il lui reste et se jette sur toi."
     $Jamie_State["steam"] = 1
 
-    Madhouse "You’re coming with me!"
+    Madhouse "Et toi tu vients avec moi!"
     $Robyn_State['eyes'] = 4
     $Robyn_State['mouth'] = 3
     $Robyn_State['brow'] = 1
@@ -149,28 +149,28 @@ label ghostzone_ch0:
     with Fade(2.0, 1.0, 1.0, color="#fff")
     camera:
         matrixcolor TintMatrix("#ffffff")
-    Narrator "Stirring awake, you blink spots from your vision, feeling oddly light. What is this place? You furrow your eyebrows and shield your face from the pale white light."
+    Narrator "Tu te débat pour réster éveillé, tu cligne tes yeux qui percoivent une douce lumière. C'est quoi cet endroit? Tu fronce les sourcils et te couvre le visage de la forte lumière."
 
-    Narrator "You glance down and see a harsh green outline below."
+    Narrator "Tu regarde en bas et voits une silhouette verte accrochée a toi."
 
     show CG Floating Away
     with Fade(0.5, 0.1, 0.5, color="#fff")
 
-    Narrator "It’s Madhouse with a stunned look on his face and a firm grip on your ankle, holding you in place."
+    Narrator "C'est Madhouse qui à l'air complètement paumé, il tient d'une manière ferme ta jambe et te garde en place."
 
-    Robyn "Let go of me!"
+    Robyn "Lâche moi!"
 
-    Madhouse "NO!"
+    Madhouse "NON!"
 
-    Madhouse "{b}You'll disappear!{/b}"
+    Madhouse "{b}Tu va disparaitre!{/b}"
 
-    Robyn "Isn't that the point?! You want me gone!"
+    Robyn "C'était pas le but? C'est ce que tu voulais non?!"
 
-    Narrator "You kick and squirm, trying to break out of the spector's grasp."
+    Narrator "Tu te débat les larmes presque aux yeux, tentant de faire lacher prise au fantôme."
 
-    Madhouse "Hold on! Wait, just chillax for a second!"
+    Madhouse "Attend! Chillax une seconde!"
 
-    Narrator "Reeling you in like a kite on a string, Madhouse finally lets you go and quickly looks away."
+    Narrator "Il te tire comme un balon, et le lâche la jambe puis regarde ailleurs l'air de rien."
 
     show CG Floating Away:
         alpha 1
@@ -204,12 +204,12 @@ label ghostzone_ch0:
     $MM_State["mouth"] = 1
     $MM_State["armL"] = 2
     $MM_State["armR"] = 2
-    Madhouse "L-look, it's no big deal! I just dragged your soul out of your body and set you adrift in the void!"
+    Madhouse "É-Écoute! C'est pas un important! Je t'ai rammené ton âme en dehors de ton corps et je t'ai mit dans le vide!"
     hide CG Floating Away
 
     $D_RobynFace = 1
     $MM_State["mouth"] = 3
-    Robyn "YOU MEAN I'M DEAD!?"
+    Robyn "TU VEUX DIRE QUE JE SUIS MORT!?"
 
 
 
@@ -218,41 +218,41 @@ label ghostzone_ch0:
     $MM_State["armL"] = 1
     $MM_State["armR"] = 1
     $D_RobynFace = 2
-    Madhouse "Yeesh,, it sounds a lot worse when you put it that way."
+    Madhouse "Yeesh,, ça a l'air encore pire quand tu le dit comme ça."
 
-    Robyn "Where are we?!"
+    Robyn "On est où?!"
     $MM_State["mouth"] = 2
     $D_RobynFace = 0
-    Madhouse "Drifting in a doorway between the spirit and material world."
+    Madhouse "Entre rien du tout, et le monde du vivant."
 
     $MM_State["mouth"] = 3
 
-    Madhouse "I usually wake up here if I pass out at my desk for too long."
+    Madhouse "Des fois je me réveille là si je m'endors sur le bureau trop longtemps."
 
 
     $MM_State["mouth"] = 11
     $MM_State["armL"] = 0
     $MM_State["armR"] = 0
     $MM_State["eyes"] = 0
-    Madhouse "Now give me your soul!"
+    Madhouse "Maintenant donne moi ton âme!"
 
     $D_RobynFace = 1
     $MM_State["mouth"] = 10
-    Robyn "No,, you give me YOUR SOUL!"
+    Robyn "Nan,, TU me donne TON ÂME!"
 
     $MM_State["mouth"] = 4
     Madhouse "Nah."
 
     $D_RobynFace = 2
 
-    Robyn "Why'd you drag me in here? What do you want from me?!"
+    Robyn "Pourquoi tu m'a ammené içi? Qu'est-ce que tu veux?!"
 
     $MM_State["eyes"] = 3
     $MM_State["mouth"] = 0
     $MM_State["armL"] = 1
     $MM_State["armR"] = 1
 
-    Madhouse "I need you as a vessel to escape! Don’t you feel bad for me? C’moooon you’ve seen movies, you know how this ends!"
+    Madhouse "J'ai besoin d'un réceptacle pour me casser, un corps! Tu te sent pas mal pour moi? Alllezzz, t'a vu des films, tu sait comment ça fini!"
 
     Robyn "..."
 
@@ -262,20 +262,20 @@ label ghostzone_ch0:
     $MM_State["armL"] = 0
     $MM_State["armR"] = 0
 
-    Madhouse "I can tell ya whatever you want! What's this about a pesky curse?"
+    Madhouse "Je peux te dire ce que tu veux! Et cette malédiction stupide?"
 
     $hatKnock = False
     $displaymenu = True
     menu:
         extend ""
-        "Punch 'em":
+        "Frappe moi ct'enculé.":
             pass
-        "Punch off his hat":
+        "Explose moi son chapeau.":
             $hatKnock = True
-        "End his afterlife with your fist":
+        "Met fin a son après-vie avec ton poing.":
             pass
     $displaymenu = False
-    Narrator "You ball up your fists and awkwardly shift your weight as you glide through the air."
+    Narrator "Tu ferme tes mains en boule et lance une 'grosse patate' dans son visage."
     $D_RobynFace = 1
     show dead_robyn:
         ease 0.2 xcenter 0.4 matrixtransform RotateMatrix(0.0, 180.0, -15.0)
@@ -304,11 +304,11 @@ label ghostzone_ch0:
     $musicPlayer.playSong(song = "ghost_space")
 
     if hatKnock:
-        Narrator "Squeezing your eyes shut, you throw your fist forward and it connects, knocking Mike’s hat off his head."
+        Narrator "Tu ferme les yeux, et ton bras connecte avec son visage, et expulse son chapeau de son crâne."
 
-        Narrator "Mike grasps for his baseball cap and keeps it firmly planted onto his head."
+        Narrator "Mike panique un instant et reprend sa casquette avant de l'enfoncer fermement sur son lôbe frontal."
     else:
-        Narrator "Squeezing your eyes shut, you throw your fist forward and it connects."
+        Narrator "Tu ferme les yeux, et ton bras connecte majéstueusement avec son visage."
 
     show madhouse:
         ease 0.5 matrixtransform RotateMatrix(0.0, 180.0, 0.0)  xcenter 0.3 yoffset 0 blur 0
@@ -330,22 +330,22 @@ label ghostzone_ch0:
     Madhouse "Gyaaughck!"
 
     voice RobynSays("Chapter 0","YoureAnAsshole")
-    Robyn "You’re an asshole!"
+    Robyn "Trou du cul!"
 
     $MM_State["eyes"] = 7
     $MM_State["mouth"] = 1
     $MM_State["armR"] = 3
     $MM_State["armL"] = 2
     $D_RobynFace = 2
-    Madhouse "Owww my nose!! How’d you even touch me?!"
+    Madhouse "Eh mon nez!! Comment est-ce que tu m'a touché?!"
 
-    Narrator "Mike brings a hand to his face, feeling the empty space where a nose would be."
+    Narrator "Il se touche le visage, sentant l'éspace vide où sont nez serait habituellement."
 
     $D_RobynFace = 1
     voice RobynSays("Chapter 0","YouDraggedMeIntoThisHellDimension")
-    Robyn "You dragged me into this hell dimension, and newsflash,, we’re both ghosts!"
+    Robyn "Tu m'a ammené dans cet endroit,,FLASH INFO! On est tout les deux des fantômes!"
 
-    Narrator "You throw your arms over your head, gesturing around the empty vacuum of space."
+    Narrator "Tu jettes tes bras sur les cotés, montrant l'éspace vide dans lequel vous êtes tout deux situés."
     $Robyn_State['eyes'] = 2
     $Robyn_State['mouth'] = 4
     $Robyn_State['brow'] = 2
@@ -353,14 +353,14 @@ label ghostzone_ch0:
     $D_RobynFace = 2
 
     voice RobynSays("Chapter 0","OfCourseIFeelBadForYouMike")
-    Robyn "Of course I feel bad for you Mike. You didn’t deserve to die,, let alone become a monster, but now you’re totally acting like one!"
+    Robyn "Evidement que je me sens mal pour toi, Mike. Tu ne méritait pas de mourir,, où même de devenir un monstre, mais là toute suite tu agis exactement comme l'un deux!"
 
     $MM_State["eyes"] = 5
     $MM_State["mouth"] = 3
-    Narrator "Mike is stunned, unsure of what to say."
+    Narrator "Mike est figé, sans vraiment savoir quoi dire."
 
     voice RobynSays("Chapter 0","SoIfYoureGonnaEatMySoul")
-    Robyn "So if you’re going to steal my soul, you might as well do it already!"
+    Robyn "Donc si tu vas voler mon âme, tu ferais mieux de le faire maintenant!"
 
     $MM_State["eyes"] = 0
     $MM_State["mouth"] = 9
@@ -368,7 +368,7 @@ label ghostzone_ch0:
     $MM_State["armL"] = 0
 
     voice mm_gladly
-    Madhouse "Gladly!"
+    Madhouse "Très bien!"
 
     show madhouse:
         ease 0.3 xcenter 0.35
@@ -383,7 +383,7 @@ label ghostzone_ch0:
 
     $D_RobynFace = 3
 
-    Robyn "But I don't think you will."
+    Robyn "Mais tu le feras pas."
     pause 5.0
 
     show madhouse:
@@ -398,14 +398,14 @@ label ghostzone_ch0:
     $MM_State["armL"] = 2
     $MM_State["armR"] = 2
 
-    Narrator "The phantom backs off."
+    Narrator "Le spectre recule."
 
     ##TODO voice MM_Quit1
     $MM_State["eyes"] = 5
     $MM_State["mouth"] = 3
-    Madhouse "You're right;., I can’t do this."
+    Madhouse "Ouais;., Je peux pas faire ça."
     $D_RobynFace = 2
-    Robyn "Why not?"
+    Robyn "Pourquoi pas?"
 
     show madhouse:
         ease 0.3 xcenter 0.3 matrixtransform RotateMatrix(0.0, 0.0, 0.0)
@@ -415,58 +415,58 @@ label ghostzone_ch0:
             repeat
 
     $MM_State["mouth"] = 1
-    Madhouse "I don’t want to hurt you."
+    Madhouse "J'ai pas envie de te blésser."
 
     $MM_State["mouth"] = 2
-    Madhouse "I shouldn’t have put any of you through this. I just... don’t know what else to do."
+    Madhouse "J'aurais jamais du tous vous mettre là dedans. Je... Je sais pas quoi faire."
 
-    Madhouse "I want to escape, but what if I up and disappear? All I have is this job. I can't remember my old life."
+    Madhouse "J'ai envie de me barrer, mais est-si je disparais? Tout ce que j'ai c'est ce boulot. Je me souviens même pas de mon ancienne vie."
 
     $MM_State["mouth"] = 9
 
-    Madhouse "Tch, I can't even remember my old face."
+    Madhouse "Putain, je me souviens même plus de mon visage."
 
     $MM_State["armR"] = 2
     $MM_State["armL"] = 3
     $MM_State["eyes"] = 0
     $MM_State["mouth"] = 2
 
-    Narrator "Mike tips his hat down, covering his eyes."
+    Narrator "Mike baisse son chapeau sur son visage pour couvrir ses yeux."
 
     Madhouse "Dammit."
 
-    Robyn "You’re not going to disappear."
+    Robyn "Tu vas pas disparaitre."
 
     $MM_State["mouth"] = 1
 
-    Madhouse "Tell that to the other defunct nobodies out there."
+    Madhouse "Vas dire ça aux autre demeurés en bas."
 
     $D_RobynFace = 3
 
-    Robyn "If you really want a fresh start, you could start a podcast! It’s like a radio show you carry in your pocket."
+    Robyn "Si tu veux faire un nouveau départ, tu pourrais faire un podcast! C'est un peu comme une radio mais partout avec toi."
 
     $MM_State["eyes"] = 4
     $MM_State["mouth"] = 2
     $MM_State["armL"] = 0
     $MM_State["armR"] = 0
-    Madhouse "On your cell phone?"
+    Madhouse "Sur ton tél?"
 
     $MM_State["eyes"] = 0
     $MM_State["mouth"] = 0
-    Narrator "Mike perks up, a slight twinkle in his dead eyes."
+    Narrator "Mike réagis, une petite lueur dans ses yeux."
 
-    Narrator "You go to take out your phone, only to realize it’s back in the material world."
+    Narrator "Tu éssaie de sortir ton portable, seulement pour réaliser qu'il n'est que dans le monde matériel."
 
-    Robyn "Erm, I’ll show you later."
+    Robyn "Erm, je te montrerais plus tard."
 
     $MM_State["eyes"] = 5
     $MM_State["mouth"] = 3
 
-    Robyn "Even if you’re a jerk."
+    Robyn "Même si t'es un connard."
 
     $D_RobynFace = 2
 
-    Robyn "If it means anything, I think you’re worth more than this crusty old station."
+    Robyn "Et puis, Je crois que tu vaux bien plus que cette vielle station radio."
 
     $MM_State["armR"] = 2
     $MM_State["armL"] = 3
@@ -477,23 +477,23 @@ label ghostzone_ch0:
     hide madhouse
     hide dead_robyn
     with Dissolve(0.3)
-    Narrator "Mike hesitates a moment before throwing his arms around you, giving you a big hug."
+    Narrator "Mike hésite un instant avant d'envelopper ses bras autours de toi, t'offrant un gros câlin."
 
     voice mm_thanksfornotgivingup
-    Madhouse "Thanks,, for not giving up on me."
+    Madhouse "Merci,, de pas m'avoir abandonné."
 
     $Robyn_State['eyes'] = 0
     $Robyn_State['mouth'] = 6
     $Robyn_State['brow'] = 2
-    Robyn "You don't have to be the Elkhorn Station Poltergeist. \n\n Not anymore."
+    Robyn "T'a pas besoin d'être le fantôme de la station d'Elkhorn. \n\n Plus maintenant."
 
-    Robyn "Not if it makes you., miserable."
+    Robyn "Pas si ça te fait sentir misérable."
 
     show CG Lifeline2
 
     Madhouse "{sc=5}...{/sc}"
 
-    Madhouse "{sc=2}Get outta here.{/sc}"
+    Madhouse "{sc=2}Dégage de là.{/sc}"
 
     jump leavingElkhornRadio_ch0
 
@@ -507,43 +507,43 @@ label leavingElkhornRadio_ch0:
     Narrator "..."
 
     voice taro_thisisallyourfault
-    Taro "This is all your fault!"
+    Taro "C'est de ta faute!"
 
     voice atlas_howsitmyfault
-    Atlas "How’s it my fault?"
+    Atlas "Eh pourquoi ça le serait?"
 
     voice jamie_youknewbringingahumanhere
-    Jamie "You knew bringing a human here was dangerous."
+    Jamie "Tu savais qu'ammener un humain serait dangereux!"
 
     voice taro_ghostgobblingdemon
-    Taro "Says the ghost gobbling demon."
+    Taro "Dit le putain de démon."
 
     voice jamie_tarowherewereyou
-    Jamie "Ah right. Taro, where the hell were you?"
+    Jamie "Ah ouais. Taro, t'étais où, putain??"
 
     voice taro_iwastheretoprotectmyhuman
-    Taro "Tch, who cares? I was there to protect [PCname] and that’s what matters!"
+    Taro "Pff, on s'en fout! J'étais là pour protéger [PCname] et c'est ce qui compte!"
 
     voice jamie_bareminimum
-    Jamie "You did the bare minimum."
+    Jamie "T'a fait le minimum syndical."
 
     voice taro_biteyourtongue
-    Taro "Hiss! Bite your tongue."
+    Taro "Pff-."
 
     voice atlas_knewwouldworkout
-    Atlas "I knew everything would work out."
+    Atlas "Je savais ce qui allait se passer."
 
     voice jamie_stoplyingatlas
-    Jamie "Stop lying to yourself, Atlas."
+    Jamie "Arrète de te mentir, Atlas."
 
     voice atlas_canseethefuture
-    Atlas "B-but, I really can see the future!"
+    Atlas "M-mais, je peux vraiment voir le futur!"
 
     voice taro_proveitmothball
-    Taro "Then prove it mothball."
+    Taro "Alors prouve le, mothball."
 
     voice RobynSays("Chapter 0","Urgh")
-    Robyn "Urgh..."
+    Robyn "Oof..."
 
     #" "
     show BG Studio Room Aftermath
@@ -576,10 +576,10 @@ label leavingElkhornRadio_ch0:
     $Taro_State["eye"] = 3
     $Taro_State["mouth"] = 1
 
-    Taro "Shush! Look, [PCname] is waking up!"
+    Taro "Ferme là! Regarde, [PCname] se réveille!"
     python:
         musicPlayer.playSong(song="dirt_nap_dreams")
-        timeText = "TIRED"
+        timeText = "Fatigué."
 
         Atlas_State["eyeFrame"] = 0
         Atlas_State["eye"] = 7
@@ -595,11 +595,11 @@ label leavingElkhornRadio_ch0:
         ease 1.2 yoffset 0 matrixtransform RotateMatrix(0.0, 0.0, 0.0)
 
 
-    Robyn "Ugh. I feel terrible."
+    Robyn "Ugh. Je me sens horrible."
 
     $Atlas_State["armL"] = 0
     $Atlas_State["eye"] = 16
-    Atlas "Thank goodness you're okay!"
+    Atlas "Dieu merci tu vas bien!...\nEt j'avais raison."
 
     hide taro
     show robyn:
@@ -615,18 +615,18 @@ label leavingElkhornRadio_ch0:
     $Robyn_State['eyes'] = 0
     $Robyn_State['mouth'] = 4
     $Robyn_State['brow'] = 1
-    Narrator "Taro leaps into your arms, nuzzling against your neck and purrs."
+    Narrator "Taro se jette dans tes bras, elle se frotte contre ton cou et ronronne."
 
     ##TODO voice Taro_Cute
-    Taro "That’s my human!"
+    Taro "C'est mon humain!"
     $Jamie_State["eye"] = 2
     $Jamie_State["armR"] = 1
     $Jamie_State["steam"] = 1
     $Atlas_State["eyeFrame"] = 0
     $Atlas_State["tears"] = 0
-    Jamie "More importantly, that loathsome ghost is gone."
+    Jamie "Plus important, ce foutu fantôme est parti."
 
-    Narrator "Jamie lets out a sigh of relief."
+    Narrator "Jamie soupire, soulagé."
     $Jamie_State["armR"] = 0
     $Jamie_State["steam"] = 0
 
@@ -634,19 +634,19 @@ label leavingElkhornRadio_ch0:
     $Atlas_State["eyeFrame"] = 3
     $Atlas_State["eye"] = 2
     $Atlas_State["armL"] = 0
-    Atlas "Yeah, let's get the heck outta here."
+    Atlas "Ouais bon, on se tire d'içi."
 
     $Robyn_State['eyes'] = 0
     $Robyn_State['mouth'] = 3
     $Robyn_State['brow'] = 1
-    Narrator "You don’t respond, a lump forming in the back of your throat."
+    Narrator "Tu ne répond pas, une douleur se forme dans le bas de ton éstomac."
 
     scene BG Black with Dissolve(0.5)
     $musicPlayer.playSong(song = "missing_you_song")
     play ambiance forest_ambianceb fadein 5.0
-    Narrator "Trailing behind the group, you stare down at the ground, listening to the cold gravel crunching underneath your shoes. Slowing to a stop, the group reaches the car, watching as you dig around in your pocket and pull out a set of car keys."
+    Narrator "Tu traîne derrière le groupe, et regarde le sol, écoutant le bruit du gravier sous tes pieds. Le groupe arrive à la voiture, et te regarde alors que tu sort tes clés."
 
-    Narrator "The crew takes one last look back at the abandoned station. You watch as cracks and vines climb up its walls, the radio tower starting to rust over as the gleaming red beacon at the top flickers, then blinks out. "
+    Narrator "Vous regardez tous en direction de ce qui était la station abandonnée. Tu regarde les fissures dans les murs, la tour radio clignote en rouge avant de s'arrèter une dernière fois. "
 
     show BG Outside Radio Station Spooky3
 
@@ -683,16 +683,16 @@ label leavingElkhornRadio_ch0:
     $Jamie_State["mouth"] = 4
     $Jamie_State["brow"] = 3
 
-    Jamie "Is something wrong? You look distressed."
+    Jamie "Ca vas pas? Tu à l'air stréssé."
 
-    Narrator "Jamie places a clawed hand on your shoulder."
+    Narrator "Jamie place une main sur ton épaule."
 
     pause 1.0
     $Robyn_State['eyes'] = 0
     $Robyn_State['mouth'] = 4
     $Robyn_State['brow'] = 1
 
-    Robyn "Oh yeah, it’s cool! Haha, don’t worry about me."
+    Robyn "Oh ouais, t'inquète! Haha."
     $Robyn_State['eyes'] = 2
 
     $Jamie_State["armR"] = 1
@@ -701,7 +701,7 @@ label leavingElkhornRadio_ch0:
     $Jamie_State["sweat"] = 1
     $Robyn_State['mouth'] = 1
 
-    Jamie "Do you mind if we catch a ride with you? My hooves are killing me."
+    Jamie "Se te dérange si on te suit? Mes jambes me font horriblement mal."
 
     $Jamie_State["armR"] = 0
     $Jamie_State["eye"] = 1
@@ -714,12 +714,12 @@ label leavingElkhornRadio_ch0:
     $Atlas_State["armR"] = 1
     $Jamie_State["eye"] = 2
 
-    Atlas "Aaaaand can we crash at your place? I’d rather not risk waking my housemate Gus at this hour."
+    Atlas "Eeeeeet on peut dormir chez toi? Je préfère pas réveiller mon coloc August à cet heure là."
 
     $Taro_State["eye"] = 3
     $Taro_State["mouth"] = 2
 
-    Taro "We don’t mind! The more the meowier~!"
+    Taro "On s'en fout! Plus ont est plus on ris~!"
 
     $Robyn_State['eyes'] = 1
     $Robyn_State['mouth'] = 5
@@ -727,18 +727,18 @@ label leavingElkhornRadio_ch0:
     $Jamie_State["eye"] = 3
     $Jamie_State["brow"] = 0
     $Jamie_State["sweat"] = 0
-    Robyn "Don’t just answer for me—!"
+    Robyn "Eh mais répond pas à ma place—!"
 
     $Taro_State["eye"] = 0
     $Taro_State["mouth"] = 3
     $Atlas_State["eye"] = 1
-    Taro "M'well, I figured you could use the company."
+    Taro "Dans tout les cas t'aurais dit oui."
 
     $Jamie_State["eye"] = 2
     $Jamie_State["mouth"] = 0
     $Jamie_State["armR"] = 3
 
-    Jamie "I do love sleepovers."
+    Jamie "J'aime bien les soirées pyjama."
 
     $Jamie_State["eye"] =3
     $Jamie_State["armR"] = 2
@@ -750,7 +750,7 @@ label leavingElkhornRadio_ch0:
     $Taro_State["eye"] = 1
     $Taro_State["pawR"] = 2
 
-    Robyn "Fine, not like I have a choice here."
+    Robyn "Pff, oké. C'est pas vraiment comme si j'avais le choix."
 
     $Atlas_State["eyeFrame"] = 3
     $Atlas_State["eye"] = 2
@@ -759,12 +759,12 @@ label leavingElkhornRadio_ch0:
     $Jamie_State["eye"] = 3
     $Robyn_State['mouth'] = 5
     $Robyn_State['brow'] = 2
-    Atlas "What’s wrong? Is it the Gus thing? He’s a sweet guy, once you get past the shedding."
+    Atlas "Qu'est-ce qui va pas? C'est à cause de Gus? Il est sympa, si ont écarte..."
 
     $Robyn_State['mouth'] = 4
     $Robyn_State['eyes'] = 4
 
-    Robyn "No, I just—., I don’t know how to feel. I didn’t get any answers about this stupid curse, I nearly DIED, and now my one source of information is gone!"
+    Robyn "Non, C'est juste—., Je sais pas comment je me sens. J'ai eu zéro réponse sur cette foutue malédiction, Je suis presque mort, et ma seule source d'information s'est vaporisée!"
 
     $Jamie_State["armR"] = 0
     $Jamie_State["eye"] = 1
@@ -772,7 +772,7 @@ label leavingElkhornRadio_ch0:
     $Robyn_State['mouth'] = 1
     $Robyn_State['eyes'] = 1
 
-    Jamie "Good information anyway."
+    Jamie "Tant mieux pour ce cas là."
 
     $Atlas_State["eyeFrame"] = 0
     $Atlas_State["eye"] = 16
@@ -785,12 +785,12 @@ label leavingElkhornRadio_ch0:
         zoom 1
         alpha 1
 
-    Atlas "I’m a great source of information!"
+    Atlas "J'suis une super source d'infos!"
 
     $Atlas_State["eye"] = 1
     $Robyn_State['eyes'] = 0
 
-    Atlas "Every rumor holds a speck of truth."
+    Atlas "Toute les rumeurs cachent une vérité."
 
     $Jamie_State["eye"] = 0
     $Jamie_State["mouth"] = 0
@@ -802,13 +802,13 @@ label leavingElkhornRadio_ch0:
     $Atlas_State["armR"] = 1
     $Taro_State["eye"] = 4
 
-    Atlas "Like eating spiders in your sleep!"
+    Atlas "Comme avaler des araignées pendant ton someil!"
     $Jamie_State["eye"] = 4
     $Jamie_State["mouth"] = 2
     $Taro_State["eye"] = 0
 
     ##TODO voice Jamie_joking
-    Jamie "Atlas, that rumor was debunked. I need you to know this."
+    Jamie "Atlas, elle a été debunk. C'est pas vrai."
 
     $Atlas_State["eyeFrame"] = 0
     $Atlas_State["eye"] = 7
@@ -817,13 +817,13 @@ label leavingElkhornRadio_ch0:
     $Jamie_State["eye"] = 3
     $Jamie_State["mouth"] = 0
     $Jamie_State["sweat"] = 0
-    Atlas "Oh thank god."
+    Atlas "Oh dieu merci."
 
     $Robyn_State['mouth'] = 5
     $Robyn_State['eyes'] = 5
     $Robyn_State['brow'] = 1
 
-    Robyn "For real though,, are you guys okay?"
+    Robyn "Pour de vrai,, vous allez bien vous au moins?"
 
     $Jamie_State["mouth"] = 0
     $Taro_State["eye"] = 5
@@ -831,15 +831,15 @@ label leavingElkhornRadio_ch0:
     $Taro_State["pawL"] = 1
     $Taro_State["pawR"] = 2
 
-    Taro "I'm great!"
+    Taro "Je vais super!"
 
     $Jamie_State["eye"] = 1
 
-    Jamie "Tired."
+    Jamie "Enfin fatigué."
     $Atlas_State["eye"] = 5
     $Atlas_State["feelers"] = 1
 
-    Atlas "I'll be okay,, just,, really sick of the color green."
+    Atlas "Mais tout vas bien,, je suis juste,, un peu dégouté de la couleur vert."
 
     $Robyn_State['mouth'] = 6
     $Robyn_State['eyes'] = 0
@@ -850,7 +850,7 @@ label leavingElkhornRadio_ch0:
     $Taro_State["pawR"] = 0
 
 
-    Robyn "Boy I hear ya."
+    Robyn "Ouais je vois pourquoi."
 
     $Atlas_State["eye"] = 8
     $Atlas_State["feelers"] = 0
@@ -870,18 +870,18 @@ label leavingElkhornRadio_ch0:
         linear 0.05 xcenter 0.7
 
 
-    Atlas "But it was kinda cool being the tall one for a second there."
+    Atlas "Mais c'était quand même sympa d'être le plus grand un moment!"
 
     $Jamie_State["eye"] = 4
     $Robyn_State['eyes'] = 0
 
-    Narrator "You and Jamie exchange worried glances."
+    Narrator "Tu échange des regards avec Jamie."
     $Jamie_State["eye"] = 2
     $Jamie_State["brow"] = 1
     $Jamie_State["mouth"] = 2
 
 
-    Jamie "Nah,, I still prefer you pint-sized."
+    Jamie "Nan, je te préfère taille pikmin."
 
     $musicPlayer.playSong(song="dirt_nap_dreams",fadeIn=1)
 
@@ -893,7 +893,7 @@ label leavingElkhornRadio_ch0:
     $Robyn_State['mouth'] = 0
 
 
-    Robyn "Yeaaah,, let's never do that again."
+    Robyn "Ouaaaais-, plus jamais."
     $Atlas_State["eye"] = 19
     $Taro_State["mouth"] = 2
     $Taro_State["pawL"] = 1
@@ -901,7 +901,7 @@ label leavingElkhornRadio_ch0:
     $Taro_State["eye"] = 5
 
 
-    Taro "Don't worry lil guy,, I'm sure you looked cool!"
+    Taro "Et t'inquète pas Atlas,, Je suis sur t'avais l'air cool!"
 
     $Atlas_State["eye"] = 5
 
@@ -919,7 +919,7 @@ label leavingElkhornRadio_ch0:
         musicNote = 3
         musicPlayer.playSong(fadeOut=8)
 
-    Narrator "Piling into the car, you flick on the headlights and turn the key, pulling out of the parking lot away from the abandoned radio station."
+    Narrator "Tu sort du parking, et démarre pour te tailler de cet horrible endroit.\n\nTa tête est toujours pleine de pensés un chouilla atroces."
     jump drivingHome_ch0
 
 label drivingHome_ch0:
@@ -928,11 +928,11 @@ label drivingHome_ch0:
     play ambiance car_ambiance fadein 8.0
     with Dissolve (1.0)
 
-    Narrator "Trailing through the woods, you click on the radio, back to channel 103.1. Your heart sinks as all you hear is static drowning out the hum of the car’s engine. The show’s really over, 103.1 is nothing but dead air on the radio waves."
+    Narrator "Une fois dans les bois tu allume la radio. Ton coeur fait mal alors que tout ce que tu entend c'est le bruit de ton moteur. Le show est vraiment fini, 103.1 c'est juste de l'air sur la radio."
 
-    Narrator "Taking a deep breath, you finally muster up the courage to change the channel, flipping back to a generic oldies station."
+    Narrator "Tu prend une grande réspiration, et trouve le courage de changer de musique, ton téléphone se connecte et affiche les anciennes radios."
 
-    Narrator "Looking over your shoulder, you see Jamie resting their head against the car window, already dozing off... Though, one sharp turn would send their horns through the glass. At least Taro looks adorable all curled up in Jamie’s arms."
+    Narrator "Tu jette un oeuil au rétroviseur, tu vois Jamie avec sa tête contre la vitre, déja presque endormis... Par contre, un seul coup de tête un peu trop rapide et ses cornes finissent dans la vitre. Au moins Taro a l'air adorable dans les bras de Jamie."
     python:
         displaymenu = True
         musicNote = 9
@@ -944,12 +944,12 @@ label drivingHome_ch0:
 
     #play sfx phone_notif
     $musicPlayer.playSong(song = "digihouse_mike_song")
-    Narrator "Your cellphone chimes in the cupholder of the car and much to your dismay, it’s a phone call. The number is a garbled mess of words and numbers, even the screen is glitching out.{nw}"
+    Narrator "Ton téléphone sonne, c'est un appel. Le numéro est un charabia plein de chiffre et de lettres, même l'écran glitch.{nw}"
 
     menu:
         extend ""
 
-        "Ew phone calls, no.":
+        "Eww des appels, non.":
             pass
         "Yes.":
             jump drivingHomep2_ch0
@@ -958,30 +958,30 @@ label drivingHome_ch0:
 
     #play sfx phone_notif
 
-    Narrator "Stubbornly, you ignore the call but the phone doesn’t stop chiming. It doesn’t even cut to voicemail. The ringing continues, the phone is shuddering now. Please pick up the phone.{nw}"
+    Narrator "Stupidement, Tu ignore l'appel. Ca coupe même pas à la méssagerie. Sa continue de sonner, le téléphone se secoue dans tout les sens. S'il te plaît décroche.{nw}"
 
     menu:
         extend ""
 
         "NOPE.":
             pass
-        "Fine.":
+        "Bon ok.":
             jump drivingHomep2_ch0
 
-    Narrator "The phone quakes, screaming it’s chime now.{nw}"
+    Narrator "Le téléphone vibre tellement que on dirait qu'Android souffre.{nw}"
 
     menu:
         extend ""
 
-        "UGH, fine!":
+        "UGH, bon ok!":
             jump drivingHomep2_ch0
-        "Accidentally misclick and accept the call.":
+        "*Missclick accidentellement et décroche*":
             jump drivingHomep2_ch0
 
 label drivingHomep2_ch0:
     $displaymenu = False
     show MM_Phone 3 CG
-    Narrator "The phone in your grasp shudders, the screen glitching out as a mass of green ooze squeezes itself through the dock connector. With a wet splat, the slimeball picks itself up and forms a small glowing orb."
+    Narrator "Le portable s'éjecte sur le siège, l'écran se fige alors qu'une masse verte sort de la vitre. Avec un bruit un peu dégeu, la boule s'éjecte et forme une petite masse verte volante."
     $BM_State["face"] = 0
     $BM_State["arms"] = 0
     $musicPlayer.playSong(song="not_so_spooky_song")
@@ -1006,44 +1006,44 @@ label drivingHomep2_ch0:
 
     Madhouse "{bt=4}Hey hey heeeey~!{/bt}"
 
-    Atlas "HANG UP!"
+    Atlas "RACCROCHE!"
 
     $BM_State["face"] = 1
     $BM_State["arms"] = 1
-    Madhouse "I’m finally free! Sure, I lost a few limbs but... I’m free!"
+    Madhouse "J'suis enfin libre! Enfin j'ai perdu quelques membres, mais je suis libre!"
 
-    Robyn "You were seriously camping out in my phone!? \n\nI-I thought you {i}died!{/i}"
+    Robyn "Tu tu fesais du camping dans mon portable!? \n\nJ-je pensais que tu était {i}mort!{/i}"
 
-    Madhouse "Bingo! No way am I beefing it yet! I’ve got a ton of life left in me!"
+    Madhouse "Bingo! Y'a pas moyen que je clamse maintenant! J'ai encore une tonne de vie en moi!"
 
-    Atlas "How?!"
+    Atlas "Comment?!"
 
     $BM_State["face"] = 3
     $BM_State["arms"] = 0
 
-    Madhouse "Tying yourself to a person takes a lot of negative energy so I figured, why not try a smartphone instead? This thing’s jam-packed with bad vibes."
+    Madhouse "T'attacher à une personne ça prend beaucoup d'énergie, alors pourquoi pas éssayer un portable? Ce truc est bourré de mauvaises intentions."
 
-    Atlas "But— you can't just leave! You're the Elkhorn Radio Ghost!"
+    Atlas "M-mais tu peux pas partir! T'es le fantôme de la station d'Elkhorn!"
 
     $BM_State["face"] = 1
-    Madhouse "{bt=4}Not anymore!{/bt}"
+    Madhouse "{bt=4}Plus maintenant{/bt}"
     $BM_State["face"] = 5
     $BM_State["arms"] = 1
-    Jamie "{sc=5}YOU{/sc}!"
+    Jamie "{sc=5}TOI{/sc}!"
 
-    Narrator "A gout of steam curls from Jamie’s jaws, heat rising off the awakened demon. Their wild eyes lock onto the glowing green orb, who squeaks out in fear."
+    Narrator "De la fumée blanche sort de la bouche de Jamie, de la colère émanne du démon maintenant réveillé. Ses yeux enragés se fixent sur le blob, qui laisse un léger cris de terreur."
 
     ##TODO voice Jamie_CCD
-    Jamie "Wretched specter, you dare to show your face after what you’ve done?"
+    Jamie "SPECTRE MAUDIT, TU OSE TE MONTRER APRÈS CE QUE TU À FAIT?"
 
     Robyn "Jamie?"
 
-    Atlas "Uh,, Jamie, be cool. Remember what we practiced? BE COOL!"
+    Atlas "Jamie! Calme-toi! Tu te souvient à quoi on s'est entrainé? RESTE COOL!"
 
     $BM_State["face"] = 2
     $BM_State["arms"] = 0
 
-    Madhouse "Hiya, bonehead!"
+    Madhouse "Hiya, tête d'os!"
 
     voice jamie_yella
     Jamie "{sc=3}GRAWWWRGH{/sc}!"
@@ -1070,12 +1070,12 @@ label drivingHomep2_ch0:
                 linear 0.25 yoffset 50
             repeat
 
-    Narrator "Jamie throws their clawed hand forward, slashing at Mike who bounces around the passenger seat."
+    Narrator "Jamie lance un coup de griffe en avant, touchant Mike qui rebondis sur le siège passagé."
 
     $BM_State["face"] = 2
     $BM_State["arms"] = 0
 
-    Madhouse "Punching a ghost while he's down, huh? Typical demon."
+    Madhouse "Frapper un fantôme dans la merde, hein? Typique de démon."
 
     $BM_State["face"] = 0
     $BM_State["arms"] = 2
@@ -1085,16 +1085,16 @@ label drivingHomep2_ch0:
         ease 0.05 xcenter 0.495
         ease 0.05 xcenter 0.505
         repeat
-    Narrator "The ghost darts around the car, taunting the demon while frantically dodging Jamie’s claw swipes."
+    Narrator "Il bouge dans la voiture, provoquant Jamie d'un air narquois."
 
-    Atlas "[PCname], eyes on the road!"
+    Atlas "[PCname], regarde la route!"
 
-    Robyn "I’m trying!"
+    Robyn "J'éssaie!!"
 
     ##TODO voice Jamie_ConsumeSoul
-    Jamie "I’m going to devour your soul!"
+    Jamie "Je vais dévorer ton âme!!"
     $BM_State["arms"] = 0
-    Taro "Watch meowwwwwout!"
+    Taro "ATTENMEEOOOWW-!"
     $WolfAugust_State["head"] = 1
     $WolfAugust_State["eyes"] = 0
     $WolfAugust_State["hurt"] = 0
@@ -1124,10 +1124,10 @@ label drivingHomep2_ch0:
         xcenter 0.5
         yoffset 700
         ease_bounce 0.3 yoffset 0
-    Narrator "Coming up fast, a hulking figure stands wide eyed on the road, staring blankly at the car racing towards them. Atlas frantically grabs at the wheel."
+    Narrator "Une figure gigantesque se tient devant la route, observant le regard vide la voiture qui l'approche. Atlas attrape le volant et le tourne violament."
 
     Everyone "A.,a.,a.,h.,h.,h.,!"
 
-    Narrator "The car skids forward, squealing as you slam on the brakes."
+    Narrator "La voiture s'arrète en avant alors que tu appuis sur le frein."
 
     jump Ch1_Start

@@ -16,14 +16,14 @@ label fightbuildup:
         enemyUnits = []
         enemyUnits.append(MM_Stats)
 
-        attackDescA = "You expect me to punch this guy?!"
-        attackDescB = "Yeeeah, I could use some emotional support."
-        attackDescC = "I feel like you're trying to tell me something..."
-        attackDescD = "Huh, this name's certainly a choice."
+        attackDescA = "Tu veux vraiment que je frappe ce type?!"
+        attackDescB = "Ouaaais, je dit pas non à un peu de support émotionel."
+        attackDescC = "J'ai l'impression que tu éssaie de me dire un truc..."
+        attackDescD = "Hum. Ce nom est un choix original."
 
         playerUnits[0].attacks = [
-                    AttackMove("Bash",attackDescA, 0, "madlas_tutorial2", "brawn", "hustle", 0, False, [],0),
-                    AttackMove("Cheer",attackDescB, 0, "madlas_tutorial2", "charm", "fixed", 1, True, [],7),
+                    AttackMove("Frapper",attackDescA, 0, "madlas_tutorial2", "brawn", "hustle", 0, False, [],0),
+                    AttackMove("Encourager",attackDescB, 0, "madlas_tutorial2", "charm", "fixed", 1, True, [],7),
                     AttackMove("Focus",attackDescC, 0, "madlas_tutorial2", "brains", "fixed", 2, True, [],8)
                     ]
 
@@ -60,7 +60,7 @@ label fightbuildup:
     with Fade(0.1, 0.2, 2.0, color="#3bec27")
 
     play voice2 dmm_angryb
-    Madlas "Don’t you know who I am?!"
+    Madlas "Tu ne sais pas qui je suis?!"
     camera:
         zoom 1.0 xcenter 0.5 ycenter 0.5
         matrixtransform RotateMatrix(0.0,180.0,180.0)
@@ -78,7 +78,7 @@ label fightbuildup:
         matrixcolor TintMatrix("#95ffba")
 
     play voice2 mm_imagoddamnurbanlegend
-    Madlas "I’m a goddamn urban legend and I’m done wasting my eternity in this place!"
+    Madlas "Je suis une putain de légende urbaine, et je pert mon temps dans ce trou à rats!"
     python:
         MD_State["eyes"] = 2
 
@@ -88,7 +88,7 @@ label fightbuildup:
 
     show BG Studio Room Spooky
     play voice2 mm_dontideservetobefree
-    Madlas "Don’t I deserve to be free!?"
+    Madlas "Je mérite pas d'être libre!?"
     python:
         MD_State["eyes"] = 3
         MD_State["mouth"] = 4
@@ -104,7 +104,7 @@ label fightbuildup:
         ease 0.3 xcenter 0.4
 
     play voice2 mm_evenindeath
-    Madlas "Somehow, even in death, I’m STILL working! All day, every night, all the time, forever. FOREVER."
+    Madlas "Putain de merde, même après être mort, je travaille TOUJOURS! Tous les jours, toutes les nuits, tout le temps, pour toujours. POUR TOUJOURS."
     python:
         MD_State["eyes"] = -1
         MD_State["mouth"] = 3
@@ -122,7 +122,7 @@ label fightbuildup:
         ease 0.3 xcenter 0.75
 
     play voice2 mm_wellimdone
-    Madlas "Well I’m done with liars, fakers, and those goddamn ghost hunters! None of them ever cared about the real me!"
+    Madlas "J'en ai plus qu'assez de ces menteurs, faux fans, et encore plus de ces putains de chasseur de fantômes! Aucun d'eux n'en avais ne serais-ce que quelque chose à foutre du VRAI MOI!"
 
     show madlas:
         matrixtransform RotateMatrix(0.0,180.0,0.0)
@@ -130,26 +130,26 @@ label fightbuildup:
 
     show BG Studio Room Spookier
     play voice2 mm_iquitloud
-    Madlas "I QUIT!"
+    Madlas "J'ARRÈTE!"
     python:
         MD_State["mouth"] = 2
         MD_State["feelerL"] = 0
         MD_State["feelerR"] = 0
 
     play voice2 mm_nomore
-    Madlas "No more graveyard shifts, no more management, and no more fake fans!"
+    Madlas "Plus d'horaires horrible, plus de management, et plus de faux fans!"
     python:
         MD_State["mouth"] = 1
-    Narrator "The pair looks down at their hands and wiggles each finger."
+    Narrator "Ses yeux posent leur regard sur ses mains, il bouge chaque doigts un par un."
     python:
         MD_State["mouth"] = 4
         MD_State["eyes"] = 3
     play voice2 mm_whathappenstofakefans
-    Madlas "And do you know what happens to fake fans?"
+    Madlas "Et tu sais ce que je leur fait aux faux fans?"
 
     show madlas:
         ease 0.3 xcenter 0.4
-    Narrator "The cryptid laughs, taking a wobbly step forward."
+    Narrator "Le cryptide rigole, et prend un grand pas en avant."
     python:
         MD_State["mouth"] = 2
 
@@ -161,7 +161,7 @@ label fightbuildup:
         ease 0.5 matrixtransform RotateMatrix(0.0,180.0*3,0.0)
 
     play voice2 mm_igettheirsouls
-    Madlas "I get their souls!"
+    Madlas "JE BOUFFE LEURS ÂMES!"
 
     $MD_State["eyes"] = -1
     $MD_State["feelerL"] = 1
@@ -186,7 +186,7 @@ label fightbuildup:
         matrixtransform RotateMatrix(0.0,180.0,0.0)
         ease 0.5 xcenter 0.25 matrixtransform RotateMatrix(0.0,360.0,0.0)
 
-    Narrator "Atlas staggers forward and swipes his talons through the air, narrowly missing you."
+    Narrator "Atlas s'élance en avant, et donne un coup du talon dans le vide te loupant de peu."
 
     show robyn:
         matrixtransform RotateMatrix(0.0,0.0,0.0)
@@ -194,41 +194,41 @@ label fightbuildup:
         pause 0.1
         ease 0.3 xcenter 0.1
 
-    Narrator "You roll off your chair onto the floor, and without realizing it, you sprint for the door in an effort to simply stay alive."
+    Narrator "Tu roulle sur le sol depuis ta chaise, et sans le réaliser tu te met à courir vers la porte avec la seule intention de rester en vie."
 
     $Robyn_State["mouth"] = 4
     show robyn:
         matrixtransform RotateMatrix(0.0,180.0,0.0)
         ease 0.3 matrixtransform RotateMatrix(0.0,0.0,0.0)
 
-    Robyn "Atlas, what about our friday movie night?!"
+    Robyn "Atlas, et notre soirée film de vendredi?!"
 
-    Madlas "Atlas can’t hear yooou!"
+    Madlas "Atlas ne t'entends paaas!"
 
-    Robyn "We were gonna watch the extended edition of that one fantasy trilogy., with director's commentary!"
+    Robyn "On allait faire la version longue de cette triologie fantasie., avec les commentaires du directeur!"
 
-    Narrator "The mothman goes rigid and his antennae flick forward."
+    Narrator "Le mothman s'arrète net, ses antennes pointée dans ta direction."
     python:
         MD_State["eyes"] = 0
         MD_State["mouth"] = 4
         MD_State["feelerL"] = 0
         MD_State["feelerR"] = 0
 
-    Atlas "And subtitles?"
+    Atlas "Avec les sous-titres?"
 
     $Robyn_State["mouth"] = 2
     show robyn:
         matrixtransform RotateMatrix(0.0,0.0,0.0)
         ease 0.3 matrixtransform RotateMatrix(0.0,180.0,0.0)
 
-    Narrator "You fumble with the doorknob, trying to get it open."
+    Narrator "Tu détruit presque la poignée en éssayant de l'ouvrir."
 
     show madlas:
         matrixtransform RotateMatrix(0,0,0)
         ease 0.3 xcenter 0.6 matrixtransform RotateMatrix(0,0,-20) yoffset 100
         ease 0.3 xcenter 0.65 matrixtransform RotateMatrix(0,0,0) yoffset 0
 
-    Narrator "Atlas’ left leg jerks to one side, almost toppling the mothman over."
+    Narrator "La jampe gauche d'Atlas bouge d'un coté, il tombe presque sur le sol."
     $MD_State["eyes"] = -1
     show madlas:
         yoffset 0
@@ -236,13 +236,13 @@ label fightbuildup:
         ease 0.3 matrixtransform RotateMatrix(0,180,0)
 
     play voice2 madlas_stopit
-    Madlas "Stop it!"
+    Madlas "Arrète!"
 
     show madlas:
         matrixtransform RotateMatrix(0,180,0)
         ease 0.4 xcenter 0.7 matrixtransform RotateMatrix(0,180,90) yoffset 500
 
-    Narrator "He takes another step but trips over nothing, like two drivers fighting for the same steering wheel."
+    Narrator "Il fait un autre pas en avant, mais tombe miséablement sur le sol comme deux conducteurs qui se battent pour le volant."
 
     show madlas:
         matrixtransform RotateMatrix(0,180,90)
@@ -258,12 +258,12 @@ label fightbuildup:
         ease 0.3 matrixtransform RotateMatrix(0,360,0)
     $MD_State["eyes"] = 0
     $MD_State["mouth"] = 1
-    Madlas "Are you crazy?! We can't just  {glitch=40}{i}combine cryptids!{/i}{/glitch} \nThe Radio Man Moth sounds {glitch=60}fuckin'{/glitch} {glitch=2}stupid!{/glitch}"
+    Madlas "T'es cinglé?! On peut pas juster combiner {glitch=40}{i}deux cryptides!{/i}{/glitch} \nLe Radio Man Moth sonne {glitch=60}putain{/glitch} de {glitch=2}stupide!{/glitch}"
     $MD_State["eyes"] = -1
     $Robyn_State['eyes'] = 3
     $Robyn_State['mouth'] = 4
     $MD_State["mouth"] = 0
-    Robyn "{size=45}JAMIE HELP!{/size}"
+    Robyn "{size=45}JAMIE À L'AIDE!{/size}"
 
     python:
         Jamie_Stats = Unit("{color=3AE9F6}Jamie{/color}",1,2,-1,0,-2,3,13)
@@ -271,14 +271,14 @@ label fightbuildup:
         Jamie_Stats.SetIcon("jamieIcon")
 
         attackDescA = "Cool! Cool?"
-        attackDescB = "Anything's better than nothing."
-        attackDescC = "Something cool might happen... maybe."
-        attackDescD = "Sure, let the DPS be the healer as well. Good game design."
+        attackDescB = "Tout est mieux que rien."
+        attackDescC = "Un truc cool pourrais arriver... peut-être"
+        attackDescD = "Ouais, laisse le DPS faire du soin tant que t'y est. Super game design."
 
         JamieAttacks = [
-                    AttackMove("Skull Cracker",attackDescA, 0, "madlas_tutorial2", "guts", "guts", 0, False, [],0),
-                    AttackMove("Spirit Blaze",attackDescC, 0, "madlas_tutorial2", "occult", "fixed", 2, False, [],11),
-                    AttackMove("Healing Wave",attackDescD, 0, "madlas_tutorial2", "occult", "fixed", 1, True, [],10)
+                    AttackMove("Pète crâne",attackDescA, 0, "madlas_tutorial2", "guts", "guts", 0, False, [],0),
+                    AttackMove("Esprit Brasier",attackDescC, 0, "madlas_tutorial2", "occult", "fixed", 2, False, [],11),
+                    AttackMove("Vague Dia",attackDescD, 0, "madlas_tutorial2", "occult", "fixed", 1, True, [],10)
                     ]
 
         Jamie_Stats.SetAttackMoves(JamieAttacks)
@@ -311,7 +311,7 @@ label fightbuildup:
         matrixtransform RotateMatrix(0.0,180.0,0.0)
         ease 0.6 xcenter 0.35
 
-    Narrator "The jersey devil clambers into the room, confused."
+    Narrator "Le démon rentre dans la salle, visiblement confus."
 
     show jamie:
         ease 0.5 xcenter 0.45
@@ -320,7 +320,7 @@ label fightbuildup:
         pause 0.5
         ease 0.3 matrixtransform RotateMatrix(0.0,180.0,0.0)
 
-    Narrator "They look around, only to watch the possessed mothman jerk and jitter towards the duo, muttering and clawing at his own feathers."
+    Narrator "Iel regarde autours, et observe Atlas en train de s'arracher ses propres plumes de colère."
 
     python:
         Jamie_State["mouth"] = 0
@@ -329,14 +329,14 @@ label fightbuildup:
         MD_State["mouth"] = 0
 
     voice jamie_surpriseb
-    Jamie "...Did Atlas get taller?"
+    Jamie "...Atlas est devenu plus grand?"
 
     python:
         Robyn_State["eyes"] = 0
         Robyn_State["brow"] = 3
         Robyn_State["mouth"] = 4
 
-    Robyn "That’s the first thing you noticed?!"
+    Robyn "C'est le premier truc que t'a remarqué?!"
 
     python:
         Jamie_State["mouth"] = 0
@@ -349,7 +349,7 @@ label fightbuildup:
         Jamie_State["sweat"] = 0
         Jamie_State["wispEyes"] = 1
 
-    Jamie "This is unforgivable."
+    Jamie "C'est impardonable."
 
     voice dmm_laughb
     show madlas:
@@ -366,7 +366,7 @@ label fightbuildup:
         MD_State["feelerL"] = 0
         MD_State["feelerR"] = 0
 
-    Madlas "Awwww,, not used to being the arm rest huh {glitch=8}shortie?{/glitch}"
+    Madlas "Awwww,, t'a pas l'habitude d'être {glitch=8}le nain{/glitch} que tout le monde utilise comme accoudoir?"
     show madlas:
         xcenter 0.8
     python:
@@ -380,15 +380,15 @@ label fightbuildup:
         MD_State["mouth"] = 0
         MD_State["eyes"] = -1
 
-    Robyn "This isn't a contest!"
+    Robyn "C'est pas un concours!"
 
-    Jamie "You're right,., feelers don't count."
+    Jamie "T'a raison,., et les antennes ne comptent pas."
 
     $Jamie_State["eye"] = 1
     $Jamie_State["mouth"] = 0
     $Jamie_State["steam"] = 0
 
-    Jamie "I think now it's time to fight."
+    Jamie "Je crois là c'est le moment où on se bat."
 
     python:
         Robyn_State["mouth"] = 5
@@ -396,16 +396,16 @@ label fightbuildup:
 
         MD_State["mouth"] = 1
 
-    Robyn "But that’ll hurt him!"
+    Robyn "Mais ça va le blesser!"
 
     $MD_State["mouth"] = 2
 
     voice dmm_yawn
-    Madlas "Oh, so now you care! Gosh,., [PCname] I thought you were supposed to {glitch=8}protect me.{/glitch}"
+    Madlas "On donc maintenant tu t'en préocupe! Genre,., [PCname] je pensais que t'était censé me {glitch=8}protéger.{/glitch}"
     $Robyn_State["mouth"] = 4
-    Robyn "H-huh?"
+    Robyn "H-hein?"
 
-    Jamie "Lets make this quick."
+    Jamie "On va le faire vite."
 
     python:
         songText = "The Visitor"
@@ -469,41 +469,41 @@ label madlas_tutorial:
     show MMFight_Chair at MMFight_LeftProp_Entry
     show MMFight_Speaker at MMFight_RightProp_Entry
 
-    Narrator "{glitch=30}Madlas{/glitch} laughs in your face!"
+    Narrator "{glitch=30}Madlas{/glitch} te rit au visage!"
 
     $MD_State["eyes"] = 2
-    Narrator "{glitch=20}Madlas{/glitch} opens up by chucking an oversized stereo speaker with supernatural force!"
+    Narrator "{glitch=20}Madlas{/glitch} t'envoie une enceinte sur-dimensionnée au visage par une force surdimentionelle!"
 
-    call dice_roll(playerUnits[1].cStats("hustle"), enemyUnits[0].cDifficulty("occult"), "Psycho Toss") from _call_dice_roll_13
+    call dice_roll(playerUnits[1].cStats("hustle"), enemyUnits[0].cDifficulty("occult"), "Psycho lance") from _call_dice_roll_13
 
     $xDmg = -(renpy.random.randint(6,10))
     show MMFight_Chair at MMFight_LeftProp_Exit
     show MMFight_Speaker at MMFight_RightProp_Exit
 
     if isRollSuccess:
-        Narrator "Jamie barely steps out of the way!"
+        Narrator "Jamie se met hors du chemin!"
     else:
         $playerUnits[1].modifyHP(xDmg,0.0,"guts")
         $RefreshBarHP()
-        Narrator "Jamie's clonked over the head, taking [sfxDmg] damage!"
+        Narrator "Jamie se la prend en pleine poire, et prend [sfxDmg] dommages!"
 
     play voice2 dmm_laughc
     $ToggleBarState([1], 0)
     show MMFight_Chair at MMFight_LeftProp_Entry
     show MMFight_Speaker at MMFight_RightProp_Entry
-    Madlas "Bwahaha, freebie! Are you two even trying?"
+    Madlas "Bwahaha, imbéciles! Est-ce que vous ne-serais-ce qu'essayez?"
     show MMFight_Chair at MMFight_LeftProp_Exit
     show MMFight_Speaker at MMFight_RightProp_Exit
 
-    Narrator "{glitch=20}Madlas{/glitch} furiously swipes his claws at the demon, who narrowly dodges the attack."
+    Narrator "{glitch=20}Madlas{/glitch} lance un coup de griffes au démon qui ésquive rapidement l'attaque."
     show MMFight_Chair at MMFight_LeftProp_Entry
     show MMFight_Speaker at MMFight_RightProp_Entry
 
-    Jamie "{b}{sc=2}[PCname], I NEED DIRECTION.{/sc}{/b}"
+    Jamie "{b}{sc=2}[PCname], J'AI BESOIN D'ORDRES.{/sc}{/b}"
 
-    Robyn "What do I even do?!"
+    Robyn "M-mais qu'est-ce que je suis censé faire?!"
 
-    Jamie "Choose a skill in the top left corner! Click it!"
+    Jamie "Choisis une attaque dans le coin supérieur gauche!"
 
     python:
         #This hides the floating Quick Menu
@@ -533,9 +533,9 @@ label madlas_tutorial2:
 
     voice RobynSays("Generic","ConfusedA")
     if isRollSuccess:
-        Robyn "Oookay that was a success? What does that mean?"
+        Robyn "Ooookay c'est reussi, et maintenant?"
     else:
-        Robyn "Yeesh, I guess that was a failure? Now what?"
+        Robyn "Ooouuais, j'ai loupé? Maintenant quoi?"
 
     show MMFight_Chair:
         parallel:
@@ -571,7 +571,7 @@ label madlas_tutorial2:
     $Robyn_State["eyes"] = 1
     $Robyn_State["brow"] = 1
 
-    Jamie "GREAT. Let me explain the basics. \n\n{size=-10}          Shit. Where do I even start? {/size}\n\nYou um."
+    Jamie "COOL. Laisse moi éxpliquer les bases. \n\n{size=-10}          Merde. Par quoi je commence? {/size}\n\nTu um."
     hide MMFight_Speaker
     hide MMFight_Chair
     $MD_State["eyes"] = 6
@@ -580,7 +580,7 @@ label madlas_tutorial2:
         displaymenu = True
         preferences.text_cps = 30
 
-    Jamie "You see.{nw}"
+    Jamie "Tu vois.{nw}"
     $preferences.text_cps = 32
     $Jamie_State ["eye"] = 3
 
@@ -593,26 +593,26 @@ label madlas_tutorial2:
     $Jamie_State ["mouth"] = 1
     $Jamie_State ["brow"] = 1
 
-    Jamie "Then you um- Stimulate the Action economy-{nw}"
+    Jamie "Et après tu simule l'action et-{nw}"
     $preferences.text_cps = 36
     $Jamie_State ["mouth"] = 2
     $Jamie_State ["brow"] = 3
 
-    Jamie "And modifiers add numbers to your roll-{nw}"
+    Jamie "Les modificateurs- rajoutent des chiffres-{nw}"
     $preferences.text_cps = 37
 
     $Jamie_State ["mouth"] = 0
 
-    Jamie "Stamina, Exhaustion, Meter..,{nw}"
+    Jamie "Stamina, fatigue, Infos..,{nw}"
     $preferences.text_cps = 41
 
-    Jamie "My brain hurts-.,{nw}"
+    Jamie "Ma tête fait mal-.,{nw}"
     $preferences.text_cps = 42
 
-    Robyn "H-hey it's okay, take your time.,-{nw}"
+    Robyn "H-hey tout vas bien, prend ton temps.,-{nw}"
     $preferences.text_cps = 60
 
-    Jamie "Physical Special Split-{nw}"
+    Jamie "Les modifications physique-{nw}"
     $preferences.text_cps = 50
 
 
@@ -620,13 +620,13 @@ label madlas_tutorial2:
     $Jamie_State ["eye"] = 4
 
 
-    Jamie "Is my nose bleeding?{nw}"
+    Jamie "J'suis en train de saigner du nez là?{nw}"
     $preferences.text_cps = 46
 
-    Robyn "Deep breaths-.,{nw}"
+    Robyn "Réspire-.,{nw}"
     $preferences.text_cps = 30
 
-    Jamie "I can't do this.,-{nw}"
+    Jamie "Je peux pas faire ça.,-{nw}"
     $preferences.text_cps = 48
 
     $Jamie_State ["steam"] = 1
@@ -634,7 +634,7 @@ label madlas_tutorial2:
     $Jamie_State ["brow"] = 0
 
 
-    Jamie "If I hurt Atlas, he would cry., and I would never forgive myself., oh god, I really am the devil.,!{nw}"
+    Jamie "Si je blesse Atlas., je me le pardonnerais jamais., roh putain, je suis vraiment le diable.,!{nw}"
     $preferences.text_cps = 60
 
     $Jamie_State ["armR"] = 3
@@ -648,13 +648,13 @@ label madlas_tutorial2:
         preferences.text_cps = 30
     $Robyn_State["mouth"] = 4
     $Robyn_State["eyes"] = 0
-    Robyn "{b}{sc=2}ATLAS HELP!{/sc}{/b}"
+    Robyn "{b}{sc=2}ATLAS À L'AIDE!{/sc}{/b}"
 
     $MD_State["mouth"] = 1
     $MD_State["eyes"] = 6
     $displaymenu = True
 
-    Madlas "Not my problem."
+    Madlas "Pas mon problème."
 
     $MD_State["eyes"] = 0
     show madlas:
@@ -677,14 +677,14 @@ label madlas_tutorial2:
             ease 0.2725 yoffset 0
             pause 0.2725
             repeat
-    Madlas "{size=40}NO!{/size} \n\nI'M NOT EXPLAINING SHIT!"
+    Madlas "{size=40}NON!{/size} \n\nJ'EXPLIQUERAIS PAS CETTE MERDE!"
     $MD_State["mouth"] = 3
     $MD_State["eyes"] = -1
-    Madlas "{sc=1}Shut up and fight me!{/sc}"
+    Madlas "{sc=1}Ferme là et bats toi!{/sc}"
     $Robyn_State["mouth"] = 5
     $Robyn_State["eyes"] = 4
     $Robyn_State["brow"] = 2
-    Robyn "{bt=4}Pleeeeeease?{/bt}"
+    Robyn "{bt=4}Steuplaaaait?{/bt}"
 
     Madlas ".,.,{nw}"
     $MD_State["mouth"] = 4
@@ -699,10 +699,10 @@ label madlas_tutorial2:
         linear 0.05 xcenter 0.2
         pause 0.2
         repeat
-    Atlas "{size=40}Okay!{/size}"
+    Atlas "{size=40}Okay! Si tu veux!{/size}"
 
-    Narrator "It seems Atlas' innate desire to overshare is more powerful than any supernatural force."
-    show madlas:
+    Narrator "On dirait que le l'envie d'aider ses amis a l'interieur d'Atlas est plus forte que la haine de Madhouse."
+    show madlas
     $MD_State["eyes"] = 4
     $MD_State["feelerL"] = 0
     $MD_State["feelerR"] = 0
@@ -712,106 +712,106 @@ label madlas_tutorial2:
 default tQcanAsk = [True,True,True,True]
 label madlas_tutorialQuestions:
     $displaymenu = True
-    show madlas at startledSquish: #.Startled Squish
+    show madlas at startledSquish #.Startled Squish
 
     if firstLoop:
-        Atlas "What do you need to know?{nw}"
+        Atlas "Donc, qu'est-ce que tu veux savoir?{nw}"
         $firstLoop = False
         $tQcanAsk = [True,True,True,True]
     elif True in tQcanAsk:
-        Atlas "Anything Else?{nw}"
+        Atlas "Autre chose?{nw}"
 
     menu:
         extend ""
 
-        "The Stats and what they mean" if tQcanAsk[0]:
+        "Les stats" if tQcanAsk[0]:
             $displaymenu = False
             $tQcanAsk[0] = False
             $MD_State["eyes"] = 5
-            Atlas "Okay so, there are six stats: [kwBrawn], [kwBrains], [kwGuts], [kwHustle], [kwCharm], and [kwOccult]!"
+            Atlas "Bon y'a 6 stats: [kwBrawn], [kwBrains], [kwGuts], [kwHustle], [kwCharm], et [kwOccult]!"
 
-            Atlas "[kwBrawn] is your physical strength. It’s typically used as a bonus and modifier for physical attacking moves."
+            Atlas "[kwBrawn] C'est t'a force physique. C'est un modificateur pour les attaques physiques, typiquement."
 
-            Atlas "[kwBrains] is a sum of your mental strength and general insight. It’s the main stat used for out of combat investigation, plus the defensive stat against supernatural damage."
+            Atlas "[kwBrains] c'est la somme de tes capacités mentales. C'est un peu tout ce qu'il est utilisé pour les recherches en dehors des combats et ta résistance contre les attaques PSI."
 
-            Atlas "[kwGuts] is your physical constitution and fortitude. It’s used for things like resisting poison, an illness, or physical damage."
+            Atlas "[kwGuts] c'est ta constitution physique et forme générale. C'est genre la défense, pour résister aux poisons, affectations de status, et aussi ta résistance contre tout le reste en fait."
 
-            Atlas "[kwHustle] is your speed and hand-eye coordination. It’s used as a modifier to avoid many attacks, as well as determine aim and effectiveness of split-second actions."
+            Atlas "[kwHustle] c'est genre ta vision et réaction. C'est un peu la vitesse de chaque trucs que tu fait."
 
-            Atlas "[kwCharm] is your charisma and likability. It’s mostly used for convincing people of things and swaying hearts."
+            Atlas "[kwCharm] c'est le charisme. C'est plûtot en dehors des combats pour convaincre les gens, ce genre de truc."
 
-            Atlas "[kwOccult] is your attunement to the supernatural. Any magics or unnatural abilities outside the realm of physical prowess use Occult."
+            Atlas "[kwOccult] c'est ton affinitée au supernaturel. Toutes les actions en dehors de la catégorie du physique c'est de l'occulte."
 
-            Atlas "These stats are the modifiers used in rolls, as well as damage calculation for whatever move you're trying to use. There are stats also exclusive to combat encounters such as [kwPowerMod], [kwPDefense], and [kwSDefense]."
+            Atlas "Toute ces stats modifient les lancés, et aussi les réductions/augmentations de dégats pour ce que tu éssaie de faire. Y'a aussi des stats que dans les combats, comme [kwPowerMod], [kwPDefense], et [kwSDefense]."
 
-            Atlas "[kwPowerMod] refers to an additional bonus to attacking power. Whenever damage calculation is involved, [kwPowerMod] is a flat bonus added to damage."
+            Atlas "[kwPowerMod] c'est un bonus additionel pour l'attaque. A partir du [kwPowerMod] c'est un bonus pour les lancés sur l'attaque."
 
-            Atlas "[kwPDefense]/[kwSDefense] are similar to power except it’s a flat bonus to defense against attacks."
+            Atlas "[kwPDefense]/[kwSDefense] c'est la même chose, mais pour la défense contre certaines attaques."
 
-            Atlas "Damage is split into two types, physical and supernatural, physical attacks being resisted by Guts and Supernatural attacks being resisted by Brains."
+            Atlas "Les dommages sont coupés en 2 parties, physique et supernaturel, Les attaques physiques sont bloqués par [kwGuts] et les super naturelles sont atténués par [kwOccult]."
 
             $MD_State["eyes"] = 0
             jump madlas_tutorialQuestions
 
-        "Move descriptions & Effects" if tQcanAsk[1]:
+        "Les actions et leur effets" if tQcanAsk[1]:
             $displaymenu = False
             $tQcanAsk[1] = False
-            Atlas "Oh this is easy!"
+            Atlas "Oh c'est simple!"
 
-            Atlas "So moves are typically laid out as follows:"
+            Atlas "En gros ça fonctionne comme ça:"
             $MD_State["eyes"] = 0
-            Atlas "{size=-5}[kwSuccess] This happens on a success.\n\n[kwFailure] This Happens on a failure.\n\nChecks {color=#83ed6e}(Your Modifier){/color} vs {color=#7aff44}(Enemy Modifier or Fixed Difficulty(X)){/color}\nCost: X Stamina{/size}"
+            Atlas "{size=-5}Tu verras [kwSuccess] si sa reussi.\n\n Tu verras[kwFailure] si tu loupe.\n\nEn gros c'est {color=#83ed6e}(Ton modificateur){/color} vs {color=#7aff44}(Le modificateur adverse ou La difficultée (X)){/color}\nCoûte: X Stamina{/size}"
 
-            Atlas "When a skill does damage, in order to figure out whether it's resisted by either [kwPDefense] or [kwSDefense], just think of what it's doing."
+            Atlas "Si une attaque fait des dégats, pour savoir si c'est [kwPDefense] ou [kwSDefense] qui joue sur la défense, juste pense à ce que la skill fait."
             $MD_State["eyes"] = 5
-            Atlas "If it's punching, it's [kwPDefense], but if you're slinging a fireball, it's resisted by [kwSDefense]."
+            Atlas "Si tu frappe, c'est [kwPDefense], mais si c'est une boule de feu par éxemple, c'est [kwSDefense] qui compte."
             jump madlas_tutorialQuestions
 
-        "Stamina, Exhaustion & Recovery" if tQcanAsk[2]:
+        "Stamina, Fatigue & Récupération" if tQcanAsk[2]:
             $displaymenu = False
             $tQcanAsk[2] = False
-            Atlas "All moves have a listed stamina cost ranging from 0-5, and all party members have stamina ranging from 0-4."
+            Atlas "Tout les Skills requirent un nombre de stamina de 0 à 5, et tout les membres de l'équipe ont une stamina de 0-4."
 
-            Atlas "Whenever you use a move, you lose the listed stamina cost, but every party member not involved gains +1 stamina. Some moves use multiple party members, so keep that in mind."
+            Atlas "Si tu loupe ton tour, tu pert la stamina montrée, mais tout les membres de l'équipe non affectés gagnent +1 de stamina. Plusieurs Skills utilisent plusieurs alliés pour se lancer, alors garde ça en tête."
 
-            Atlas "You can use any move regardless of how much stamina you have versus its cost, but if you go into the negatives, you become exhausted. Exhausted party members cannot act for a set amount of turns until they become unexhausted."
+            Atlas "Si tu utilise une Skil alors que la demande de stamina est plus grande que ton énergie actuelle tu va dans le négatif, mais si cela arrive, tu deviens fatigué. Tu pourras pas attaquer tant que tu auras pas récupéré."
             jump madlas_tutorialQuestions
 
-        "Enemy Attacks, MTA, & Difficulty" if tQcanAsk[3]:
+        "Enemy Attaques, MTA, & Difficultée" if tQcanAsk[3]:
             $displaymenu = False
             $tQcanAsk[3] = False
             $MD_State["eyes"] = 5
-            Madlas "[kwMTA] {size=-9}(Moves Until Attack){/size} is simple! It’s the number of turns you can take until the foe in question can act."
+            Madlas "[kwMTA] {size=-9}(Moves Until Attack){/size} c'est simple! C'est le nombre de tours que tu dois attendre avant que la cible en question ne puisse agir."
 
-            Atlas "It’s a fun little count down going down to mark when we can kick your butt!"
+            Atlas "C'est un petit décompte sympa avant que ont puisse te faire bobo!"
 
-            Atlas "Some enemies can also attack multiple times when their counter reaches 0, so it’s safe to assume that foes fighting by themselves will go more than once in any given encounter."
+            Atlas "Certains ennemis peuvent attaquer plusieurs fois quand le compteur est à 0, Donc les ennemis qui s'attaquent ou aggissent entre eux attaquent forcément plusieurs fois."
 
-            Atlas "One important thing to note is how KOed party members affect delay. If a party member is KOed, any healing can bring them up from 0 health. There’s no revives after all!"
+            Atlas "Et aussi, les alliés KO. Si un ami est KOed, n'importe quel soin peut le rammener au dessus de 0 health. Il n'y a pas de résuréction après tout!"
 
-            Atlas "To balance this out, whenever an enemy’s turn ends and any party members are KOed, their maximum delay is lowered by each downed party member."
+            Atlas "Pour équilibrer, quand le tour d'un ennemi fini et que un allié est KO, sont délai MTA est déscendu de 1 point par alliés KO."
 
-            Madlas "For example, if you have a team of 4 and 2 are downed. The enemy acts and has a maximum delay of 5. Their delay would be set to 3, because 2 party members being downed sped up the process!"
+            Madlas "Par éxemple, si tu à une équipe de 4 et que 2 de tes alliés sont KO, L'ennemy devrait avoir un nombre de tour max de 5. Son délair seras mis à 3, parce que 2 membres de ton équipe étant KO rend le procéssus plus rapide!"
             $MD_State["eyes"] = 0
             jump madlas_tutorialQuestions
 
-        "I've got it!" if True in tQcanAsk:
-            Atlas "Great!"
+        "J'ai compris!" if True in tQcanAsk:
+            Atlas "Cool!"
             pass
             $MD_State["eyes"] = 4
             $MD_State["mouth"] = 4
     $MD_State["eyes"] = 4
-    Atlas "I think that's everything!"
+    Atlas "Je crois que c'est tout!"
     $MD_State["eyes"] = 1
 
-    Atlas "Hey,, Jamie? It's okay."
+    Atlas "Hey,, Jamie? Tout vas bien."
 
     $MD_State["eyes"] = 0
     $MD_State["mouth"] = 1
     $MD_State["feelerL"] = 1
     $MD_State["feelerR"] = 1
     voice dmm_laughb
-    Madlas "Get his ass."
+    Madlas "Explose moi son cul."
 
     show jamie:
         ease 0.06 yoffset 2
@@ -841,14 +841,14 @@ label madlas_tutorialQuestions:
     $Jamie_State["wispEyes"] = 1
     $Jamie_State["mouth"] = 1
 
-    Narrator "Jamie's totally fired up, the spark of determination gleaming in their wild eyes. It inspires you too,, maybe things will work out. Maybe you can do this."
+    Narrator "Jamie est complètement enragé, une lueure de détermination brille dans ses yeux. Ca t'inspire aussi,, peut être que tu peux y arriver. Peut être que tu peux faire ça."
 
     show robyn:
         ease 0.5 xcenter 1.5
     show jamie:
         ease 0.6 xcenter 1.5
     $Jamie_State["r3Fire"] = 0
-    Robyn "Let's save Atlas!"
+    Robyn "Sauvons Atlas!"
 
     $MD_State["eyes"] = 2
     $MD_State["mouth"] = 2
@@ -856,7 +856,7 @@ label madlas_tutorialQuestions:
     $MD_State["feelerR"] = 0
     if gameVersion == 3:
         $displaymenu = True
-        Narrator "Skip Fight?{nw}"
+        Narrator "Passer le combat?{nw}"
         menu:
             extend ""
             "Yes":
@@ -874,7 +874,7 @@ label buildup_to_MM_Fight:
     $MD_State["mouth"] = 0
     $MD_State["eyes"] = -1
     voice dmm_angryb
-    Madlas "You losers really thought you could defeat me? \n\n{sc=3}WHAT A JOKE!{/sc}"
+    Madlas "Vous avez vraiment cru que vous pouviez me battre? \n\n{sc=3}QUELLE BLAGUE!{/sc}"
     show madlas:
         parallel:
             hoppies(xIntensity=2)
@@ -884,25 +884,25 @@ label buildup_to_MM_Fight:
     $MD_State["eyes"] = 0
     $MD_State["feelerR"] = 1
     $MD_State["feelerL"] = 1
-    Madlas "You're lookin' at the next mothman, baby! Y-yeah! Not {b}a{/b} mothman,, but \n{b}THE MOTHMAN{/b}!"
+    Madlas "Tu à les yeux devant le prochain Mothamn, baby! Ouais nan! Pas {b}UN{/b} mothman,, mais \n{b}LE MOTHMAN{/b}!"
     show madlas:
         parallel:
             hoppies_flipped(xIntensity=2)
         parallel:
             startledSquish
-    Madlas "No more {glitch=30}patronizing{/glitch} stares,, or shifty glances! \n\nJust sheer, {glitch=30}crystaline terror!{/glitch}"
+    Madlas "Plus d'ignorance ou de dégout, \n\nJuste de la pure, {glitch=30}TERREUR CRYSTALINE!{/glitch}"
 
     show madlas:
         parallel:
             hoppies(xIntensity=2)
         parallel:
             startledSquish
-    Madlas "I'm a legend!"
+    Madlas "J'suis une légende!"
     show madlas:
         ease 0.15 yoffset -30
         ease 0.15 yoffset 0
 
-    Madlas "I'm a demon!"
+    Madlas "J'suis un démon!"
 
     $MD_State["mouth"] = 5
     $MD_State["eyes"] = 2
@@ -920,7 +920,7 @@ label buildup_to_MM_Fight:
     $MD_State["feelerL"] = 1
     $MD_State["feelerR"] = 1
 
-    Madlas "{sc=6}I'm a—{/sc}"
+    Madlas "{sc=6}Je suis—{/sc}"
     python:
         musicNote = 3
         songText = "Awkward Silence"
@@ -945,7 +945,7 @@ label buildup_to_MM_Fight:
         zoom 1
         alpha 1
 
-    Narrator "Atlas pops back to normal."
+    Narrator "Poof."
 
     show atlas:
         linear 0.05 xcenter 0.500
@@ -960,11 +960,11 @@ label buildup_to_MM_Fight:
     $Atlas_State["armR"] = 0
     $Atlas_State["feelers"] = 0
 
-    Atlas "I'm a little light headed."
+    Atlas "Je suis un peu léger de la tête."
     $Atlas_State["eye"] = 13
 
     voice taro_angryb
-    Taro "{sc=1}Know your place!{/sc}"
+    Taro "{sc=1}SAIS OU TU DOIS ÊTRE!{/sc}"
     $BTaro_State['mouth'] = 2
     $BTaro_State['eye'] = 1
     camera:
@@ -985,11 +985,11 @@ label buildup_to_MM_Fight:
         Taro_Stats.Color = "#C064FF"
         Taro_Stats.SetIcon("taroIcon")
 
-        attackDescA = "[kwSuccess] Deals medium damage to Target. When Taro is at 5 [kwHealth] or lower, deals heavy damage.\n\n[kwFailure] Deals reduced damage to Target\n\nChecks [kwBrawn] vs [kwHustleD]\nCost: 2 Stamina"
+        attackDescA = "[kwSuccess] Dommages mediums à une cible. Quand Taro est à moins de [kwHealth], fait des dommages lourds.\n\n[kwFailure] Moins de résultats\n\nUtilise[kwBrawn] vs [kwHustleD]\nCoût: 2 Stamina"
 
-        attackDescB = "[kwSuccess] Taro intercepts all incoming attacks, and slightly raises her [kwDefenseMod]. Taro maintains stat changes until she uses a different move.\n\n[kwFailure] Move works, but slightly lowers Taro's [kwDefenseMod]. Also raises her [kwPowerMod].\n\nChecks [kwGutsD] vs Fixed(7)"
+        attackDescB = "[kwSuccess] Taro intércepte toute attaque, et augmente légèrement sa [kwDefenseMod]. Elle garde la stat ansi jusqu'a l'utilisation d'une autre Skill.\n\n[kwFailure] Fonctionne, mais diminue légèrement la [kwDefenseMod] de Taro. Augmente aussi son [kwPowerMod].\n\nStats: [kwGutsD] vs Fixé(7)"
 
-        attackDescD = "[kwSuccess] Lowers Target [kwPowerMod], and slightly lowers their [kwDifficultyModD].\n\n[kwFailure] Raises Target [kwPowerMod]\n\nChecks [kwCharm] vs [kwBrainsD]\nCost: 3 Stamina"
+        attackDescD = "[kwSuccess] Baisse le [kwPowerMod] de la cible, et monte légèrement son [kwDifficultyModD].\n\n[kwFailure] Monte le [kwPowerMod] de la cible.\n\nStats: [kwCharm] vs [kwBrainsD]\nCoût: 3 Stamina"
 
         TaroAttacks = [
                     AttackMove("Pounce",attackDescA, -2, "FIGHT_01_MM_TARO_0", "brawn", "hustle", 0, False, [],0),
@@ -1020,34 +1020,34 @@ label buildup_to_MM_Fight:
 
     play sfx delayedThunk
 
-    Narrator "The door to the studio buckles, splitting open as monstrous Taro bursts into the room. With a triumphant meow, she knocks Atlas to the ground."
+    Narrator "La porte se fait éxploser contre le mur, elle souvre en deux alors qu'une version monstrueuse de Taro apparait dans la salle. Avec un miaulement victorieux elle éjecte Atlas au sol."
     hide atlas
     $BTaro_State['mouth'] = 1
     $BTaro_State['eye'] = 2
     show tarobig:
         ease 10 xcenter -0.5
-    Narrator "Sprawled out on the floor all battered and dazed, Atlas hacks up a mouthful of toxic waste."
+    Narrator "Balancé sur le sol, Atlas laisse éxtraire une quantitée atroce de Toxic Waste depuis son horifice bucal. Il vomis,, en gros."
 
-    Robyn "{sc=2}Taro what the {b}hell{/b}!{/sc}., Atlas are you okay?!"
+    Robyn "{sc=2}Taro c'est quoi ton {b}problème{/b}!{/sc}., Atlas tout vas bien?!"
 
-    Narrator "Atlas gives you a weak thumbs up."
+    Narrator "Atlas te donne un petit pouce en l'air."
 
     python:
         Atlas_Stats = Unit("{color=#ED2A82}Atlas{/color}",-1,2,2,-1,1,0,13)
         Atlas_Stats.Color = "#ED2A82"
         Atlas_Stats.SetIcon("atlasIcon")
 
-        attackDescA = "[kwSuccess] Delays Target attack.\n\n[kwFailure] Move works but everyone's stamina is set to 0 (excluding Atlas).\n\nChecks [kwBrainsD] vs Fixed(10)\nCost: 3 Stamina"
+        attackDescA = "[kwSuccess] Délai le tour ennemis.\n\n[kwFailure] Fonctionne mais la stamina de tout le monde est réduite à 0. (sauf Atlas).\n\nStats: [kwBrainsD] vs Fixé(10)\nCoût: 3 Stamina"
 
-        attackDescB = "[kwSuccess] Deals heavy damage, and lowers Target [kwBrainsD]. Atlas takes 30% recoil.\n\n[kwFailure] Move works but Atlas' [kwBrainsD] is lowered, and Atlas Takes 60% recoil.\n\nChecks [kwOccultD] vs [kwBrainsD]\nCost: 4 Stamina"
+        attackDescB = "[kwSuccess] Gros dommages, et baisse le [kwBrainsD] de la cible. Atlas prend 30% de contre.\n\n[kwFailure] Fonctionne mais le [kwBrainsD] d'Atlas est baissé, il prend aussi 60% de contre.\n\nStats: [kwOccultD] vs [kwBrainsD]\nCoût: 4 Stamina"
 
-        attackDescC = "[kwSuccess] Jamie gains +1 stamina, and both their [kwOccultD] and [kwBrawn] are raised. \n\n[kwFailure] Jamie's [kwOccultD] and [kwBrawn] are raised slightly.\n\nChecks [kwCharm] vs Fixed(10)\nCost: 1 Stamina"
+        attackDescC = "[kwSuccess] Jamie regagne +1 stamina, et son [kwOccultD] ainsi que son [kwBrawn] sont augmentés. \n\n[kwFailure] Les stats [kwOccultD] et [kwBrawn] de Jamie montent un petit peu.\n\nStats: [kwCharm] vs Fixé(10)\nCoût: 1 Stamina"
 
 
         AtlasAttacks = [
-                    AttackMove("Lore Dump",attackDescA, -3, "FIGHT_01_MM_ATLAS_0", "brains", "fixed", 2, False, [],10),
-                    AttackMove("Kinesis",attackDescB, -4, "FIGHT_01_MM_ATLAS_1", "occult", "brains", 0, False, [],7),
-                    AttackMove("Pump Up",attackDescC, -2, "FIGHT_01_MM_ATLAS_2", "charm", "fixed", 2, True, [],10)
+                    AttackMove("Étalage de lore",attackDescA, -3, "FIGHT_01_MM_ATLAS_0", "brains", "fixed", 2, False, [],10),
+                    AttackMove("Kinésis α",attackDescB, -4, "FIGHT_01_MM_ATLAS_1", "occult", "brains", 0, False, [],7),
+                    AttackMove("Bon Mindset",attackDescC, -2, "FIGHT_01_MM_ATLAS_2", "charm", "fixed", 2, True, [],10)
                     ]
 
         Atlas_Stats.SetAttackMoves(AtlasAttacks)
@@ -1057,60 +1057,58 @@ label buildup_to_MM_Fight:
         InitializeCombatUI(playerUnits, enemyUnits)
         HighlightPlayerUnitBars([0,1,2,3])
 
-    Atlas "Yeah., yeah, I'm fine."
-    Atlas "Sorry for scaring you."
-    Narrator "Helping Atlas to his feet, you keep an arm around him as you nervously glance around. Where's Madhouse?"
+    Atlas "Je vais bien."
+    Atlas "Désolé de t'avoir fait peur."
+    Narrator "Tu aide Atlas a se relever, et garde ton bras autours de lui avant de regarder autours nerveusement. Où est Madhouse?"
 
     hide tarobig
 
-    Jamie "Mike you coward!"
+    Jamie "Mike espèce de connard!"
 
-    Narrator "Grasping at the air, the jersey devil exhales a gout of blue flame as they throw punches at nothing."
+    Narrator "Regardant dans les airs, le démon crache une bouffée de feu bleu alors qu'iel lance des poings dans le vide qu'est le corps de Mike."
 
-    Taro "Prrrh, do you honestly think that'll work?"
+    Taro "Prrrh, tu crois vraiment que ça va marcher?"
     $musicPlayer.playSong(song="not_so_spooky_song",fadeIn=1)
 
-    Narrator "Throwing another punch, Jamie winces as it actually strikes,, Madhouse's open palm."
+    Narrator "Lanceant un autre coup, Jamie grince alors qu'il touche en fait la main ouverte de Madhouse."
     voice mm_booa
-    Madhouse "Coward?"
+    Madhouse "Connard?"
     voice mm_laughe
-    Narrator "The ghost blinks back into view with a giddy laugh and a smile."
+    Narrator "Le fantôme résume un sourire narquois en arrètant le poing de Jamie."
 
     voice jamie_surpriseb
     Jamie "-!{nw}"
 
-    Narrator "Jamie yanks their hand away but it's too late, Madhouse's coiled his fist around their arm. "
+    Madhouse "Je te l'ai déja dit, je—"
 
-    Madhouse "Didn't I tell you? I—"
+    Narrator "Rien à foutre. Elle donne un gros coup de tête sur le spectre le laissant bouche-bé."
 
-    Narrator "Jamie doesn't care. They swing their head back and slam their skull against the ghost's face, leaving Madhouse sputtering."
+    Madhouse "Je travaille pas avec les—"
 
-    Madhouse "I don't deal with—"
+    Narrator "Iel lance un autre coup, Jamie frappe une nouvelle fois le torse de Madhouse."
 
-    Narrator "Throwing their other fist, Jamie punches their arm through Madhouse's chest."
+    Madhouse "{sc=1}Laisse moi finir!{/sc}"
 
-    Madhouse "{sc=1}Let me finish!{/sc}"
+    Narrator "Ils sont tout les deux bloqués. Jamie ne peux pas bouger ses bras."
 
-    Narrator "They're both stuck. Jamie can't move their arms."
-
-    Narrator "Jamie bites and kicks but to no avail,, they're tangled in a tangible, intangible mess."
+    Narrator "Iel mors et se débat,, d'une manière très violente malgré l'efficacitée de l'acte proche du zéro absolu."
     voice mm_laughawkward
-    Madhouse "Way to go and ruin the moment, bonehead."
+    Madhouse "Arrète de ruiner l'instant, tête d'os."
 
-    Narrator "Madhouse tightens his grip around the devil."
+    Narrator "Madhouse serre plus fort sur son emprise."
 
-    Jamie "., You wouldn't dare."
+    Jamie "., Tu n'hoserais pas."
 
     $musicPlayer.playSong(song="drink_it_song",fadeOut=1,fadeIn=3)
     voice mm_laugha
-    Madhouse "Whaaaat? I've never possessed a demon before—"
+    Madhouse "Quoiii? J'ai jamais possedé un démon avant!"
 
-    Jamie "Your soul would be {i}incinerated!{/i}"
+    Jamie "Ton âme se ferait {i}carboniser!{/i}"
 
     voice mm_yawn
-    Madhouse "So what?"
+    Madhouse "Et alors?"
 
-    Madhouse "I'll manage,, {bt=2}either way it's a win-win!{/bt}"
+    Madhouse "J'men fout,, {bt=2}dans les deux cas c'est gagnant-gagnant!{/bt}"
 
 
     camera:
@@ -1126,11 +1124,11 @@ label buildup_to_MM_Fight:
 
     show demon_madhouse at MMD_Entry_Pos
 
-    Narrator "Madhouse's jaw suddenly unhinges, a curled horn jutting out the side of his head. He claps a hand over his face and stifles a cry, his ghastly form flickering in the iridescent lights."
+    Narrator "La mâchoire de Madhouse se déchaîne soudainement, une corne recourbée dépassant du côté de sa tête. Il met une main sur son visage et étouffe un cri, sa forme horrible vacillant dans les lumières irisées"
 
-    Jamie "I told you it wouldn't work!"
+    Jamie "Je t'ai dit que ça marcherais pas!"
 
-    Narrator "Jamie acts fast, taking this moment to finally tear their hand out of Madhouse's chest while he writhes, shaking ectoplasm off their claws."
+    Narrator "Jamie se dégage enfin de l'emprise de Madhouse, iel secoue ses main maintenant pleine d'éctoplasme."
     if gameVersion == 3:
         $displaymenu = True
         Narrator "Skip Fight?{nw}"

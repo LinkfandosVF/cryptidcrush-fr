@@ -32,19 +32,19 @@ label FIGHT_01_MADHOUSE:
 
         #Robyn Setup
         PC_Stats = RobynUnit()
-        PC_Stats.SetAttackMoves(['Bash', 'Cheer', 'Focus', 'Heart Out'], 'FIGHT_01_MM_ROBYN_')
+        PC_Stats.SetAttackMoves(['Frapper', 'Encourager', 'Focus', 'Coeur ouvert'], 'FIGHT_01_MM_ROBYN_')
 
         #Jamie Setup
         Jamie_Stats = JamieUnit()
-        Jamie_Stats.SetAttackMoves(['Spirit Blaze', 'Skull Cracker', 'Healing Wave'], 'FIGHT_01_MM_JAMIE_')
+        Jamie_Stats.SetAttackMoves(['Esprit brasier', 'Pète crâne', 'Vague Dia'], 'FIGHT_01_MM_JAMIE_')
 
         #Taro Setup
         Taro_Stats = TaroUnit()
-        Taro_Stats.SetAttackMoves(['Pounce', 'Tuna Defender', 'Jeer'], 'FIGHT_01_MM_TARO_')
+        Taro_Stats.SetAttackMoves(['Bourrer', 'Défense Tuna', 'Rayer'], 'FIGHT_01_MM_TARO_')
 
         usedKinesis = False
         Atlas_Stats = AtlasUnit()
-        Atlas_Stats.SetAttackMoves(['Lore Dump', 'Kinesis', 'Pump Up'], 'FIGHT_01_MM_ATLAS_')
+        Atlas_Stats.SetAttackMoves(['Étalage de lore', 'Kinesis α', 'Bon Mindset'], 'FIGHT_01_MM_ATLAS_')
 
     python:
         #Puts the party into the Bar
@@ -92,45 +92,45 @@ label FIGHT_01_MADHOUSE_PT:
     #Random Lines
     python:
         #Random Idle Lines
-        xStr = "The party is ready to fight."
+        xStr = "C'est l'heure d'attaquer."
         xIdle = []
 
         #Robyn
         if playerUnits[0].isAlive:
-            xIdle.append("You brace yourself for the worst.")
-            xIdle.append("You try getting a grip on the situation. It’s a lot to process.")
+            xIdle.append("Tu te prépare au pire.")
+            xIdle.append("Tu éssaie de suivre le moment. Ca fait beaucoup à encasser d'un coup.")
 
         #Atlas
         if playerUnits[1].isAlive:
             if playerUnits[0].isAlive:
-                xIdle.append("You look to Atlas nervously.")
+                xIdle.append("Tu regarde Atlas nerveusement.")
 
-            xIdle.append("Atlas stares off into space.")
-            xIdle.append("Atlas coughs up more ectoplasm.")
-            xIdle.append("Atlas daydreams about having a raven familiar.")
+            xIdle.append("Atlas regarde dans le vide.")
+            xIdle.append("Atlas Crache plus d'éctoplasme.")
+            xIdle.append("Atlas pense à avoir un familier corbeau.")
 
         #Jamie
         if playerUnits[2].isAlive:
             if playerUnits[0].isAlive:
-                xIdle.append("You look to Jamie nervously.")
+                xIdle.append("Tu regarde Jamie nerveusement.")
 
             if playerUnits[1].isAlive:
-                xIdle.append("Jamie shifts their weight, their tail swishing in time.")
-                xIdle.append("Jamie’s trying to hold back for Atlas’ sake.")
+                xIdle.append("Jamie ajuste sa posture, sa queue bouge sur le sol.")
+                xIdle.append("Jamie éssaie de se retenir pour Atlas.")
             else:
-                xIdle.append("Jamie is done messing around.")
+                xIdle.append("Jamie en à plus qu'assez de bidouiller.")
 
         #Taro
         if playerUnits[3].isAlive:
             if playerUnits[0].isAlive:
-                xIdle.append("You look to Taro nervously.")
+                xIdle.append("Tu regarde Taro nerveusement.")
 
-            xIdle.append("Taro yawns and combs her whiskers.")
-            xIdle.append("Taro is ready and raring to tear into this dude.")
+            xIdle.append("Taro baille et lèche ses pattes.")
+            xIdle.append("Taro est prète à déchiqueter Madhouse.")
 
         xStr = renpy.random.choice(xIdle)
         if playerUnits[CheckLowestHP(False)].cHP <= 5:
-            xStr = playerUnits[CheckLowestHP(False)].name + " could use some help."
+            xStr = playerUnits[CheckLowestHP(False)].name + " pourrait avoir un peu d'aide."
 
 
     Narrator "[xStr]"
@@ -190,23 +190,23 @@ label FIGHT_01_MADEHOUSE_P2START:
         if not enemyUnits[0].isAlive:
             enemyUnits[0].modifyHP(1,1.0,"guts")
 
-    Atlas "I wanted to believe you loved it here, working your dream job, but now I know that was a total lie!"
+    Atlas "Je pensais que tu aimait travailler içi, mais c'est complètement faux! Tu déteste ton travail!"
 
-    Madhouse "Get over yourself. \n\n{size=30}You don't know me!{/size}"
+    Madhouse "Sort de ton monde des bisounours. \n\n{size=30}TU NE ME CONNAIS PAS!{/size}"
 
-    Atlas "I know you're on the road to {i}eradication!{/i}"
+    Atlas "Je sais que tu est sur la route de l'{i}éradication!{/i}"
 
-    Narrator "A crooked grin peels across the demon’s face as he giggles to himself."
+    Narrator "Un sourire triste se penche du coté de Madhouse alors qu'il se dit a lui même."
 
-    Madhouse "You saw my future back there, didn't you?"
+    Madhouse "T'avais vu mon avenir là bas, n'est-ce pas?"
 
-    Atlas "H-huh? No- I can't! I didn't!"
+    Atlas "H-hein? Nan! Je peux pas!"
 
-    Madhouse "{size=30}You're one shitty liar!{/size}"
+    Madhouse "{size=30}T'es vraiment qu'un putain de mauvais menteur!{/size}"
 
-    Atlas "If you keep this up, you’re going to die, like {i}die{/i}, die!"
+    Atlas "Si tu continue tu vas mourir! Genre {i}Crèver{/i}, crèver!"
 
-    Madhouse "{size=35}No one cares!!{/size}"
+    Madhouse "{size=35}TOUT LE MONDE S'EN FOUT!{/size}"
     jump FIGHT_01_MADHOUSE_ET2
 
 label Fight_01_MADHOUSE_END:
@@ -219,9 +219,9 @@ label Fight_01_MADHOUSE_END:
         $persistent.unlockedDice[3] = True
         $persistent.unlockedDice[4] = True
 
-    Narrator "You've unlocked some new dice! You can equip them through the quick menu (the = on the left) at any time! Just not while rolling."
+    Narrator "T'a choppé un nouveau dé. Tu peux le changer dans le menu. (le = sur la gauche) quand tu veux! Juste pas quand tu joue un dé."
 
-    Narrator "Future updates will include more in depth explanations on the differences between dice sets, but the main thing you'll want to keep in mind is that dice sets change how much karma you have to work with, and the numbers you typically roll."
+    Narrator "Va voir le Mothman pour des explications détaillées de leurs effets."
     
 
     return

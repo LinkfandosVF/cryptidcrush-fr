@@ -44,15 +44,15 @@ label FIGHT_00_MADLAS:
         currentLabelET = "FIGHT_00_MADLAS_ET"
 
 
-    Narrator "{glitch=20}Madlas{/glitch} freaks out!"
+    Narrator "{glitch=20}Madlas{/glitch} complexe!"
 
-    Jamie "I need a breather."
+    Jamie "J'ai besoin d'une pause."
     python:
         xHeal = playerUnits[1].cPower("occult") + 3
         playerUnits[0].modifyHP(xHeal,0.0,"guts")
         playerUnits[1].modifyHP(xHeal,0.0,"guts")
 
-    Narrator "Jamie closes their eyes, and the flame between their horns casts a cool light over their allies, mending some of their wounds."
+    Narrator "Jamie ferme les yeux, et la lumière entre ses cornes émanne d'une lumière bleue rafraichissante. Iel panse ainsi quelques-unes des bléssures du groupe."
     $HighlightEnemyUnitBars([])
     jump FIGHT_00_MADLAS_ET
 
@@ -73,8 +73,8 @@ label FIGHT_00_MADLAS_PT:
 
         MD_State["mouth"] = 3
         MD_State["eyes"] = -1
-    Narrator "It's time to fight."
-
+    Narrator "Madlas se tiens devant toi."
+    
     $toggleQuickMenu()
 
     hide screen quicker_menu
