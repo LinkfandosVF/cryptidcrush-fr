@@ -1,4 +1,6 @@
 # Cryptid Crush
+
+**ANNONCE**: Vu que c'est la rentrée, j'aurais moins de temps pour bosser- alors... voila. C'est tout. Bref. um...
 ## Patch francophone
 
 Télécharger le jeu: https://drowsy-drake-studios.itch.io/cryptid-crush
