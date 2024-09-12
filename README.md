@@ -20,11 +20,12 @@ Cryptid Crush contiendras *AU MOINS* 5 personnages a date, et recevera des màj 
 
 [💖]VERSION ACTUELLE DU JEU:  **Dec 31, 2023** - Build Itch.io
 
-[📘]VERSION ACTUELLE DU PATCH:  *V.01* Basé sur **Dec 31, 2023** - Build Itch.io
+[📘]VERSION ACTUELLE DU PATCH:  *V.00001* Basé sur **Dec 31, 2023** - Build Itch.io
 
 "Grand mercis au playtesters, amis et héros comme toi!"
 
 
+UPDATE: Les cours c'est pas cool. J'ai pas beaucoup de temps pour travailler sur le patch mais il n'est pas mort!! J'ai beaucoup de fichiers a pull dans mon ordi alors soyez patient!!
 
 -------------------------------------------------------
 
@@ -83,15 +84,7 @@ Dans l'état l'intro jusqu'a la station d'Ehlkorn est traduit. Rien d'autre.
 
 C'est juste une suposition, mais le jeu devrais être patché!
 
-Temps de travail:
-
-Jour 1- 4H (22/03), Fini a 1h12
-
-Jour 2- 2H + 7H (23/08), Fini à 1:52AM
-
-Jour 3- 3:46H (23/08), Fini à 0:26AM
-
-Jour 4- 00:46h (24/08à, FIni à 9h35
+Note: Un self-loader pour installer des mods sera disponible plus tard, contenant des instructions pour installer le patch ainsi que d'autres potentiels mods!
 
 [Devenir Membre Patreon](https://www.patreon.com/bePatron?u=19966246&redirect_uri=https%3A%2F%2Fitch.io%2Fgame%2Fedit%2F815590&utm_medium=widget)
 (ça aide beaucoup!)
@@ -99,6 +92,6 @@ Jour 4- 00:46h (24/08à, FIni à 9h35
 [Discord du jeu](https://discord.com/invite/cryptidcrush)
 
 Thanks to Mike for allowing me to mess with files and not smashing my head against a wall for discovering spoilers i wasn't supposed to see :3
-+ MIKE UR A FUCKING GOD DKHFKDFKDJFDFKDFJ WHY DOES A FUCKING : RUINED EVERYTHING
+
 
 And thanks the whole dev team for making this master piece of a game. It's awesome. Thank y'all a lot!! ❤️
