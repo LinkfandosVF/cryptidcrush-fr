@@ -86,6 +86,11 @@ C'est juste une suposition, mais le jeu devrais être patché!
 
 Note: Un self-loader pour installer des mods sera disponible plus tard, contenant des instructions pour installer le patch ainsi que d'autres potentiels mods!
 
+### Crédits:
+
+Linkfandos(moi): VA D'Atlas, traduction des dialogues, création du patch
+Baphos (@BaphosTV): VA du Mothman (Atticus), VA d'August
+
 [Devenir Membre Patreon](https://www.patreon.com/bePatron?u=19966246&redirect_uri=https%3A%2F%2Fitch.io%2Fgame%2Fedit%2F815590&utm_medium=widget)
 (ça aide beaucoup!)
 
