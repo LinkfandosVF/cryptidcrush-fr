@@ -71,15 +71,15 @@ Dans l'état l'intro jusqu'a la station d'Ehlkorn est traduit. Rien d'autre.
 
 ### POUR INSTALLER:
 
-1 - Télécharger le code en tant que .Zip
+1 - Télécharger la dernière sortie dans [RELEASES](https://github.com/LinkfandosVF/cryptidcrush-fr/releases)
 
 2 - Ouvrir le dossier du jeu préalablement téléchargé sur itch.io
 
 3 - Ouvrir le dossier "Game" du jeu
 
-4 - Copier le contenu du .zip dans un nouveau dossier appelé "Game Code" A LA LETTRE et CLIQUER SUR REMPLACER LES FICHIERS.
+4 - Extraire le contenu du patch dans celui du jeu et REMPLACER les fichiers
 
-5 - Optionel, supprimer le fichier gamefiles.rpa dans le dossier Game.
+5 - Vous devriez avoir remplacé le fichier gamefiles.rpa et avoir remplacé plusieurs fichiers de audio.
 
 
 C'est juste une suposition, mais le jeu devrais être patché!
