@@ -1,7 +1,10 @@
 # Cryptid Crush
 
 **ANNONCE**: Le jeu n'est actuellement PAS patchable sous android. Cela néssécite la construction d'un APK custom, mais l'uploader sur le github contstitue une publication non authorisée et non officielle du jeu... Désolé.
-## Patch francophone
+
+**Annonce 2:** Le développement du patch est en pause. On a besoin de gens pour faire le voice acting et tant que le jeu n'est pas entièrement sorti...
+
+## Patch francophone 
 
 Télécharger le jeu: https://drowsy-drake-studios.itch.io/cryptid-crush
 
