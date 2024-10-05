@@ -95,11 +95,12 @@ Note: Un self-loader pour installer des mods sera disponible plus tard, contenan
 - Robyn VOIX A - Minikiwi
 - Robyn VOIX B - ?
 - Taro - ?
-- Atlas - Linkfandos
+- Atlas - WillTheSloth
 - Jamie - ?
 - August - Linkfandos
 - Oz - ?
 - Thursday - ?
+- Goatma'am
 - Edith - ?
 - Hazel - ?
 - Robbie - ?
