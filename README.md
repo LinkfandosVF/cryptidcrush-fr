@@ -2,8 +2,6 @@
 
 **ANNONCE**: Le jeu n'est actuellement PAS patchable sous android. Cela néssécite la construction d'un APK custom, mais l'uploader sur le github contstitue une publication non authorisée et non officielle du jeu... Désolé.
 
-**Annonce 2:** Le développement du patch est en pause. On a besoin de gens pour faire le voice acting et tant que le jeu n'est pas entièrement sorti...
-
 ## Patch francophone 
 
 Télécharger le jeu: https://drowsy-drake-studios.itch.io/cryptid-crush
@@ -93,8 +91,19 @@ Note: Un self-loader pour installer des mods sera disponible plus tard, contenan
 
 ### Crédits:
 
-- Linkfandos(moi): VA D'Atlas, traduction des dialogues, création du patch
-- Baphos (@BaphosTV): VA du Mothman (Atticus), VA d'August
+- Mothman (Atticus) - BaphosTV
+- Robyn VOIX A - Minikiwi
+- Robyn VOIX B - ?
+- Taro - ?
+- Atlas - Linkfandos
+- Jamie - ?
+- August - Linkfandos
+- Oz - ?
+- Thursday - ?
+- Edith - ?
+- Hazel - ?
+- Robbie - ?
+- Lexulathu'al - ?
 
 
 Et d'autres gens a venir!!
