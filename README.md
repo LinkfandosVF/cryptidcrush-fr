@@ -90,22 +90,22 @@ C'est juste une suposition, mais le jeu devrais être patché!
 Note: Un self-loader pour installer des mods sera disponible plus tard, contenant des instructions pour installer le patch ainsi que d'autres potentiels mods!
 
 ### Crédits:
+...Temporaire... Peut être.
 
-- Mothman (Atticus) - BaphosTV
-- Robyn VOIX A - Minikiwi
-- Robyn VOIX B - ?
-- Taro - ?
-- Atlas - WillTheSloth
-- Jamie - ?
-- August - Linkfandos
-- Oz - ?
-- Thursday - ?
-- Goatma'am
-- Edith - ?
-- Hazel - ?
-- Robbie - ?
-- Lexulathu'al - ?
-
+Atticus - Baphos 
+Robyn A - Minikiwi 
+Robyn B - Valtinei
+Taro - Kokoro
+Atlas - WillTheSloth
+Madhouse - ??
+Jamie - ??
+August - ??
+Oz - ??
+Thursday - ??
+Edith - ??
+Hazel - ??
+Robbie - Linkfandos
+Lexulathu'al - Oto
 
 Et d'autres gens a venir!!
 
