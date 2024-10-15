@@ -92,20 +92,20 @@ Note: Un self-loader pour installer des mods sera disponible plus tard, contenan
 ### Crédits:
 ...Temporaire... Peut être.
 
-Atticus - Baphos 
-Robyn A - Minikiwi 
-Robyn B - Valtinei
-Taro - Kokoro
-Atlas - WillTheSloth
-Madhouse - ??
-Jamie - ??
-August - ??
-Oz - ??
-Thursday - ??
-Edith - ??
-Hazel - ??
-Robbie - Linkfandos
-Lexulathu'al - Oto
+- Atticus - Baphos 
+- Robyn A - Minikiwi 
+- Robyn B - Valtinei
+- Taro - Kokoro
+- Atlas - WillTheSloth
+- Madhouse - ??
+- Jamie - ??
+- August - ??
+- Oz - ??
+- Thursday - ??
+- Edith - ??
+- Hazel - ??
+- Robbie - Linkfandos
+- Lexulathu'al - Oto
 
 Et d'autres gens a venir!!
 
