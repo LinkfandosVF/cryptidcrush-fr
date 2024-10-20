@@ -72,20 +72,9 @@ Dans l'état l'intro jusqu'a la station d'Ehlkorn est traduit. Rien d'autre.
 
 ### POUR INSTALLER:
 
-1 - Télécharger la dernière sortie dans [RELEASES](https://github.com/LinkfandosVF/cryptidcrush-fr/releases) ou en téléchargant le code source en tant que .zip
-
-2 - Installer l'éditeur de Re'npy depuis le site officiel
-
-3 - Copier le dossier du jeu et le placer dans celui de Ren'py
-
-4 - Extraire le contenu du patch dans celui du jeu, vous devriez avoir un nouveau dossier dans celui du jeu appelé "Game Code"
-
-5 - Ouvrez l'éditeur de Ren'py et selectionnez "Compiler les paquets", puis validez.
+https://github.com/LinkfandosVF/cryptidcrush-fr/wiki/Index
 
 Une fois la compilation terminée, un dossier devrait s'ouvrir dans l'explorateur/Finder (ou ce que vous utlisez). Il contiendras des dossiers .zip, choisissez celui qui correspond a votre système, copiez le vers un autre endroit et une fois le fichier éxtrait, le jeu est prêt a être joué et est maintenant patché!
-
-
-C'est juste une suposition, mais le jeu devrais être patché!
 
 Note: Un self-loader pour installer des mods sera disponible plus tard, contenant des instructions pour installer le patch ainsi que d'autres potentiels mods!
 
