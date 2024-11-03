@@ -47,13 +47,14 @@ Vide= A faire
   - Note: Cela n'inclus pas les UI DES COMABTS EN GENERAL.
 - 🟠 Chapitre 0, DEAD AIR - Combat 2
 - 🟢 Chapitre 0, DEAD AIR - "Post Madhouse Bash"
-- Chapitre 1, Intro
-- Chapitre 1, Jour 1 [0/7]
+- 🟢 Chapitre 1, Intro
+- 🟠 Chapitre 1, Jour 1 [2/7]
 - Chapitre 1, Jour 2 [0/4]
 - Chapitre 1, Jour 3 [0/5]
 - Chapitre 1, Hangouts [0/7]
+- Chapitre 2... - NOTE; En cours d'édition par Mikey...
 
- Plus a venir. (Oh mon dieu je vais tellement crever)
+ Plus a venir. (Oh mon dieu je vais tellement mourir les vacances sont finies)
 -------------------------------------------------------
 ### DISCLAIMER:
 
@@ -71,7 +72,13 @@ Je suis toujours en train de travailler sur la permière build! Patience!
 Dans l'état l'intro jusqu'a la station d'Ehlkorn est traduit. Rien d'autre.
 
 ### POUR INSTALLER:
+#### Télécharger un Patch tout fait(Recommendé)
+Vu que JE suis con et que c'est super compliqué de patcher le jeu sois même, rendez vous dans https://github.com/LinkfandosVF/cryptidcrush-fr/releases pour télécharger une build toute faite...
 
+NOTE: Partager cette version du jeu est légal car le jeu est gratuiiiiiit~
+
+#### Patcher le jeu sois même (Pour les nerds)
+Oh, vous êtes masochistes?
 https://github.com/LinkfandosVF/cryptidcrush-fr/wiki/Index
 
 Une fois la compilation terminée, un dossier devrait s'ouvrir dans l'explorateur/Finder (ou ce que vous utlisez). Il contiendras des dossiers .zip, choisissez celui qui correspond a votre système, copiez le vers un autre endroit et une fois le fichier éxtrait, le jeu est prêt a être joué et est maintenant patché!
