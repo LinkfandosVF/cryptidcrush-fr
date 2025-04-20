@@ -1,4 +1,4 @@
-# Cryptid Crush - SUSPENDU
+# Cryptid Crush - Patch Français
 Dançons, faisont le encore comme si c'était la première fois
 
 **ANNONCE**: Le jeu n'est actuellement PAS patchable sous android. Cela néssécite la construction d'un APK custom, mais l'uploader sur le github contstitue une publication non authorisée et non officielle du jeu... Désolé.
