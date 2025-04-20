@@ -48,9 +48,9 @@ label Ch1_RobbieIntro:
     Someone "..."
 
     $adjustChar("Robbie",eye=1)
-    Robyn "I'm at the bridge! Yeah, I stopped by the clinic. Uh, I think he went home. \n\n'Kay, I'll see you there!"
+    Robyn "Je suis au pont, ouais! Je me suis arrêté à la clinique en passant. Heu, Je crois qu'il est rentré. \n\n'Ké, Je te vois là bas!"
 
-    Narrator "The bundled up cryptid catches your eye, they seem lost in thought, gazing out across the water. Feeling a twinge of worry, you quickly cross the street and call out."
+    Narrator "Le cryptide fortement habillé t'attire l'attention, il à l'air complètement perdu dans ses pensées, observant la surface de l'eau. Sentant un coup d'inquètude, tu traverses rapidement la rue et l'interpelle."
 
     camera:
         camera_zoom(z=-350,y=-20,x=-175,t=2.0)
@@ -58,45 +58,45 @@ label Ch1_RobbieIntro:
     python:
         adjustChar("Robyn",eyes=2,brow=2,mouth=4,armR=0)
 
-    Robyn "You alright?"
+    Robyn "Ça va?"
 
     python:
         adjustChar("Robyn",mouth=5)
         Robbie_State["eye"] = 0
 
-    Narrator "The stranger digs around and pulls out a chunk of granite stone. Tied around the stone is a string of woven green clovers."
+    Narrator "L'étranger fouille dans sa poche et ramasse un gallet de granite. Enroulé autour de la pierre est un fil fait de trèfles."
     python:
         adjustChar("Robyn",brow=0,mouth=1)
         Robbie_State["mouth"] = 2
 
     voice robbie_tossingrocks
 
-    Someone "I'm tossing rocks."
+    Someone "J'balance des pierres."
 
-    Narrator "He hoists it up and tosses it off the bridge, watching it plummet before plunking into the water."
+    Narrator "Il la soulève et la lance par dessus le pont, la regardant tomber dans l'eau en s'écrasant au fond du lac."
 
     python:
         adjustChar("Robbie",eye=1,mouth=5)
         adjustChar("Robyn",brow=0,mouth=5)
     voice robbie_youwannatry
 
-    Someone "You wanna try?"
+    Someone "Tu veux essayer?"
 
     show CGShade
     show Rock
 
-    Narrator "The cryptid offers you a mossy rock wrapped in grass and yellow wildflowers."
+    Narrator "Le cryptide t'offres une roche couverte de mousse enroulée dans des liasses de petites fleurs jaunes."
 
     python:
         adjustChar("Robbie",eye=1,mouth=0)
         adjustChar("Robyn",brow=2,mouth=4)
 
-    Robyn "Why., exactly?"
+    Robyn "Et pourquoi., exactement?"
 
     hide Rock
     hide CGShade
 
-    Narrator "He tosses another stone, this one wrapped in twine and maple leaves."
+    Narrator "Il lance une autre pierre, une enroulée dans des feuilles d'érables."
 
     python:
         adjustChar("Robbie",eye=0,mouth=3)
@@ -108,7 +108,7 @@ label Ch1_RobbieIntro:
         camera_shake
 
     voice robbie_goddess
-    Someone "{size=25}There's a {b}{color=#57fcd0}goddess{/color}{/b} sleeping at the mouth of the river.{/size}"
+    Someone "{size=25Il y a une {b}{color=#57fcd0}déesse{/color}{/b} qui dors dans la bouche de la rivière.{/size}"
 
     show robbie:
         matrixtransform RotateMatrix(0.0, 180.0, 15.0)
@@ -126,19 +126,19 @@ label Ch1_RobbieIntro:
         adjustChar("Robyn",brow=0,eyes=4,mouth=3)
 
     voice robbie_igotquestions
-    Someone "So I'm trying to wake her up. \n\nI've got questions."
+    Someone "Donc j'éssaie de la réveiller. \n\nJ'ai masse de questions à lui poser."
 
     $adjustChar("Robyn",brow=2,eyes=1,mouth=1)
     Narrator "Weirdo."
 
     $adjustChar("Robyn",mouth=4,eyes=2)
-    Robyn "How do you know she's down there?"
+    Robyn "Comment tu sais qu'elle est là dessous?"
 
     python:
         adjustChar("Robbie",eye=0,mouth=2)
         adjustChar("Robyn",brow=0,mouth=1,eyes=3)
     voice robbie_shetoreachunk
-    Someone "She tore a chunk outta me down in the bay."
+    Someone "Elle à essayé d'arracher un morceau de mon pied sur la baie."
 
     voice robbie_froglegs
     show robbie:
@@ -149,7 +149,7 @@ label Ch1_RobbieIntro:
         adjustChar("Robbie",eye=3,mouth=1)
         adjustChar("Robyn",brow=1,mouth=1,eyes=0)
 
-    Someone "Apologies ma'am but, frog legs are off the menu!"
+    Someone "Excusez moi madame, mais les cuisses de grenouilles ne sont pas sur le menu!"
 
     python:
         adjustChar("Robbie",eye=1,mouth=0)
@@ -157,26 +157,26 @@ label Ch1_RobbieIntro:
 
     #Someone "This town's seriously backwards."
     #$adjustChar("Robyn",brow=1,eyes=0)
-    Narrator "Oh, you thought he was joking."
+    Narrator "Eeeeeetttt tu pensais que c'était une blague."
 
     python:
         adjustChar("Robyn",brow=2,eyes=3,mouth=0)
         adjustChar("Robbie",eye=2,mouth=3)
 
     voice robbie_stillgettingused
-    Someone "Sorry,, I'm still gettin' used to life here..,{nw}"
+    Someone "Excuse moi ,, J'éssaie toujours de m'habituer à la vie par ici...,{nw}"
 
     python:
         adjustChar("Robyn",brow=0,eyes=2,mouth=0)
         adjustChar("Robbie",eye=0,mouth=3)
 
-    extend "\n\nUh, the name's {b}Robbie{/b}...{nw}"
+    extend "\n\nHeu, jm'appelle {b}Robbie{/b}...{nw}"
 
     $adjustChar("Robbie",eye=7,mouth=0)
-    extend " Y-you,, you., can keep the rock."
+    extend "T-tu,, tu peux garder la pierre, au fait..."
 
     $adjustChar("Robyn",brow=0,eyes=2,mouth=4)
-    Robyn "Ah, are you new?"
+    Robyn "Ah, t'es nouveau?"
 
     python:
         adjustChar("Robyn",brow=1,mouth=5)
@@ -186,7 +186,7 @@ label Ch1_RobbieIntro:
         matrixtransform RotateMatrix(0.0, 180.0, 15.0)
         ease 0.5  matrixtransform RotateMatrix(0, 180, 0)
 
-    Robert "Very new."
+    Robert "Très."
 
     show robbie:
         ease 1.0 yoffset 30
@@ -195,13 +195,13 @@ label Ch1_RobbieIntro:
         Robyn_State["brow"] = 0
         adjustChar("Robbie",eye=1,mouth=3)
 
-    Robert "I washed up on the beach like a piece of soggy driftwood."
+    Robert "Je me suis échoué sur la plage comme un vieux morceau de bois."
 
     python:
         adjustChar("Robyn",mouth=0,eyes=3,brow=0)
         Robbie_State["eye"] = 2
 
-    Robyn "That's a real fairytale entrance. Maybe fate brought you here?"
+    Robyn "Wow. Vraiment une entrée de conte de fée. Peut-être que le destin t'a ammené içi?"
 
     python:
         adjustChar("Robyn",mouth=5,eyes=0)
@@ -247,28 +247,28 @@ label Ch1_RobbieIntro:
         adjustChar("Robyn",mouth=5,eyes=2,brow=1)
         adjustChar("Robbie",mouth=3,eye=5)
 
-    Robert "I suppose that'd make me the frog prince."
+    Robert "Je suppose que ça ferait de moi un prince grenouille."
 
 
     python:
         adjustChar("Robyn",mouth=0,eyes=3,brow=2)
         adjustChar("Robbie",eye=2,mouth=0)
 
-    Robyn "I thought you were a fish."
+    Robyn "Je pensais que tu était un poisson."
 
     python:
         adjustChar("Robyn",eyes=2,mouth=5,brow=0)
         adjustChar("Robbie",mouth=2,eye=1)
 
-    Robert "A monster either way."
+    Robert "Un monstre dans tout les cas."
 
     $adjustChar("Robbie",mouth=0)
-    Narrator "You just have to ask—{nw}"
+    Narrator "T'es obligé de demander—{nw}"
 
     menu:
         extend ""
 
-        "Where are you from?":
+        "Tu viens d'où?":
             show robbie:
                 ease 1.5 xcenter 0.45
 
@@ -281,22 +281,22 @@ label Ch1_RobbieIntro:
                 adjustChar("Robyn",brow=1,eyes=0)
                 adjustChar("Robbie",mouth=2,eye=0)
 
-            extend "\n\nWhich is roughly three gazillion miles away."
+            extend "\n\nQui est à probablemennt des gazillions de killo-mètres d'içi."
             python:
                 adjustChar("Robyn",mouth=5,brow=2,eyes=2)
                 adjustChar("Robbie",mouth=3,eye=3)
 
-            Robert "So, no matter how you spin it, I shouldn't be here."
+            Robert "Donc, d'une manière ou d'une autre, je ne devrais pas être içi."
             python:
                 adjustChar("Robyn",mouth=0,eyes=1)
                 adjustChar("Robbie",mouth=2,eye=1)
 
-            Robyn "Unless—{nw}"
+            Robyn "A moins que—{nw}"
             python:
                 adjustChar("Robyn",eyes=4,mouth=4,brow=1)
                 adjustChar("Robbie",eye=1)
 
-            extend "\n\nYou're an astral projection?"
+            extend "\n\nT'es une projection astrale?"
             python:
                 adjustChar("Robbie",eye=7,mouth=3)
                 adjustChar("Robyn",eyes=2,mouth=5,brow=0)
@@ -307,16 +307,16 @@ label Ch1_RobbieIntro:
                 xcenter 0.45
                 ease 0.5  matrixtransform RotateMatrix(0, 180, 15.0)
 
-            Robert "Bleugh, don't even joke about that junk."
+            Robert "Bleugh, me parle pas de ce genre de truc."
 
-        "What does this {b}goddess{/b} look like?":
+        "A quoi ressemble cette {b}déesse{/b}?":
             python:
                 adjustChar("Robbie",eye=3,mouth=6)
                 adjustChar("Robyn",brow=1,eyes=0,mouth=1)
 
             show robbie at jumpSquish(0.15,150,0.25)
 
-            Robert "{b}LIKE ME!{/b}"
+            Robert "{b}COMME MOI!{/b}"
 
             show robbie:
                 xzoom 1
@@ -327,7 +327,7 @@ label Ch1_RobbieIntro:
                 ease 1.5 xcenter 0.45
 
             $adjustChar("Robbie",eye=4,mouth=0)
-            Robert "Green,, long fins,, awfully territorial."
+            Robert "Vert,, long et fin,, horriblement territorial."
             $adjustChar("Robbie",eye=8,mouth=5)
 
             show robbie:
@@ -335,10 +335,10 @@ label Ch1_RobbieIntro:
                 matrixtransform RotateMatrix(0.0, 180.0, 0.0)
                 ease 0.5  matrixtransform RotateMatrix(0, 180, 15.0)
 
-            extend "\n\nLike a little slice of home."
+            extend "\n\nComme un petit morceau de chez moi..."
 
     $adjustChar("Robyn",brow=0,eyes=2,mouth=0)
-    Robyn "So what's your plan now?"
+    Robyn "Tu va faire quoi maintenant du coup?"
 
 
     show robbie:
@@ -346,19 +346,19 @@ label Ch1_RobbieIntro:
         ease 0.5  matrixtransform RotateMatrix(0, 180, 0.0)
 
     $adjustChar("Robbie",eye=2,mouth=2)
-    Robert "Hitch a ride out of town, find a nice pond and hibernate 'til spring."
+    Robert "Me balader en ville, trouver un p'tit étang et hiberner j'usqu'au primptemps."
     python:
         adjustChar("Robbie",eye=0,mouth=7)
         adjustChar("Robyn",mouth=4,brow=1)
 
-    Robyn "Do cryptids generally hibernate?"
+    Robyn "Les cryptides hibernent?"
     python:
         adjustChar("Robbie",eye=8,mouth=5)
         adjustChar("Robyn",mouth=1,brow=0)
 
     voice robbie_laughb
 
-    Narrator "Robbie wheezes a strained laugh."
+    Narrator "Robbie éclate de rire."
 
     show robbie:
         ease 0.15 yoffset 0 matrixtransform RotateMatrix(0.0, 180.0, 0.0)
@@ -366,12 +366,12 @@ label Ch1_RobbieIntro:
 
     $adjustChar("Robbie",eye=3)
 
-    Robert "{b}Cryptids?!{/b} \n\nIs that what folks call us? Like I'm some kinda space alien?"
+    Robert "{b}Cryptids?!{/b} \n\nC'est comme ça qu'ils nous appellent? Comme une espèce d'alien?"
     python:
         adjustChar("Robbie",mouth=2,eye=0)
         adjustChar("Robyn",mouth=0,brow=2,eyes=4)
 
-    Robyn "I figured it was an umbrella term."
+    Robyn "J'utilise juste le terme du coin."
     python:
         adjustChar("Robbie",eye=2)
         adjustChar("Robyn",mouth=0,eyes=2)
@@ -380,20 +380,20 @@ label Ch1_RobbieIntro:
         ease 0.15 yoffset 0 matrixtransform RotateMatrix(0.0, 180.0, -10.0)
         ease 0.5 matrixtransform RotateMatrix(0.0, 180.0, 5.0)
 
-    Robert "That's hilarious!"
+    Robert "C'est hillarant!"
     $adjustChar("Robbie",eye=1)
 
-    extend "\n\nAnd not at all like what they call us back home."
+    extend "\n\nC'est pas DU TOUT comme ça qu'ils nous appellent à la maison."
     $adjustChar("Robyn",mouth=4)
 
-    Robyn "Which is?"
+    Robyn "Qui est?"
     python:
         adjustChar("Robbie",eye=3,mouth=6)
         adjustChar("Robyn",mouth=5,eyes=0,brow=1,)
 
     show robbie at hoppies_flipped(xIntensity=2.5)
 
-    Robert "{sc=2}EEEEK, GET AWAY YOU {b}MONSTER{/b}!{/sc}"
+    Robert "{sc=2}BEUUURK, DEGAGE DE LA ESPECE DE {b}MONSTRE{/b}!{/sc}"
 
     show robbie:
         ease 0.15 yoffset 0 matrixtransform rotated(y=180)
@@ -402,39 +402,39 @@ label Ch1_RobbieIntro:
         adjustChar("Robbie",eye=2,mouth=3)
         adjustChar("Robyn",mouth=1,eyes=1,brow=2,)
 
-    Robyn "That's terrible!"
+    Robyn "C'est térrible!"
 
     $adjustChar("Robbie",eye=1,mouth=2)
-    Robert "Psh, it doesn't bother me."
+    Robert "Psh, ça m'embète pas."
     python:
         adjustChar("Robbie",eye=7,mouth=3)
         adjustChar("Robyn",mouth=5,eyes=2,brow=0)
 
     voice robbie_laugha
-    Robert "Or that's what I {i}would{/i} say if it didn't {i}actually{/i} bother me."
+    Robert "Où c'est ce que {i}j'aurais{/i} dit si ça ne m'emmerdais pas {i}vraiment beaucoup{/i}."
 
     $adjustChar("Robyn",eyes=3,mouth=0)
-    Robyn "Well, I think you're a pretty cool frog prince."
+    Robyn "Moi je trouve que t'es plutôt cool comme prince grenouille."
 
     $adjustChar("Robbie",eye=0,mouth=2)
 
     voice robbie_flushed
-    Robert "{sc=3}Wow,, y-you think so?{/sc}"
+    Robert "{sc=3}Wow,, t-tu trouve?{/sc}"
 
     python:
         adjustChar("Robbie",eye=2,mouth=0)
         adjustChar("Robyn",mouth=4,eyes=2,brow=1)
 
-    Robyn "Do you have a place to stay?"
+    Robyn "T'a un endroit pour dormir?"
     python:
         adjustChar("Robbie",eye=0)
         adjustChar("Robyn",mouth=5,eyes=2,brow=0)
 
-    Robert "I'm squatting in some greenhouse I found.{nw}"
+    Robert "Je squatte un genre de serre que j'ai trouvé.{nw}"
 
     python:
         adjustChar("Robbie",eye=1,mouth=3)
-    extend "\n\nThe humidity's easy on the gills."
+    extend "\n\nL'humidité aide un peu."
 
 
     scene BG Black
@@ -443,7 +443,7 @@ label Ch1_RobbieIntro:
 
     with quickDissolve
 
-    Narrator "The two of you gaze out over the river, hoping some water breathing dragon would burst from the waves but,, nothing happens. With a curt nod, Robbie departs."
+    Narrator "Vous regardez tout les deux la surface de la rivière, éspèrant qu'un dragon sorte des vagues,, mais rien ne se passe. Avec un mouvement de la tête, Robbie se bouge un peu."
 
     jump Ch1_AtlasMeetup
 
@@ -479,14 +479,14 @@ label Ch1_AtlasMeetup:
     voice atlas_greet
 
     $adjustChar("Atlas",eye=6)
-    Atlas "Wait up!"
+    Atlas "Attends!"
 
     voice RobynSays("Chapter 1","WonderingWhenYoudShow")
     python:
         adjustChar("Robyn",mouth=6,eyes=3)
         adjustChar("Atlas",eye=1,armL=0,armR=0)
 
-    Robyn "I was wondering when you'd show up! What's up?"
+    Robyn "Je me demandais quand tu allais arriver, quoi de neuf?"
 
     python:
         adjustChar("Robyn",mouth=0,armL=0)
