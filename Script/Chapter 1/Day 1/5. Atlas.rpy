@@ -497,14 +497,14 @@ label Ch1_AtlasMeetup:
         xcenter 0.5
     voice atlas_newtypeofpossession
 
-    Atlas "I think we discovered a new type of {sc=1}possession!{/sc}"
+    Atlas "Je crois qu'on a découvert un nouveau type de {sc=1}possession!{/sc}"
 
     voice RobynSays("Chapter 1","OhYeah")
     python:
         adjustChar("Robyn",eyes=0,mouth=4)
         Atlas_State["eye"] = 6
 
-    Robyn "Oh yeah?"
+    Robyn "Ah ouais?"
 
     voice atlas_illcallitpp
 
@@ -512,16 +512,16 @@ label Ch1_AtlasMeetup:
         adjustChar("Atlas",eye=1,eyeFrame=5,feelers=1)
         adjustChar("Robyn",brow=2,eyes=4,mouth=5)
 
-    Atlas "I'll call it...{nw}"
+    Atlas "Je vais l'appeller...{nw}"
     $adjustChar("Atlas",eye=0,eyeFrame=5,feelers=1,armR=2,armL=1)
-    extend "\n\n{size=30}{color=#3bec27}paranormal poisoning.{/color}{/size}"
+    extend "\n\n{size=30}{color=#3bec27}l'empoisonement paranormal.{/color}{/size}"
 
     voice atlas_completewithalliteration
     python:
         adjustChar("Atlas",eyeFrame=0,sparkle=1,eye=6,feelers=0)
         adjustChar("Robyn",brow=0,eyes=2)
 
-    Atlas "Complete with alliteration!"
+    Atlas "Complèté par alliteration!"
 
     show atlas:
         parallel:
@@ -534,7 +534,7 @@ label Ch1_AtlasMeetup:
         adjustChar("Atlas",sparkle=0,eye=1,armR=0,armL=0)
         adjustChar("Robyn",eyes=2,mouth=3)
 
-    Atlas "Cool right?"
+    Atlas "Cool pas vrai?"
 
     show atlas:
         ease 0.5 yoffset 0 matrixtransform rotated(y=180) yzoom 1 xzoom 1 xoffset 0
@@ -545,46 +545,46 @@ label Ch1_AtlasMeetup:
 
     voice RobynSays("Chapter 1","NameAlone")
 
-    Robyn "By the name alone I’m guessing it’s some sort of supernatural leak that bleeds into someone else’s life essence?"
+    Robyn "Par son nom j'en conclus qu'il sagit d'une sorte de saignéee supernaturelle qui touche l'éssence vitale de quelqu'un d'autre?"
 
     python:
         adjustChar("Atlas",eye=6,armL=2)
         Robyn_State["mouth"] = 5
 
-    Atlas "Bingo! You're pretty sharp."
+    Atlas "Bingo! T'es plutôt doué."
 
     $adjustChar("Robyn",mouth=3,eyes=1,brow=2)
-    Robyn "I., made that up."
+    Robyn "Je viens de l'inventer.?"
     python:
         adjustChar("Robyn",mouth=0,eyes=3,brow=0)
         adjustChar("Atlas",feelers=1,eye=21,armL=0)
 
-    Atlas "Oh. \n\nGaaaah, don't screw with me!"
+    Atlas "Roh. \n\nGaaaah, te moque pas de moi!"
 
     python:
         adjustChar("Atlas",eye=18,feelers=0)
         Robyn_State["eyes"] = 4
 
-    Robyn "Okay okay, continue. I'm listening."
+    Robyn "Okay okay, continue. Je t'écoute."
 
     python:
         Atlas_State["eye"] = 16
         Robyn_State["eyes"] = 2
 
-    Atlas "So paranormal poisoning isn’t absolute possession, but rather a weaker indirect influence. \n\nLike keeping a haunted doll by your bedside."
+    Atlas "Donc en gros, l'empoisonement paranormal c'est pas une possession complète, mais plûtot un genre d'affluence. \n\nCommme garder une poupée hantée sur le coté de ton lit."
 
     $adjustChar("Robyn",eyes=1,mouth=4,brow=0)
-    Robyn "Or drinking a can of haunted soda."
+    Robyn "Ou boire une canette de soda hantée."
 
     show atlas at startledSquish
     $Atlas_State["eye"] = 1
-    Atlas "You got it!"
+    Atlas "T'a tout compris!"
 
     python:
         adjustChar("Robyn",eyes=2,mouth=5,brow=2)
         Atlas_State["eye"] = 6
 
-    Robyn "How'd you figure this out?"
+    Robyn "Comment t'a trouvé tout ça?"
 
     $adjustChar("Atlas",eye=14,feelers=3)
 
@@ -606,10 +606,10 @@ label Ch1_AtlasMeetup:
         adjustChar("Atlas",eye=16,feelers=0)
         adjustChar("Robyn",eyes=4,brow=0)
 
-    Atlas "Taro, can your buddy and I talk in private?"
+    Atlas "Taro, je peut parler à ton pote en privé?"
 
     $adjustChar("Taro",eye=2,mouth=2,pawR=0,pawL=1)
-    Taro "What,, you two need some {bt=3}alone time?{/bt}"
+    Taro "Quoi, vous voulez un petit temps salon {bt=3}tout seul?{/bt}"
 
     python:
         adjustChar("Atlas",eye=21,feelers=3)
@@ -627,7 +627,7 @@ label Ch1_AtlasMeetup:
         adjustChar("Robyn",eyes=1,brow=0)
         adjustChar("Taro",mouth=4,eye=5)
 
-    Taro "{i}Myehehe,{/i} I'm just teasing! You two get along now."
+    Taro "{i}Myehehe,{/i} Je déconne! Allez faire vos trucs."
     python:
         Taro_State["eye"] = 1
         Atlas_State["eye"] = 1
@@ -635,7 +635,7 @@ label Ch1_AtlasMeetup:
     show taro:
         ease 5.0 yoffset 700
 
-    Taro "I'll meet you back home, human."
+    Taro "Je serais à la maison, humain."
     python:
         adjustChar("Atlas",eye=0,eyeFrame=0)
         Robyn_State["mouth"] = 4
@@ -650,17 +650,17 @@ label Ch1_AtlasMeetup:
         ease 0.4 matrixtransform RotateMatrix(0,180,0)
 
 
-    Robyn "Oh! Aaand she's gone. \n\nWhat did you want to tell me?"
+    Robyn "Oh! Eeeeeettt elle est partie. \n\nTu voulais me dire quoi?"
 
     hide taro
     python:
         Atlas_State["eye"] = 5
         adjustChar("Robyn",mouth=0,eyes=3)
 
-    Atlas "Well."
+    Atlas "Eh bien."
 
     $Atlas_State["eye"] = 3
-    Atlas "When I close my eyes, this happens."
+    Atlas "Quand je ferme mes yeux, y'a ça qui se passe."
     $adjustChar("Atlas",eye=16,feelers=2)
 
     show atlas:
@@ -681,10 +681,10 @@ label Ch1_AtlasMeetup:
     camera at camera_default:
         matrixcolor TintMatrix("#c0fac8")
 
-    Narrator "Atlas squeezes his eyes shut and when he opens them, they’re a sharp green with a faint glow."
+    Narrator "Atlas fermes ses yeux et quand ils les réouvres, ils sont d'une brilliant lueur verte."
 
     $adjustChar("Atlas",feelers=1,eye=15)
-    P_Atlas "I’m sure it’ll wear off soon, but I’ve been keeping an eye on it."
+    P_Atlas "J'suis sur que ça partira, mais j'ai gardé un oeuil dessus."
 
     python:
         adjustChar("Robyn",eyes=0,mouth=4,brow=3)
@@ -704,7 +704,7 @@ label Ch1_AtlasMeetup:
 
     voice RobynSays("Chapter 1","YoureStillPossessed")
 
-    Robyn "{size=30}You’re still possessed?!{/size}\n\nAtlas, how are you {b}functioning?{/b}"
+    Robyn "{size=30}T'es toujours possèdé?!{/size}\n\nAtlas, comment est-ce que tu {b}FONCTIONNE?{/b}"
 
     python:
         Robyn_State["mouth"] = 1
@@ -714,10 +714,10 @@ label Ch1_AtlasMeetup:
         camera_shake
 
     voice atlas_gigglea
-    P_Atlas "{bt=3}{color=#3bec27}Willpower baby!{/color}{/bt}"
+    P_Atlas "{bt=3}{color=#3bec27}La volonté, baby!{/color}{/bt}"
 
     $adjustChar("Robyn",eyes=1,mouth=4)
-    Robyn "I'm taking you to the doctor's right now. I'm calling poison control."
+    Robyn "Je t'emmène chez le médecin immédiatement. J'appelle le contrôle du poison."
     python:
         adjustChar("Atlas",eye=10,feelers=2)
         adjustChar("Robyn",mouth=1,brow=2)
@@ -725,7 +725,7 @@ label Ch1_AtlasMeetup:
     show atlas:
         camera_shake
 
-    P_Atlas "{sc=3}Nooooo!{/sc} Chillax! \n\nLet's not pass up this glorious {color=#3bec27}opportunity!{/color}"
+    P_Atlas "{sc=3}Nooooon!{/sc} Chillax! \n\nNe passons pas sur cette glorieuse {color=#3bec27}opportunité!{/color}"
 
     python:
         adjustChar("Atlas",eye=11,feelers=0)
@@ -737,12 +737,12 @@ label Ch1_AtlasMeetup:
     show robyn:
         ease 0.5 xcenter 0.7 matrixtransform rotated(y=180)
 
-    P_Atlas "I've gotta show ya what I can do with {color=#3bec27}this{/color} first!"
+    P_Atlas "J'dois te montrer ce que je peux faire avec {color=#3bec27}ça{/color} d'abord!"
     python:
         adjustChar("Atlas",eye=5,feelers=3)
         adjustChar("Robyn",eyes=1,mouth=4,brow=3)
 
-    Robyn "Fine,, but I'm not happy about it."
+    Robyn "D'accords,, mais honnêtement ça me fait chier."
 
     $adjustChar("Atlas",eye=9,feelers=1)
 
