@@ -30,19 +30,19 @@ label Ch1_CafeIntro:
         musicPlayer.playSong(song="stygian_scuffle_song",fadeIn=2,fadeOut=1)
         songText = "(REDACTED)"
 
-    Narrator "Entering the cafe, you’re greeted with the sharp air of roasted coffee and funky choral music that doesn’t suit the atmosphere at all."
+    Narrator "En entrant dans le café, tu est immédiatement acceuilli par un air de café en poudre et de musique chorale funky qui ne se tient pas du tout à l'athmosphère."
 
-    Narrator "Not that you’re one to judge, everyone has their odd music tastes. \n\n You're just here for a chair and a bite to eat."
+    Narrator "Non pas que tu sois là pour juger, tout le monde à des goûts musicaux étranges. \n\n Tu est juste ici pour une chaise et un truc à manger."
 
     show robyn happy:
         xcenter 0.2
     $Robbie_State["eye"] = 3
-    Robyn "Are you in line?"
+    Robyn "Tu fait la queue?"
 
     $Robbie_State["eye"] = 1
-    Narrator "Standing towards the counter is a bundled up cryptid hunched over a tiny coffee cup, dressed in layers of warm clothes and a fuzzy hat to match."
+    Narrator "Debout devant le contoir se tient un cryptide penché devant un petit goblet, habillé de multiples couches de vêtements et un chapeau poilu pour accompagner."
 
-    Narrator "The droning music suddenly cuts to a peppy, folk playlist."
+    Narrator "La musique change soudainement vers une playlist enjouée, altèrant complètement l'ambiance."
 
     $musicPlayer.playSong(song="cryptidcrush_cafe2",fadeIn=1,fadeOut=1)
 
@@ -56,11 +56,11 @@ label Ch1_CafeIntro:
         ease 0.15 yoffset 0
 
     voice robbie_hopingtochangeorder
-    Someone "I was hopin' to change my order."
+    Someone "J'aurais espéré pouvoir changer ma commande."
     voice robbie_longhopescoffee
     $adjustChar("Robbie",eye=7,mouth=3)
 
-    Someone "But,, I think Longhope's coffee., is just., {b}bad.{/b} Like look at this it's crap. It's useless, warm, brown water."
+    Someone "Mais,, je crois que le café de Longhope., il est juste., {b}mauvais.{/b} Regarde ce truc. C'est juste de l'eau marron."
 
     python:
         musicPlayer.playSong(song="cryptidcrush_cafe2",fadeIn=1,fadeOut=1)
@@ -84,7 +84,7 @@ label Ch1_CafeIntro:
     show jamie cafe:
         unflipCharDelayed(0.8,0.5)
 
-    Narrator "You shuffle past as the disgruntled cryptid leaves the shop."
+    Narrator "Tu t'écartes alors que le cryptide quitte le magasin."
     camera:
         camera_zoom(x=100,y=-30,z=-150)
 
@@ -97,7 +97,7 @@ label Ch1_CafeIntro:
         matrixtransform RotateMatrix(0,0,0)
 
     voice jamie_abyssalcoldbrewishalfoff
-    Jamie "Welcome! What would you like to order? Abyssal cold brew is half off."
+    Jamie "Bienvenue! Qu'est-ce que vous voulez commander? Les infusions abyssales froides sont à moité prix."
 
     $adjustChar("Robyn",eyes=0,mouth=4)
     Robyn "Jamie?"
@@ -108,63 +108,63 @@ label Ch1_CafeIntro:
         alpha 1
 
     $adjustChar("Jamie",alFace=0,eye=4,sweat=0,blush=1)
-    Narrator "The towering demon freezes up on the spot and their cheeks flushing a bright blue."
+    Narrator "L'immense démon se bloque sur place et son visage se mettent à briller d'un lèger bleu clair."
 
     voice jamie_lookaway
-    Jamie "No,., please,., look away."
+    Jamie "Non,., s'il te plait,., ne me regarde pas-..."
 
     Robyn "Oh—"
 
     $adjustChar("Jamie",mouth=1,eye=6,blush=0,wispEyes=3)
     voice jamie_begonehuman
-    Jamie "{sc=2}Begone human!{/sc}"
+    Jamie "{sc=2}Vas-t'en humain!{/sc}"
 
     $adjustChar("Jamie",eye=7,mouth=2)
-    Jamie "Gaze not upon my wretched form."
+    Jamie "Ne pose pas les yeux sur cette forme affaiblie."
 
     python:
         adjustChar("Robyn",eyes=2,mouth=2)
         Jamie_State["blush"] = 0
 
-    Robyn "You mean., your work uniform?"
+    Robyn "Tu veux dire., ton uniforme de travail?"
 
     python:
         adjustChar("Jamie",eye=1,mouth=0,wispEyes=4)
         Robyn_State["mouth"] = 5
 
-    Jamie "Precisely,, I am but a worm in this state."
+    Jamie "Précisément,, mais je suis vraiment un rat sous cette forme."
 
-    Robyn "Hey, if it's too awkward, I can come back when you're on lunch break."
+    Robyn "Hey, si c'est trop génant, je peux revenir quand c'est ta pause."
 
     $Jamie_State["eye"] = 4
 
-    Jamie "No, I must be strong."
+    Jamie "Non, je dois rester fort."
 
     python:
         adjustChar("Jamie",eye=3,blush=0,wispEyes=0)
         adjustChar("Robyn",eyes=3,mouth=0,brow=2)
 
-    Robyn "I'll have a chai latte and a croissant."
+    Robyn "Je vais prendre un chai et un croissant."
 
     show robyn:
         matrixtransform RotateMatrix(0,0,0)
 
     $adjustChar("Jamie",mouth=1,eye=6,wispEyes=1)
-    Jamie "You could save two dollars if you ordered an Abyssal Cold Brew."
+    Jamie "Tu économiserait 2 dollars si tu prenait une infusion."
 
-    Robyn "Sure, if you recommend it!"
+    Robyn "Okau, si tu le recommande!"
 
     python:
         adjustChar("Robyn",eyes=0,mouth=3)
         adjustChar("Jamie",eye=1,wispEyes=1,mouth=2)
 
-    Jamie "No, it tastes very bad."
+    Jamie "Non, c'est plûtot mauvais."
 
     $adjustChar("Robyn",eyes=3,mouth=0,brow=0)
-    Robyn "How about an iced green tea?"
+    Robyn "Et du thé vert glacé?"
 
     $adjustChar("Jamie",mouth=0,eye=2)
-    Jamie "Great choice."
+    Jamie "Super choix."
 
     python:
         adjustChar("Jamie",eye=2,mouth=0)
@@ -181,7 +181,7 @@ label Ch1_CafeIntro:
         pause 0.5
         ease 0.75 matrixtransform RotateMatrix(0,0,0) yoffset 0
 
-    Narrator "You get your croissant and handcrafted beverage, eager to take a sip. With great anticipation, You take a drink- "
+    Narrator "Tu prends ton croissant et ton thé, impatient d'en prendre une gorgé. Avec beaucoup d'anticipation, tu le porte à tes lèvres- "
 
     $adjustChar("Robyn",mouth=4,brow=3,eyes=3)
 
@@ -192,20 +192,20 @@ label Ch1_CafeIntro:
         matrixtransform RotateMatrix(0,0,0)
         yoffset 0
 
-    extend "\nand gag. It's horrible! It tastes like the vacuum of space slathered with the Marianas trench."
+    extend "\net merde! C'est immonde! Ça à le goût d'un aspirateur fermenté avec des tentacules de l'éspace."
 
     $adjustChar("Robyn",mouth=4,brow=1,eyes=0)
-    Robyn "This isn't what I ordered."
+    Robyn "C'est... pas ce que j'ai commandé-"
 
-    Jamie "I believe you ordered an abyssal green tea?"
+    Jamie "Je pensais que tu voulais un thé vert abyssal?"
 
-    Robyn "N-no. I- {sc=3}{i}ugh.{/i}{/sc} Abyssal?"
+    Robyn "N-non. Je- {sc=3}{i}Attends.{/i}{/sc} Abyssal?"
 
     python:
         adjustChar("Jamie",eye=0,brow=3,mouth=4)
         Robyn_State["mouth"] = 5
 
-    Jamie "It's where we source our ingredients."
+    Jamie "C'est de là que on prends nos ingrédients."
 
     python:
         adjustChar("Robyn",eyes=1,mouth=3,brow=2)
@@ -214,25 +214,25 @@ label Ch1_CafeIntro:
     Robyn "Bleugh."
 
     $adjustChar("Jamie",wispEyes=0,eye=2)
-    Jamie "What if I made you a drink that's {i}off menu{/i}? {nw}"
+    Jamie "Et si je fesais quelque chose qui n'est pas sur la carte? {i}En dehors du menu{/i}? {nw}"
 
     $adjustChar("Jamie",wispEyes=1,eye=1,brow=0)
-    extend "\n\n I insist."
+    extend "\n\n J'insiste."
 
     $Robyn_State["eyes"] = 2
-    Robyn "Okay,, just don't get in trouble."
+    Robyn "Okay,, juste,, ne t'attire pas de problèmes."
 
     python:
         adjustChar("Robyn",eyes=1,mouth=5)
         adjustChar("Jamie",eye=1,wispEyes=0,brow=0)
 
 
-    Jamie "That's part of the fun."
+    Jamie "Ça fait parti du fun."
     show jamie cafe:
         xcenter 0.8
         ease 2.0 xcenter 1.3
 
-    Narrator "You nudge the drink aside while Jamie heads back behind the counter."
+    Narrator "Tu mets ta boisson de coté alors que Jamie retourne derrière le contoir."
 
     camera:
         camera_zoom(z=-500,x=-30,t=0.4)
@@ -263,7 +263,7 @@ label Ch1_CafeIntro:
     $musicPlayer.playSong(song="not_so_spooky_song")
 
     voice mm_laughd
-    Madhouse "{sc=3}{b}CAR BATTERIES!{/b}{/sc}"
+    Madhouse "{sc=3}{b}DES BATTERIES DE VOITURES!{/b}{/sc}"
 
     $adjustChar("Robyn",eyes=0,brow=1,mouth=4)
     Robyn "Pardon?"
@@ -273,13 +273,13 @@ label Ch1_CafeIntro:
         BM_State['face'] = 2
 
     voice mm_laughawkward
-    Madhouse "If ya took some jumper cables and hooked me to a car battery,, that'd be just the {b}jolt{/b} I need to get my powers back!"
+    Madhouse "Si tu prennait des câbles et les branches sur moi et une batterie de voiture,, ca serait juste le coup de {b}jus{/b} dont j'ai besoin pour récupérer mes pouvoirs!"
 
     $adjustChar("Robyn",eyes=1,mouth=4,brow=2)
-    Robyn "Are you trying to eletrocute me?"
+    Robyn "T'essaie de me tuer?"
 
     $BM_State['face'] = 4
-    Madhouse "No? Why would I do that?"
+    Madhouse "Non? Pourquoi je ferais ça?"
 
     python:
         adjustChar("Robyn",eyes=4,mouth=5,brow=3)
@@ -288,18 +288,18 @@ label Ch1_CafeIntro:
         matrixtransform RotateMatrix(0,180,0)
         ease 0.45 matrixtransform RotateMatrix(0,0,0)
 
-    Robyn "Who knows."
+    Robyn "Qui sais."
 
     $BM_State['face'] = 14
     voice mm_dismissive
 
-    Madhouse "C'moooon, I wouldn't put ya in harms way!"
+    Madhouse "Alleeeeez, jamais je te blesserais!"
 
     python:
         adjustChar("Robyn",eyes=2,mouth=4)
         BM_State['face'] = 4
 
-    Robyn "Tell that to your {i}one fanboy.{/i}"
+    Robyn "Va dire ça à ton {i}unique fanboy.{/i}"
 
     python:
         BM_State['face'] = 5
@@ -308,13 +308,13 @@ label Ch1_CafeIntro:
     show blobhouse at startledSquish:
         idleFloat(2,10)
 
-    Madhouse "{sc=2}{b}Ye-{/b}{/sc}{sc=4}{b}OWCH!{/b}{/sc} \n\nGosh, you're brutal. I'm being honest y'know."
+    Madhouse "{sc=2}{b}Ye-{/b}{/sc}{sc=4}{b}OWCH!{/b}{/sc} \n\nPutain, t'es brûtal. J'étais juste honnète tu sais."
 
     show robyn:
-        matrixtransform RotateMatrix(0,0,0)
+        matrixtransform RotateMatrix(0,0,0) 
         ease 0.45 matrixtransform RotateMatrix(0,180,0)
 
-    Robyn "I don't want you thinking you're off the hook here, {color=#3bec27}Slimeball{/color}."
+    Robyn "Je veux pas que tu pense être permis de tout ici, {color=#3bec27}Slimeball.{/color}"
 
     $BM_State['face'] = 2
 
@@ -323,16 +323,16 @@ label Ch1_CafeIntro:
         idleFloat(2,10)
 
     voice mm_yohoholaugh
-    Madhouse "And a cute nickname? \n\nDoes that mean I get to call you., {sc=2}{b}{color=#EC2A2A}Meatball{/color}{/b}{/sc}?"
+    Madhouse "Et un surnom mignon? \n\nEst-ce que ca veut dire que je dois t'appeller., {sc=2}{b}{color=#EC2A2A}Meatball{/color}{/b}{/sc}?"
 
     $adjustChar("Robyn",eyes=2,mouth=4,brow=2)
-    Robyn "No, seriously, you've got a lot of work to do."
+    Robyn "Non, serieux, t'as beaucoup de travail à faire."
 
     python:
         BM_State['face'] = 4
         Robyn_State["mouth"] = 5
 
-    Madhouse "Wh—{nw}"
+    Madhouse "Qu—{nw}"
 
     $BM_State['face'] = 13
 
@@ -340,7 +340,7 @@ label Ch1_CafeIntro:
         matrixtransform RotateMatrix(0.0, 0.0, 0.0)
         idleFloat(2,10)
 
-    extend "\n\nWhatever."
+    extend "\n\nOn s'en fout."
 
     python:
         adjustChar("Robyn",eyes=1,mouth=5,brow=1)
@@ -353,7 +353,7 @@ label Ch1_CafeIntro:
     show blobhouse:
         ease 0.3 xzoom 0 yoffset -100 alpha 0 blur 30
 
-    Narrator "Jeez, what's his problem? It's like he wants conflict."
+    Narrator "Wow, sans déconner, c'est quoi son problème? On dirait qu'il cherche constament les conflits."
     scene BG Black
     camera:
         camera_zoom()
@@ -361,28 +361,28 @@ label Ch1_CafeIntro:
 
     with BGDissolve(name="Trans_BM.png")
 
-    Narrator "Back in the kitchen, the devil's brewing something truly unholy... And sure, they'll throw in a roasted veggie panini on the side."
+    Narrator "De retour dans la cuisine, le démon se met à concocter un truc vraiment étrange..."
     python:
         displaymenu = True
         drinkChoice = 0
         drinkDifficulty = 7
 
-    Narrator "They search their heart and the perfect recipe comes to mind-{nw}"
+    Narrator "Iel cherche dans son coeur et la recette parfaite vient à l'ésprit-{nw}"
 
     menu:
         extend ""
 
-        "Dagon’s Primordial Brew":
+        "Boisson de Dagon Primordiale":
             python:
                 displaymenu = False
                 drinkChoice = 1
                 drinkDifficulty = 8
-        "Tincture of Divine Truths":
+        "Tincture des véritiés divines":
             python:
                 displaymenu = False
                 drinkChoice = 2
                 drinkDifficulty = 10
-        "Prismatic tea of Unknowable Hues":
+        "Thé prismatique des inductions inconnues":
             python:
                 displaymenu = False
                 drinkChoice = 3
@@ -394,9 +394,9 @@ label Ch1_CafeIntro:
 
 label Ch1_CafeResult:
 
-    $dNoun = ["sweet","punchy","otherworldly"][drinkChoice-1]
+    $dNoun = ["sucrée","serrée","indescriptible"][drinkChoice-1]
 
-    Narrator "With an idea in place they get to work. Their hands move masterfully as they concoct the [dNoun] beverage, carefully crafting a brew to suit a mortal's palette."
+    Narrator "Avec une idée en place iel se met au travail. Ses mains bougent avec adresse et se composent à la concoction de la boisson [dNoun] , en faisant attention à la faire aux goûts du mortel."
     python:
         adjustChar("Jamie",eye=2,mouth=2,wispEyes=3,brow=3)
         adjustChar("Robyn",eyes=2,brow=1,mouth=0)
@@ -417,17 +417,17 @@ label Ch1_CafeResult:
 
     with Pixellate(0.75,7)
 
-    Jamie "Here."
+    Jamie "Voilà."
 
     if not isRollSuccess:
         python:
             adjustChar("Jamie",eye=1,mouth=2,sweat=1)
             adjustChar("Robyn",brow=2)
-        Narrator "Jamie slides the cup down on the counter with a handcrafted beverage, but not without nearly dropping it first."
+        Narrator "Jamie fait glisser la boisson sur la table, mais pas sans louper de la faire tomber avant."
     else:
-        Narrator "Jamie slides the cup across on the counter."
+        Narrator "Jamie dépose la boisson sur la table."
 
-    Jamie "Hope you enjoy."
+    Jamie "J'éspère que t'aimeras."
 
     show CGShade
     show CG Cafe Drink
